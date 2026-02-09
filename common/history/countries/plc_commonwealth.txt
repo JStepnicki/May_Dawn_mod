@@ -1,17 +1,12 @@
 ﻿COUNTRIES = {
     c:PLC = {
-        set_government_type = monarchy
-        tier = empire
 
         # --- TECHNOLOGIA ---
         # Ustawiamy bazowy poziom technologii (Tier 1 to start gry 1836)
         effect_starting_technology_tier_1_tech = yes
 
-        # Bonusy z dziedzictwa Napoleona (Mobilność i nauka)
-        add_technology = line_infantry
-        add_technology = mobile_artillery
-        add_technology = academia
-        add_technology = atmospheric_engine
+        # --- on road to reforms
+        effect_starting_politics_liberal = yes
 
         # --- PRAWA (LAWS) ---
 
@@ -58,9 +53,5 @@ ig:ig_landowners = {
         ig:ig_petty_bourgeoisie = {
             set_interest_group_name = ig_plc_burghers
         }
-
-        # --- FINANSE ---
-        # Państwo jest zadłużone po uszy przez wydatki na armię i obronę granic
-        add_gold_reserves = -150000
     }
 }

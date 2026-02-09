@@ -1,12 +1,7 @@
 ﻿COUNTRIES = {
     c:COU = {
-        set_government_type = monarchy
-        tier = principality
 
-        # Technologie: Musi mieć to, żeby prawo kolonialne działało
-        add_technology = colonization
-        add_technology = navigation
-        add_technology = medicine
+        effect_starting_technology_tier_1_tech = yes
 
         # Prawa: Kurlandia jako oświecone, kolonialne księstwo
         activate_law = law_type:law_monarchy
@@ -17,7 +12,5 @@
         activate_law = law_type:law_state_religion
         activate_law = law_type:law_serfdom # Historycznie wciąż obecna
 
-        # Skarbiec na wyprawy
-        add_gold_reserves = 25000
     }
 }

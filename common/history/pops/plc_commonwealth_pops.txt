@@ -119,7 +119,8 @@
           create_pop = { culture = byelorussian size = 285000 }
           create_pop = { culture = ashkenazi size = 75000 }
           create_pop = { culture = russian size = 5000 }
-          # Popy, które wcześniej były pod RUS (teraz w PLC)
+          }
+          region_state:RUS = {
           create_pop = { culture = polish size = 14910 }
           create_pop = { culture = byelorussian size = 284714 }
           create_pop = { culture = ashkenazi size = 74520 }
@@ -134,7 +135,8 @@
           create_pop = { culture = polish size = 40000 }
           create_pop = { culture = ukrainian size = 500000 }
           create_pop = { culture = ashkenazi size = 80000 }
-          # Popy z części "rosyjskiej" (teraz w Twoich rękach)
+        }
+        region_state:RUS = {
           create_pop = { culture = ukrainian pop_type = aristocrats size = 29300 }
           create_pop = { culture = russian pop_type = aristocrats size = 6000 }
           create_pop = { culture = ukrainian size = 2076020 }
@@ -145,7 +147,7 @@
     }
 
 s:STATE_BREST = {
-       region_state:PLC = { # Zmienione z RUS na PLC
+       region_state:PLC = {
           create_pop = { culture = byelorussian size = 512334 }
           create_pop = { culture = lithuanian size = 10524 }
           create_pop = { culture = ukrainian size = 133659 }

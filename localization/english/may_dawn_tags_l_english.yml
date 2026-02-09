@@ -1,8 +1,10 @@
-l_english:
+﻿l_english:
  RTN:0 "Republic of Three Nations"
  RTN_ADJ:0 "Commonwealth"
  TPE:0 "Polish Empire"
  TPE_ADJ:0 "Imperial Polish"
+ COU:0 "Courland"
+ COU_ADJ:0 "Courland"
  
  # Specyficzne nazwy rządów
  RTN_monarchy:0 "Universal Commonwealth"

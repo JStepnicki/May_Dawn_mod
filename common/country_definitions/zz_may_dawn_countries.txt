@@ -7,7 +7,7 @@ RTN = {
 	tier = empire # Jako monarchia uniwersalna zasługuje na poziom Empire
 
 	# Cztery narody: Polski, Litewski, Ukraiński (Ruthenian) i Białoruski
-	cultures = { polish lithuanian ruthenian byelorussian }
+	cultures = { polish lithuanian ukrainian byelorussian }
 
 	capital = STATE_MAZOVIA
 }
