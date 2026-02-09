@@ -1,0 +1,30 @@
+﻿CHARACTERS = {
+    c:PLC = {
+        # Król
+        create_character = {
+            first_name = Fryderyk_August
+            last_name = Wettyn
+            age = 39
+            culture = cu:polish
+            traits = { charismatic } # Usunięto 'erudite' i 'is_ruler'
+        }
+        # Następca
+        create_character = {
+            first_name = Jan
+            last_name = Wettyn
+            age = 35
+            culture = cu:polish
+            traits = { persistent }
+        }
+        # Adam Jerzy Czartoryski
+        create_character = {
+            first_name = Adam_Jerzy
+            last_name = Czartoryski
+            age = 66
+            culture = cu:polish
+            ig_leader = yes
+            interest_group = ig_landowners
+            traits = { diplomat } # 'celebrity' nie istnieje jako trait w kodzie
+        }
+    }
+}

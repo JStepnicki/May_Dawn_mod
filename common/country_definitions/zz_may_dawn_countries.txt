@@ -25,14 +25,6 @@ TPE = {
 	capital = STATE_MAZOVIA
 }
 
-PLC = {
-    color = { 160 40 50 }
-    country_type = recognized
-    tier = empire
-    cultures = { polish lithuanian }
-    capital = STATE_MAZOVIA
-}
-
 COU = {
 	color = { 185 150 90 }
 	country_type = recognized

@@ -1,169 +1,193 @@
 ﻿POPS = {
     s:STATE_MAZOVIA = {
-       region_state:PLC = {
-          create_pop = { culture = polish pop_type = aristocrats size = 12400 }
-          create_pop = { culture = polish size = 958392 }
-          create_pop = { culture = ashkenazi size = 180591 }
-          create_pop = { culture = east_german size = 39499 }
-          create_pop = { culture = russian size = 53083 }
-          create_pop = { culture = byelorussian size = 50440 }
-          create_pop = { culture = ukrainian size = 21106 }
-       }
+        region_state:RUS = { kill_population_percent_in_state = { percent = 1 } }
+        region_state:PLC = {
+            create_pop = { culture = polish pop_type = aristocrats size = 12400 }
+            create_pop = { culture = polish size = 958392 }
+            create_pop = { culture = ashkenazi size = 180591 }
+            create_pop = { culture = east_german size = 39499 }
+            create_pop = { culture = russian size = 53083 }
+            create_pop = { culture = byelorussian size = 50440 }
+            create_pop = { culture = ukrainian size = 21106 }
+        }
     }
+
     s:STATE_GREATER_POLAND = {
-       region_state:PLC = {
-          create_pop = { culture = polish pop_type = aristocrats size = 25000 }
-          create_pop = { culture = russian pop_type = aristocrats size = 2300 }
-          create_pop = { culture = polish size = 1979469 }
-          create_pop = { culture = polish religion = protestant size = 30000 }
-          create_pop = { culture = ashkenazi size = 358977 }
-          create_pop = { culture = east_german size = 134245 }
-          create_pop = { culture = russian size = 58300 }
-       }
+        region_state:RUS = { kill_population_percent_in_state = { percent = 1 } }
+        region_state:PLC = {
+            create_pop = { culture = polish pop_type = aristocrats size = 25000 }
+            create_pop = { culture = russian pop_type = aristocrats size = 2300 }
+            create_pop = { culture = polish size = 1979469 }
+            create_pop = { culture = polish religion = protestant size = 30000 }
+            create_pop = { culture = ashkenazi size = 358977 }
+            create_pop = { culture = east_german size = 134245 }
+            create_pop = { culture = russian size = 58300 }
+        }
     }
+
     s:STATE_LESSER_POLAND = {
-       region_state:PLC = {
-          create_pop = { culture = polish size = 633163 }
-          create_pop = { culture = polish religion = protestant size = 26000 }
-          create_pop = { culture = ashkenazi size = 117162 }
-          create_pop = { culture = east_german size = 19663 }
-          create_pop = { culture = ukrainian size = 160774 }
-          create_pop = { culture = russian size = 35435 }
-       }
+        region_state:RUS = { kill_population_percent_in_state = { percent = 1 } }
+        region_state:PLC = {
+            create_pop = { culture = polish size = 633163 }
+            create_pop = { culture = polish religion = protestant size = 26000 }
+            create_pop = { culture = ashkenazi size = 117162 }
+            create_pop = { culture = east_german size = 19663 }
+            create_pop = { culture = ukrainian size = 160774 }
+            create_pop = { culture = russian size = 35435 }
+        }
     }
+
     s:STATE_POSEN = {
-       region_state:PLC = { # Zmienione na PLC, aby populacja była w Twoich granicach
-          create_pop = { culture = polish pop_type = aristocrats size = 12000 }
-          create_pop = { culture = north_german size = 240400 }
-          create_pop = { culture = ashkenazi size = 16000 }
-          create_pop = { culture = polish size = 1259204 }
-          create_pop = { culture = north_german religion = catholic size = 14116 }
-       }
+        region_state:PRU = { kill_population_percent_in_state = { percent = 1 } }
+        region_state:PLC = {
+            create_pop = { culture = polish pop_type = aristocrats size = 12000 }
+            create_pop = { culture = north_german size = 240400 }
+            create_pop = { culture = ashkenazi size = 16000 }
+            create_pop = { culture = polish size = 1259204 }
+            create_pop = { culture = north_german religion = catholic size = 14116 }
+        }
     }
+
     s:STATE_WEST_PRUSSIA = {
+        region_state:PRU = { kill_population_percent_in_state = { percent = 1 } }
         region_state:PLC = {
-           create_pop = { culture = polish pop_type = aristocrats size = 6000 }
-           create_pop = { culture = north_german pop_type = aristocrats size = 1000 }
-           create_pop = { culture = polish size = 350000 }
-           create_pop = { culture = polish religion = protestant size = 160000 }
-           create_pop = { culture = north_german size = 250000 }
-           create_pop = { culture = north_german religion = catholic size = 15000 }
-           create_pop = { culture = ashkenazi size = 12000 }
+            create_pop = { culture = polish pop_type = aristocrats size = 6000 }
+            create_pop = { culture = north_german pop_type = aristocrats size = 1000 }
+            create_pop = { culture = polish size = 350000 }
+            create_pop = { culture = polish religion = protestant size = 160000 }
+            create_pop = { culture = north_german size = 250000 }
+            create_pop = { culture = north_german religion = catholic size = 15000 }
+            create_pop = { culture = ashkenazi size = 12000 }
         }
     }
+
     s:STATE_EAST_PRUSSIA = {
+        region_state:PRU = { kill_population_percent_in_state = { percent = 1 } }
         region_state:PRU = {
-           create_pop = { culture = north_german pop_type = aristocrats size = 4500 }
-           create_pop = { culture = north_german size = 560000 }
-           create_pop = { culture = lithuanian religion = protestant size = 105000 }
-           create_pop = { culture = north_german religion = catholic size = 73000 }
-           create_pop = { culture = polish religion = protestant size = 5000 }
+            create_pop = { culture = north_german pop_type = aristocrats size = 4500 }
+            create_pop = { culture = north_german size = 560000 }
+            create_pop = { culture = lithuanian religion = protestant size = 105000 }
+            create_pop = { culture = north_german religion = catholic size = 73000 }
+            create_pop = { culture = polish religion = protestant size = 5000 }
         }
         region_state:PLC = {
-           create_pop = { culture = polish religion = catholic pop_type = aristocrats size = 1000 }
-           create_pop = { culture = polish religion = catholic size = 60000 }
-           create_pop = { culture = polish religion = protestant size = 15000 }
-           create_pop = { culture = north_german size = 10000 }
-           create_pop = { culture = ashkenazi size = 1500 }
+            create_pop = { culture = polish religion = catholic pop_type = aristocrats size = 1000 }
+            create_pop = { culture = polish religion = catholic size = 60000 }
+            create_pop = { culture = polish religion = protestant size = 15000 }
+            create_pop = { culture = north_german size = 10000 }
+            create_pop = { culture = ashkenazi size = 1500 }
         }
     }
+
     s:STATE_WEST_GALICIA = {
-       region_state:PLC = {
-          create_pop = { culture = polish size = 1800004 }
-          create_pop = { culture = ukrainian size = 152000 }
-          create_pop = { culture = ashkenazi size = 128500 }
-          create_pop = { culture = ashkenazi pop_type = shopkeepers size = 500 }
-       }
+        region_state:AUS = { kill_population_percent_in_state = { percent = 1 } }
+        region_state:PLC = {
+            create_pop = { culture = polish size = 1800004 }
+            create_pop = { culture = ukrainian size = 152000 }
+            create_pop = { culture = ashkenazi size = 128500 }
+            create_pop = { culture = ashkenazi pop_type = shopkeepers size = 500 }
+        }
     }
+
     s:STATE_EAST_GALICIA = {
-       region_state:PLC = {
-          create_pop = { culture = polish pop_type = aristocrats size = 20000 }
-          create_pop = { culture = ukrainian pop_type = aristocrats size = 6000 }
-          create_pop = { culture = polish size = 1000000 }
-          create_pop = { culture = ukrainian size = 1343804 }
-          create_pop = { culture = ashkenazi size = 14500 }
-          create_pop = { culture = ashkenazi pop_type = laborers size = 30000 }
-       }
+        region_state:AUS = { kill_population_percent_in_state = { percent = 1 } }
+        region_state:PLC = {
+            create_pop = { culture = polish pop_type = aristocrats size = 20000 }
+            create_pop = { culture = ukrainian pop_type = aristocrats size = 6000 }
+            create_pop = { culture = polish size = 1000000 }
+            create_pop = { culture = ukrainian size = 1343804 }
+            create_pop = { culture = ashkenazi size = 14500 }
+            create_pop = { culture = ashkenazi pop_type = laborers size = 30000 }
+        }
     }
+
     s:STATE_VILNIUS = {
-       region_state:PLC = {
-          create_pop = { culture = polish pop_type = aristocrats size = 4500 }
-          create_pop = { culture = byelorussian size = 147130 }
-          create_pop = { culture = lithuanian size = 178882 }
-          create_pop = { culture = polish size = 70918 }
-          create_pop = { culture = ashkenazi size = 77259 }
-          create_pop = { culture = russian size = 40028 }
-       }
+        region_state:RUS = { kill_population_percent_in_state = { percent = 1 } }
+        region_state:PLC = {
+            create_pop = { culture = polish pop_type = aristocrats size = 4500 }
+            create_pop = { culture = byelorussian size = 147130 }
+            create_pop = { culture = lithuanian size = 178882 }
+            create_pop = { culture = polish size = 70918 }
+            create_pop = { culture = ashkenazi size = 77259 }
+            create_pop = { culture = russian size = 40028 }
+        }
     }
+
     s:STATE_KAUNAS = {
-       region_state:PLC = {
-          create_pop = { culture = polish pop_type = aristocrats size = 4500 }
-          create_pop = { culture = lithuanian size = 350000 }
-          create_pop = { culture = ashkenazi size = 91653 }
-          create_pop = { culture = polish size = 70000 }
-          create_pop = { culture = east_german size = 26366 }
-       }
+        region_state:RUS = { kill_population_percent_in_state = { percent = 1 } }
+        region_state:PLC = {
+            create_pop = { culture = polish pop_type = aristocrats size = 4500 }
+            create_pop = { culture = lithuanian size = 350000 }
+            create_pop = { culture = ashkenazi size = 91653 }
+            create_pop = { culture = polish size = 70000 }
+            create_pop = { culture = east_german size = 26366 }
+        }
     }
+
     s:STATE_VOLHYNIA = {
-       region_state:PLC = {
-          create_pop = { culture = ukrainian size = 526356 }
-          create_pop = { culture = ashkenazi size = 94529 }
-          create_pop = { culture = polish size = 44400 }
-          create_pop = { culture = east_german size = 40819 }
-       }
+        region_state:RUS = { kill_population_percent_in_state = { percent = 1 } }
+        region_state:PLC = {
+            create_pop = { culture = ukrainian size = 526356 }
+            create_pop = { culture = ashkenazi size = 94529 }
+            create_pop = { culture = polish size = 44400 }
+            create_pop = { culture = east_german size = 40819 }
+        }
     }
+
     s:STATE_MINSK = {
-       region_state:PLC = {
-          # Popy z Twojej części
-          create_pop = { culture = polish size = 15000 }
-          create_pop = { culture = byelorussian size = 285000 }
-          create_pop = { culture = ashkenazi size = 75000 }
-          create_pop = { culture = russian size = 5000 }
-          }
-          region_state:RUS = {
-          create_pop = { culture = polish size = 14910 }
-          create_pop = { culture = byelorussian size = 284714 }
-          create_pop = { culture = ashkenazi size = 74520 }
-          create_pop = { culture = russian size = 33883 }
-       }
+        region_state:RUS = { kill_population_percent_in_state = { percent = 1 } }
+        region_state:PLC = {
+            create_pop = { culture = polish size = 15000 }
+            create_pop = { culture = byelorussian size = 285000 }
+            create_pop = { culture = ashkenazi size = 75000 }
+            create_pop = { culture = russian size = 5000 }
+        }
+        region_state:RUS = {
+            create_pop = { culture = polish size = 14910 }
+            create_pop = { culture = byelorussian size = 284714 }
+            create_pop = { culture = ashkenazi size = 74520 }
+            create_pop = { culture = russian size = 33883 }
+        }
     }
 
     s:STATE_KIEV = {
-       region_state:PLC = {
-          # Twoja elita i mieszczanie
-          create_pop = { culture = ukrainian pop_type = aristocrats size = 5000 }
-          create_pop = { culture = polish size = 40000 }
-          create_pop = { culture = ukrainian size = 500000 }
-          create_pop = { culture = ashkenazi size = 80000 }
-        }
+        region_state:RUS = { kill_population_percent_in_state = { percent = 1 } }
         region_state:RUS = {
-          create_pop = { culture = ukrainian pop_type = aristocrats size = 29300 }
-          create_pop = { culture = russian pop_type = aristocrats size = 6000 }
-          create_pop = { culture = ukrainian size = 2076020 }
-          create_pop = { culture = ashkenazi size = 406660 }
-          create_pop = { culture = russian size = 81600 }
-          create_pop = { culture = polish size = 32740 }
-       }
+            create_pop = { culture = ukrainian pop_type = aristocrats size = 29300 }
+            create_pop = { culture = russian pop_type = aristocrats size = 6000 }
+            create_pop = { culture = ukrainian size = 2076020 }
+            create_pop = { culture = ashkenazi size = 406660 }
+            create_pop = { culture = russian size = 81600 }
+            create_pop = { culture = polish size = 32740 }
+        }
+        region_state:PLC = {
+            create_pop = { culture = ukrainian pop_type = aristocrats size = 5000 }
+            create_pop = { culture = polish size = 40000 }
+            create_pop = { culture = ukrainian size = 500000 }
+            create_pop = { culture = ashkenazi size = 80000 }
+        }
     }
 
-s:STATE_BREST = {
-       region_state:PLC = {
-          create_pop = { culture = byelorussian size = 512334 }
-          create_pop = { culture = lithuanian size = 10524 }
-          create_pop = { culture = ukrainian size = 133659 }
-          create_pop = { culture = polish size = 57504 }
-          create_pop = { culture = ashkenazi size = 59387 }
-       }
+    s:STATE_BREST = {
+        region_state:RUS = { kill_population_percent_in_state = { percent = 1 } }
+        region_state:PLC = {
+            create_pop = { culture = byelorussian size = 512334 }
+            create_pop = { culture = lithuanian size = 10524 }
+            create_pop = { culture = ukrainian size = 133659 }
+            create_pop = { culture = polish size = 57504 }
+            create_pop = { culture = ashkenazi size = 59387 }
+        }
     }
 
     s:STATE_COURLAND = {
-       region_state:COU = { # Używamy tagu COU dla Księstwa Kurlandii
-          create_pop = { culture = latvian size = 354472 }
-          create_pop = { culture = latvian pop_type = aristocrats size = 5000 }
-          create_pop = { culture = east_german size = 30872 }
-          create_pop = { culture = ashkenazi size = 26432 }
-          create_pop = { culture = lithuanian size = 12744 }
-          create_pop = { culture = polish size = 29440 }
-       }
+        region_state:RUS = { kill_population_percent_in_state = { percent = 1 } }
+        region_state:COU = {
+            create_pop = { culture = latvian size = 354472 }
+            create_pop = { culture = latvian pop_type = aristocrats size = 5000 }
+            create_pop = { culture = east_german size = 30872 }
+            create_pop = { culture = ashkenazi size = 26432 }
+            create_pop = { culture = lithuanian size = 12744 }
+            create_pop = { culture = polish size = 29440 }
+        }
     }
 }

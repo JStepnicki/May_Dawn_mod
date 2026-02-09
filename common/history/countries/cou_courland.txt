@@ -1,16 +1,38 @@
 ﻿COUNTRIES = {
-    c:COU = {
-
+    c:COU ?= {
         effect_starting_technology_tier_1_tech = yes
 
-        # Prawa: Kurlandia jako oświecone, kolonialne księstwo
-        activate_law = law_type:law_monarchy
-        activate_law = law_type:law_autocracy
-        activate_law = law_type:law_mercantilism
-        activate_law = law_type:law_professional_army
-        activate_law = law_type:law_colonial_resettlement # To pozwala na kolonizację!
-        activate_law = law_type:law_state_religion
-        activate_law = law_type:law_serfdom # Historycznie wciąż obecna
+        # --- PRAWA (Kurlandia: Niemiecka elita, bałtycka gospodarka) ---
+        activate_laws = {
+            law_monarchy
+            law_autocracy              # Silna władza książęca
+            law_landed_voting         # Głos mają wyłącznie baronowie kurlandzcy
 
+            law_mercantilism          # Tradycja handlowa (Kurlandia miała floty!)
+            law_tenant_farmers        # HISTORYCZNIE: Kurlandia zniosła pańszczyznę wcześniej niż Rosja (1817), chłopi byli wolni, ale bez ziemi.
+            law_per_capita_taxes
+
+            law_state_religion        # Protestantyzm (Luteranizm) jako fundament elity
+            law_national_supremacy     # Niemiecka dominacja nad łotewskimi chłopami
+            law_professional_army
+            law_colonial_resettlement  # Twoja prośba: nawiązanie do tradycji Gambii i Tobago
+            law_no_schools            # Edukacja ograniczona do elit
+            law_local_police           # Silna rola lokalnej szlachty (Rittershaft)
+        }
+
+        # --- GRUPY INTERESU ---
+        # W Kurlandii rządzili "Baltische Ritterschaft" (Baronowie)
+        ig:ig_landowners ?= {
+            add_ruling_interest_group = yes
+            set_interest_group_name = ig_cou_baltic_barons
+        }
+
+        ig:ig_devout ?= {
+            set_interest_group_name = ig_cou_lutheran_church
+        }
+
+        # --- BONUS NA START ---
+        # Jeśli chcesz nawiązać do tradycji morskiej Kurlandii:
+        add_treasury = 25000
     }
 }

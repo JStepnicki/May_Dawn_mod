@@ -1,57 +1,44 @@
 ﻿COUNTRIES = {
-    c:PLC = {
-
-        # --- TECHNOLOGIA ---
-        # Ustawiamy bazowy poziom technologii (Tier 1 to start gry 1836)
+    c:PLC ?= {
         effect_starting_technology_tier_1_tech = yes
 
-        # --- on road to reforms
-        effect_starting_politics_liberal = yes
+        # Podatki konsumpcyjne (dla budżetu)
+        add_taxed_goods = g:liquor
+        add_taxed_goods = g:wine
 
-        # --- PRAWA (LAWS) ---
-
-        # Struktura Władzy: Konstytucyjna Monarchia Autorytarna
+        # Prawa (Zgodnie z Twoim wzorcem)
         activate_law = law_type:law_monarchy
-        activate_law = law_type:law_autocracy        # Król i Sejm trzymają kraj mocną ręką
-        activate_law = law_type:law_landed_voting    # Reforma 1791 dawała głos szlachcie i mieszczanom (posesjonatom)
+        activate_law = law_type:law_autocracy
+        activate_law = law_type:law_landed_voting
+        activate_law = law_type:law_freedom_of_conscience
+        activate_law = law_type:law_women_own_property
+        activate_law = law_type:law_per_capita_taxes
+        activate_law = law_type:law_appointed_bureaucrats
+        activate_law = law_type:law_racial_segregation
+        activate_law = law_type:law_mercantilism
+        activate_law = law_type:law_interventionism
+        activate_law = law_type:law_private_schools
+        activate_law = law_type:law_local_police
+        activate_law = law_type:law_professional_army
+        activate_law = law_type:law_censorship
+        activate_law = law_type:law_tenant_farmers
 
-        # Gospodarka i Społeczeństwo: Przetrwanie za wszelką cenę
-        activate_law = law_type:law_mercantilism     # Ochrona własnego przemysłu przed potęgami
-        activate_law = law_type:law_per_capita_taxation # Bardziej nowoczesny system podatkowy niż u sąsiadów
-        activate_law = law_type:law_serfdom          # Twój największy problem - pańszczyzna wciąż trwa
+        # Instytucje
+        set_institution_investment_level = {
+            institution = institution_schools
+            level = 2
+        }
+        set_institution_investment_level = {
+            institution = institution_police
+            level = 1
+        }
 
-        # Wojsko i Policja
-        activate_law = law_type:law_professional_army # Dziedzictwo Legionów i wojen narodowych
-
-        # Wyznanie i Prawa Ludzi: Tolerancja religijna (Tradycja RP)
-        # Zamiast State Religion (Dyskryminacja), dajemy Freedom of Conscience lub Religious Schools
-        activate_law = law_type:law_freedom_of_conscience # Katolicy, Prawosławni i Żydzi żyją obok siebie
-        activate_law = law_type:law_racial_segregation    # Akceptuje kultury europejskie (Polaków, Litwinów, Rusinów)
-        activate_law = law_type:law_religious_schools     # Edukacja w rękach Kościoła i KEN
-
-        # --- GRUPY INTERESU (POLITYKA) ---
-        # W rządzie dominuje Szlachta (Landowners) i Armia (Armed Forces)
-ig:ig_landowners = {
+        # Grupy interesu w rządzie
+        ig:ig_landowners ?= {
             add_ruling_interest_group = yes
-            set_interest_group_name = ig_plc_magnates # Nazwa dla lokalizacji
         }
-        ig:ig_armed_forces = {
+        ig:ig_armed_forces ?= {
             add_ruling_interest_group = yes
-            set_interest_group_name = ig_plc_army
-        }
-
-        # Opozycja / Inne grupy
-        ig:ig_intelligentsia = {
-            set_interest_group_name = ig_plc_intelligentsia
-        }
-        ig:ig_devout = {
-            set_interest_group_name = ig_plc_clergy
-        }
-        ig:ig_rural_folk = {
-            set_interest_group_name = ig_plc_szlachta_zagonowa
-        }
-        ig:ig_petty_bourgeoisie = {
-            set_interest_group_name = ig_plc_burghers
         }
     }
 }
