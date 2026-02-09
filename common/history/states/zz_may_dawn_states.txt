@@ -1,0 +1,170 @@
+#TUTORIAL: When you create a new country, you must assign states to it, and that's what this file is for
+#TUTORIAL: This only explains how to change the ownership \ homelands of already exsiting states, if you want to create a state then see the states creation tutorial
+#TUTORIAL: You only need to create one txt file, call it your mod's name (Example: communitypatch_states.txt, modernday_states.txt)
+#TUTORIAL: Then you need to copy over the state you wanna modify from game\common\history\states\states.txt like the following
+#TUTORIAL: Make sure that the file starts with STATES = { and ends with an }
+#TUTORIAL: All states added here, must be added here as well: game\common\history\pops (See the tutorial there)
+#TUTORIAL: In our case, our Tutorial Nation will own Albania, Bosnia, Montenegro, Southern Serbia, Dalmatia and North Macedonia
+
+STATES = {
+    s:STATE_MAZOVIA = {
+        create_state = {
+            country = c:PLC
+            owned_provinces = { x009F60 x1AA8FB x46B451 x4F022C x802161 x809F60 xC17590 xDC58D0 xE165F5 xF8C8F6 xDE551D x117AE1 x4969E4 xC06121 x0087C9 }
+            state_type = incorporated
+        }
+        add_homeland = cu:polish
+    }
+    s:STATE_LESSER_POLAND = {
+        create_state = {
+            country = c:PLC
+            owned_provinces = { x40DF20 x4161A0 x44ACBB x46B950 x496950 x51A0E0 x9444C9 xAEB9A5 xB491B1 xE0BB00 xEB0783 xF73169 }
+            state_type = incorporated
+        }
+        add_homeland = cu:polish
+    }
+    s:STATE_GREATER_POLAND = {
+        create_state = {
+            country = c:PLC
+            owned_provinces = { x0E40DA x1CB894 x1F6F99 x24BBED x29408F x2F0D92 x471A61 x577EE4 x57A53D x5FF022 x6000DF x738072 x8FE2DB x955F09 x9FEDC5 xA03316 xA3A3A9 xA7B86B xAB3C62 xC02B8C xC061A0 xC0E0A0 xD0A0E0 xDE06BA }
+            state_type = incorporated
+        }
+        add_homeland = cu:polish
+    }
+
+    s:STATE_POSEN = {
+        create_state = {
+            country = c:PLC
+            owned_provinces = { x1FA1E1 x2141A0 x2E6001 x999CEE xC32D8B xE513C0 x085962 xC02121 xFCC7B7 xF962B2 x41E0A0 x635336 }
+            state_type = incorporated
+        }
+        add_homeland = cu:polish
+    }
+
+    s:STATE_WEST_PRUSSIA = {
+        create_state = {
+            country = c:PLC
+            owned_provinces = { x178C99 x374AC3 x41A021 x55FD02 x611F2F x7CB839 x80A0A0 x945000 xBAF66D }
+            state_type = incorporated
+        }
+        add_homeland = cu:polish
+    }
+
+	s:STATE_EAST_PRUSSIA = {
+		create_state = {
+			country = c:PRU
+			owned_provinces = { x1E73B9 x2399A2 x40A0A0 x4121A0 x47C900   x72FDF3 x7A6061 x7D6DC3 x975566 x981EBE x9FD037 xABC4AE xAEA6D6 xBF9F20 xC020A0 xC04521 xEEF586 }
+		}
+		create_state = {
+			country = c:PLC
+			owned_provinces = {x5428E6 x6E8875 }
+		}
+
+		add_homeland = cu:north_german
+		add_homeland = cu:polish
+		add_homeland = cu:lithuanian
+	}
+
+    s:STATE_WEST_GALICIA = {
+        create_state = {
+            country = c:PLC
+            owned_provinces = { x90E060 x1161E0 xC8690C x66DCEE xA63CE6 xFCC35F xC7B7B8 x5F3456 x56599F xA550A9 x906060 x11E061 }
+            state_type = incorporated
+        }
+        add_homeland = cu:polish
+    }
+
+    s:STATE_EAST_GALICIA = {
+        create_state = {
+            country = c:PLC
+            owned_provinces = { xA2805F x9D8087 xCDD223 x11A021 xCAE5B0 x8F9F20 xE369C4 xA3CF78 xB021A0 x053163 x4D0305 xC1B262 xEFE270 x489C42 x7EDD9E x53932F xC58E1C }
+            state_type = incorporated
+        }
+        add_homeland = cu:polish
+        add_homeland = cu:ukrainian
+    }
+
+    s:STATE_VILNIUS = {
+        create_state = {
+            country = c:PLC
+            owned_provinces = { x0161A0 x41E061 xF2CB3D }
+            state_type = incorporated
+        }
+        add_homeland = cu:polish
+        add_homeland = cu:lithuanian
+    }
+    s:STATE_KAUNAS = {
+        create_state = {
+            country = c:PLC
+            owned_provinces = { x00E0A0 x0980C8 x0B6577 x21F318 x232B98 x406DC9 x4177AF x4678E5 x577C69 x6175AD x629C46 x7A5D64 x8060A0 x80D858 x95171C xA8FF51 xA916E3 xAF73F2 xBFE867 xC0A0A0 xCC4C28 xCD7291 xE0B943 }
+            state_type = incorporated
+        }
+        add_homeland = cu:polish
+        add_homeland = cu:lithuanian
+    }
+    s:STATE_MINSK = {
+        create_state = {
+            country = c:PLC
+            owned_provinces = {  x80E0A0 xA16195 xC9C7AF x4B3105 x21175E x51F4A4 x28C9D9 x2FD0B1 x2EB844 x716052 x416161  x80E061}
+            state_type = incorporated
+        }
+        create_state = {
+            country = c:RUS
+            owned_provinces = {x80DFDF x16A8B5 x0161E0 x0A89D7   x235156 x26722B x41A0E0 x557F9F   xA36969 xC06C1A xC3D50D  xEDA68C xEFAEC6 xF05D59 }
+            state_type = incorporated
+        }
+        add_homeland = cu:byelorussian
+    }
+    s:STATE_VOLHYNIA = {
+        create_state = {
+            country = c:PLC
+            owned_provinces = { x0EB3C7 x1A9FFE x364496 x37A636 x5A26AE x71E0A0 x80FB0F x8201CF xAC3079 xAFEBC8 xE001E0 xE2F553 }
+            state_type = incorporated
+        }
+        add_homeland = cu:polish
+        add_homeland = cu:ukrainian
+    }
+s:STATE_KIEV = {
+        add_homeland = cu:ukrainian
+
+        create_state = {
+            country = c:PLC
+            owned_provinces = {
+                x31F90F x2D80BA xA8600B xD5E7D2 x2472F3 x46B48F
+                x1C7F2D x11F253 x9B1B0B x884128 x7161A0 x2C6218
+                x6168EB x6AC779 x33471E x905D21 xE2B51B xBD8617
+                x1121A0 x4D686A x4700D0
+            }
+            state_type = incorporated
+        }
+
+        create_state = {
+            country = c:RUS
+            owned_provinces = {
+                x01E0E0 x022620  x18E9E1  x2E05DE
+                  x4C92CC  x54B5C4
+                 x7DA787 x7DF67D x82AE2F x8CE323
+                x98E808 xA9FA61  xCD2CE5 xD6537D xD8EA8C
+                xDD790F  xE6AF95 xE996D1 xEA1E16 xF061A0
+                xF0E021 xF9066A xFF7D57
+            }
+            state_type = incorporated
+        }
+    }
+    s:STATE_BREST = {
+		create_state = {
+			country = c:PLC
+			owned_provinces = { x157352 x18020B x1917E9 x241A22 x406020 x66FB56 x6D7F7E x75F1B4 x7E7F58 x806161 x84294C x84FE3D x862F77 x8ABE62 x936BF9 xA201E3 xA6BED3 xA93262 xAB3AC5 xAC6FAE xB338E8 xBCB94C xBFDF20 xC15AD8 xC1D9C0 xC3FA73 xCB21FD xCCD197 xDE471E xE06176 xE87D11 xF02643 }
+		}
+		}
+
+		s:STATE_COURLAND = {
+		create_state = {
+			country = c:COU
+			owned_provinces = { x01E021 x4A8E5D x4D08D8 x74042F x806121 x898083 x8D4F76 xABA718 xF4B54B xF8BBB0 xFA8436 xFCC2E1 xFD1424 }
+			state_type = incorporated
+		}
+
+		add_homeland = cu:latvian
+	}
+}

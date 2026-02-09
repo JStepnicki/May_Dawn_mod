@@ -1,0 +1,66 @@
+﻿COUNTRIES = {
+    c:PLC = {
+        set_government_type = monarchy
+        tier = empire
+
+        # --- TECHNOLOGIA ---
+        # Ustawiamy bazowy poziom technologii (Tier 1 to start gry 1836)
+        effect_starting_technology_tier_1_tech = yes
+
+        # Bonusy z dziedzictwa Napoleona (Mobilność i nauka)
+        add_technology = line_infantry
+        add_technology = mobile_artillery
+        add_technology = academia
+        add_technology = atmospheric_engine
+
+        # --- PRAWA (LAWS) ---
+
+        # Struktura Władzy: Konstytucyjna Monarchia Autorytarna
+        activate_law = law_type:law_monarchy
+        activate_law = law_type:law_autocracy        # Król i Sejm trzymają kraj mocną ręką
+        activate_law = law_type:law_landed_voting    # Reforma 1791 dawała głos szlachcie i mieszczanom (posesjonatom)
+
+        # Gospodarka i Społeczeństwo: Przetrwanie za wszelką cenę
+        activate_law = law_type:law_mercantilism     # Ochrona własnego przemysłu przed potęgami
+        activate_law = law_type:law_per_capita_taxation # Bardziej nowoczesny system podatkowy niż u sąsiadów
+        activate_law = law_type:law_serfdom          # Twój największy problem - pańszczyzna wciąż trwa
+
+        # Wojsko i Policja
+        activate_law = law_type:law_professional_army # Dziedzictwo Legionów i wojen narodowych
+
+        # Wyznanie i Prawa Ludzi: Tolerancja religijna (Tradycja RP)
+        # Zamiast State Religion (Dyskryminacja), dajemy Freedom of Conscience lub Religious Schools
+        activate_law = law_type:law_freedom_of_conscience # Katolicy, Prawosławni i Żydzi żyją obok siebie
+        activate_law = law_type:law_racial_segregation    # Akceptuje kultury europejskie (Polaków, Litwinów, Rusinów)
+        activate_law = law_type:law_religious_schools     # Edukacja w rękach Kościoła i KEN
+
+        # --- GRUPY INTERESU (POLITYKA) ---
+        # W rządzie dominuje Szlachta (Landowners) i Armia (Armed Forces)
+ig:ig_landowners = {
+            add_ruling_interest_group = yes
+            set_interest_group_name = ig_plc_magnates # Nazwa dla lokalizacji
+        }
+        ig:ig_armed_forces = {
+            add_ruling_interest_group = yes
+            set_interest_group_name = ig_plc_army
+        }
+
+        # Opozycja / Inne grupy
+        ig:ig_intelligentsia = {
+            set_interest_group_name = ig_plc_intelligentsia
+        }
+        ig:ig_devout = {
+            set_interest_group_name = ig_plc_clergy
+        }
+        ig:ig_rural_folk = {
+            set_interest_group_name = ig_plc_szlachta_zagonowa
+        }
+        ig:ig_petty_bourgeoisie = {
+            set_interest_group_name = ig_plc_burghers
+        }
+
+        # --- FINANSE ---
+        # Państwo jest zadłużone po uszy przez wydatki na armię i obronę granic
+        add_gold_reserves = -150000
+    }
+}

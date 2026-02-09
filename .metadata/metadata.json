@@ -1,0 +1,14 @@
+﻿{
+  "name": "May Dawn",
+  "version": "0.1",
+  "short_description": "An alternate history where the Commonwealth survived as a broken, militarized state.",
+  "tags": ["Alternative History", "Map", "Politics"],
+  "id": "may_dawn_mod_jstepnicki",
+  "game_id": "victoria3",
+  "picture": "thumbnail.png",
+  "supported_game_version": "1.12.*",
+  "relationships": [],
+  "game_custom_data": {
+    "multiplayer_synchronized": true
+  }
+}

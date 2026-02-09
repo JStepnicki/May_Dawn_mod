@@ -1,0 +1,42 @@
+﻿# Rzeczpospolita Trojga Narodów (The Commonwealth of Three Nations)
+# Wizja: Monarchia uniwersalna, wielokulturowa, po głębokich reformach.
+RTN = {
+	color = { 160 40 50 }
+
+	country_type = recognized
+	tier = empire # Jako monarchia uniwersalna zasługuje na poziom Empire
+
+	# Cztery narody: Polski, Litewski, Ukraiński (Ruthenian) i Białoruski
+	cultures = { polish lithuanian ruthenian byelorussian }
+
+	capital = STATE_MAZOVIA
+}
+
+# Imperium Polskie (The Polish Empire)
+# Wizja: Państwo narodowe, scentralizowane, skupione na polskiej dominacji.
+TPE = {
+	color = { 210 0 20 }
+
+	country_type = recognized
+	tier = empire
+
+	cultures = { polish } # Tylko kultura polska jako dominująca
+
+	capital = STATE_MAZOVIA
+}
+
+PLC = {
+    color = { 160 40 50 }
+    country_type = recognized
+    tier = empire
+    cultures = { polish lithuanian }
+    capital = STATE_MAZOVIA
+}
+
+COU = {
+	color = { 185 150 90 }
+	country_type = recognized
+	tier = principality
+	cultures = { latvian }
+	capital = STATE_COURLAND
+}

@@ -1,0 +1,115 @@
+﻿BUILDINGS = {
+	# === STOLICA: WARSZAWA (MAZOVIA) ===
+	s:STATE_MAZOVIA = {
+		region_state:PLC = {
+			# Administracja (Kluczowa dla podatków)
+			create_building = {
+				building = building_government_administration
+				level = 15
+				activate_production_methods = { pm_simple_organization pm_clerical_investment }
+			}
+			# Armia Koronna (Gwardia Warszawska)
+			create_building = {
+				building = building_barracks
+				level = 20
+				activate_production_methods = { pm_line_infantry pm_mobile_artillery }
+			}
+			# Uniwersytet Warszawski (Oświata i Innowacje)
+			create_building = {
+				building = building_university
+				level = 3
+			}
+			# Przemysł lekki (Początki tekstyliów)
+			create_building = {
+				building = building_textile_mills
+				level = 5
+			}
+		}
+	}
+
+	# === WIELKOPOLSKA (POSEN) - Spichlerz i warsztaty ===
+	s:STATE_POSEN = {
+		region_state:PLC = {
+			create_building = {
+				building = building_rye_farms
+				level = 15
+			}
+			create_building = {
+				building = building_livestock_ranches
+				level = 10
+			}
+			create_building = {
+				building = building_tooling_workshops
+				level = 5
+			}
+			create_building = {
+				building = building_barracks
+				level = 10
+			}
+		}
+	}
+
+	# === POMORZE I GDAŃSK (WEST PRUSSIA) - Handel i porty ===
+	s:STATE_WEST_PRUSSIA = {
+		region_state:PLC = {
+			create_building = {
+				building = building_port
+				level = 5
+				activate_production_methods = { pm_cargo_port }
+			}
+			create_building = {
+				building = building_shipyards
+				level = 3
+			}
+			create_building = {
+				building = building_urban_center
+				level = 5
+			}
+		}
+	}
+
+	# === MAŁOPOLSKA (LESSER POLAND / WEST GALICIA) - Górnictwo ===
+	s:STATE_WEST_GALICIA = {
+		region_state:PLC = {
+			create_building = {
+				building = building_iron_mines
+				level = 10
+			}
+			create_building = {
+				building = building_coal_mines
+				level = 5
+			}
+			create_building = {
+				building = building_barracks
+				level = 10
+			}
+		}
+	}
+
+	# === KRESY (WILNO / WOŁYŃ) - Obrona Wschodnia ===
+	s:STATE_VILNIUS = {
+		region_state:PLC = {
+			create_building = {
+				building = building_government_administration
+				level = 5
+			}
+			create_building = {
+				building = building_barracks
+				level = 15
+			}
+		}
+	}
+
+	s:STATE_VOLHYNIA = {
+		region_state:PLC = {
+			create_building = {
+				building = building_rye_farms
+				level = 20
+			}
+			create_building = {
+				building = building_barracks
+				level = 10
+			}
+		}
+	}
+}
