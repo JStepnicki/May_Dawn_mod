@@ -18,6 +18,24 @@
                 add_ownership = { building = { type = "building_financial_district" country = "c:PLC" levels = 3 region = "STATE_MAZOVIA" } }
                 activate_production_methods = { "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts" }
             }
+
+            create_building={
+                building="building_construction_sector"
+                add_ownership={
+                    country={
+                        country="c:PLC"
+                        levels=3
+                    }
+                }
+                reserves=1
+                activate_production_methods={ "pm_iron_frame_buildings" }
+            }
+            create_building = {
+                building = "building_paper_mill"
+                add_ownership = { country = { country = "c:PLC" levels = 3 } }
+                reserves = 1
+                activate_production_methods = { "pm_pulp_pressing" "pm_automation_disabled" }
+            }
         }
     }
 
@@ -47,6 +65,11 @@
                 add_ownership = { building = { type = "building_financial_district" country = "c:PLC" levels = 1 region = "STATE_LESSER_POLAND" } }
                 reserves = 1
                 activate_production_methods = { "pm_forest_glass" "pm_ceramics" "pm_manual_glassblowing" }
+            }
+            create_building = {
+                building = "building_logging_camp"
+                add_ownership = { building = { type = "building_financial_district" country = "c:PLC" levels = 3 region = "STATE_MAZOVIA" } }
+                activate_production_methods = { "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts" }
             }
         }
     }
@@ -80,6 +103,48 @@
                 reserves = 1
                 activate_production_methods = { "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" }
             }
+            create_building = {
+                building = "building_logging_camp"
+                add_ownership = { building = { type = "building_financial_district" country = "c:PLC" levels = 3 region = "STATE_MAZOVIA" } }
+                activate_production_methods = { "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts" }
+            }
+            create_building = {
+                building = "building_paper_mill"
+                add_ownership = { country = { country = "c:PLC" levels = 1 } }
+                reserves = 1
+                activate_production_methods = { "pm_pulp_pressing" "pm_automation_disabled" }
+            }
+            create_building={
+                building="building_construction_sector"
+                add_ownership={
+                    country={
+                        country="c:PLC"
+                        levels=1
+                    }
+                }
+                reserves=1
+                activate_production_methods={ "pm_iron_frame_buildings" }
+            }
+            create_building = {
+                building = "building_government_administration"
+                add_ownership = { country = { country = "c:PLC" levels = 10} }
+                reserves = 1
+                activate_production_methods = { "pm_horizontal_drawer_cabinets" "pm_hereditary_bureaucrats" }
+            }
+			create_building={
+				building="building_arms_industry"
+				add_ownership={
+					building={
+						type="building_arms_industry"
+						country="c:PLC"
+						levels=2
+						region="STATE_GREATER_POLAND"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_muskets" "pm_automation_disabled"  }
+			}
+	
         }
     }
 
@@ -104,7 +169,38 @@
                 reserves = 1
                 activate_production_methods = { "pm_slaughterhouses" "pm_sheep_farms" "pm_standard_fences" }
             }
+            create_building = {
+                building = "building_logging_camp"
+                add_ownership = { building = { type = "building_financial_district" country = "c:PLC" levels = 3 region = "STATE_MAZOVIA" } }
+                activate_production_methods = { "pm_saw_mills" "pm_hardwood" "pm_no_equipment" "pm_road_carts" }
+            }
+
+            create_building={
+                building="building_construction_sector"
+                add_ownership={
+                    country={
+                        country="c:PLC"
+                        levels=1
+                    }
+                }
+                reserves=1
+                activate_production_methods={ "pm_iron_frame_buildings" }
+            }
+            create_building={
+                building="building_tooling_workshop"
+                add_ownership={
+                    building={
+                        type="building_tooling_workshop"
+                        country="c:PLC"
+                        levels=1
+                        region="STATE_GREATER_POLAND"
+                    }
+                }
+                reserves=1
+                activate_production_methods={ "pm_crude_tools" "pm_automation_disabled"  }
+            }
         }
+
     }
 
     # --- WEST GALICIA (Merged from Austria and Krakow) ---
@@ -131,6 +227,67 @@
                 reserves = 1
                 activate_production_methods = { "pm_horizontal_drawer_cabinets" "pm_hereditary_bureaucrats" }
             }
+            create_building={
+                building="building_construction_sector"
+                add_ownership={
+                    country={
+                        country="c:PLC"
+                        levels=2
+                    }
+                }
+                reserves=1
+                activate_production_methods={ "pm_iron_frame_buildings" }
+            }
+            create_building={
+                building="building_tooling_workshop"
+                add_ownership={
+                    building={
+                        type="building_tooling_workshop"
+                        country="c:PLC"
+                        levels=2
+                        region="STATE_GREATER_POLAND"
+                    }
+                }
+                reserves=1
+                activate_production_methods={ "pm_crude_tools" "pm_automation_disabled"  }
+            }
+            create_building={
+                building="building_iron_mine"
+                add_ownership={
+                    building={
+                        type="building_iron_mine"
+                        country="c:PLC"
+                        levels=3
+                        region="STATE_WEST_GALICIA"
+                    }
+                }
+                reserves=1
+                activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+            }
+            create_building={
+                building="building_coal_mine"
+                add_ownership={
+                    building={
+                        type="building_coal_mine"
+                        country="c:PLC"
+                        levels=3
+                        region="STATE_WEST_GALICIA"
+                    }
+                }
+                reserves=1
+                activate_production_methods={ "pm_picks_and_shovels_building_coal_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+            }
+	    create_building={
+				building="building_artillery_foundry"
+				add_ownership={
+					country={
+						country="c:PLC"
+						levels=1
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_cannons" "pm_automation_disabled"  }
+			}
         }
     }
 

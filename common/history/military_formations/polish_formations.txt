@@ -1,0 +1,86 @@
+﻿MILITARY_FORMATIONS = {
+    c:PLC = {
+        # --- ARMIA KORONNA (Main Army in Warsaw) ---
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_poland
+            name = "Armia Koronna"
+
+            # I. Korpus Warszawski (Mazovia)
+            combat_unit = {
+                type = unit_type:combat_unit_type_line_infantry
+                state_region = s:STATE_MAZOVIA
+                count = 15
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers # Polish Uhlans!
+                state_region = s:STATE_MAZOVIA
+                count = 5
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_MAZOVIA
+                count = 5
+            }
+
+            # II. Korpus Małopolski (Lesser Poland)
+            combat_unit = {
+                type = unit_type:combat_unit_type_line_infantry
+                state_region = s:STATE_LESSER_POLAND
+                count = 10
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_hussars
+                state_region = s:STATE_LESSER_POLAND
+                count = 2
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_LESSER_POLAND
+                count = 3
+            }
+        }
+
+        # --- ARMIA LITWSKA (Northern Defense) ---
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_poland # Or region_baltic if Kaunas is there
+            name = "Armia Litewska"
+
+            # Korpus Wileński
+            combat_unit = {
+                type = unit_type:combat_unit_type_line_infantry
+                state_region = s:STATE_VILNIUS
+                count = 8
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_VILNIUS
+                count = 4
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_VILNIUS
+                count = 2
+            }
+        }
+
+        # --- KORPUS GALICYJSKI (Defending the South) ---
+        create_military_formation = {
+            type = army
+            hq_region = sr:region_poland
+            name = "Korpus Galicyjski"
+
+            combat_unit = {
+                type = unit_type:combat_unit_type_line_infantry
+                state_region = s:STATE_WEST_GALICIA
+                count = 10
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_cuirassiers
+                state_region = s:STATE_WEST_GALICIA
+                count = 2
+            }
+        }
+    }
+}
