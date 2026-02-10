@@ -41,9 +41,9 @@
         region_state:PRU = { kill_population_percent_in_state = { percent = 1 } }
         region_state:PLC = {
             create_pop = { culture = polish pop_type = aristocrats size = 12000 }
-            create_pop = { culture = north_german size = 240400 }
+            create_pop = { culture = north_german size = 40400 }
             create_pop = { culture = ashkenazi size = 16000 }
-            create_pop = { culture = polish size = 1259204 }
+            create_pop = { culture = polish size = 1459204 }
             create_pop = { culture = north_german religion = catholic size = 14116 }
         }
     }
@@ -51,11 +51,10 @@
     s:STATE_WEST_PRUSSIA = {
         region_state:PRU = { kill_population_percent_in_state = { percent = 1 } }
         region_state:PLC = {
-            create_pop = { culture = polish pop_type = aristocrats size = 6000 }
-            create_pop = { culture = north_german pop_type = aristocrats size = 1000 }
-            create_pop = { culture = polish size = 350000 }
-            create_pop = { culture = polish religion = protestant size = 160000 }
-            create_pop = { culture = north_german size = 250000 }
+            create_pop = { culture = polish pop_type = aristocrats size = 7000 }
+            create_pop = { culture = polish size = 650000 }
+            create_pop = { culture = polish religion = protestant size = 60000 }
+            create_pop = { culture = north_german size = 50000 }
             create_pop = { culture = north_german religion = catholic size = 15000 }
             create_pop = { culture = ashkenazi size = 12000 }
         }

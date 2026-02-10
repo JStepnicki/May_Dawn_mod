@@ -7,6 +7,7 @@
 #TUTORIAL: In our case, our Tutorial Nation will own Albania, Bosnia, Montenegro, Southern Serbia, Dalmatia and North Macedonia
 
 STATES = {
+
     s:STATE_MAZOVIA = {
         create_state = {
             country = c:PLC
@@ -39,6 +40,7 @@ STATES = {
             state_type = incorporated
         }
         add_homeland = cu:polish
+        remove_homeland = cu:north_german
     }
 
     s:STATE_WEST_PRUSSIA = {
@@ -48,19 +50,8 @@ STATES = {
             state_type = incorporated
         }
         add_homeland = cu:polish
+        remove_homeland = cu:north_german
     }
-
-	s:STATE_EAST_PRUSSIA = {
-
-		create_state = {
-			country = c:PLC
-			owned_provinces = {x5428E6 x6E8875 }
-		}
-
-		add_homeland = cu:north_german
-		add_homeland = cu:polish
-		add_homeland = cu:lithuanian
-	}
 
     s:STATE_WEST_GALICIA = {
         create_state = {
@@ -90,6 +81,7 @@ STATES = {
         add_homeland = cu:polish
         add_homeland = cu:lithuanian
     }
+
     s:STATE_KAUNAS = {
         create_state = {
             country = c:PLC
@@ -99,15 +91,7 @@ STATES = {
         add_homeland = cu:polish
         add_homeland = cu:lithuanian
     }
-    s:STATE_MINSK = {
-        create_state = {
-            country = c:PLC
-            owned_provinces = {  x80E0A0 xA16195 xC9C7AF x4B3105 x21175E x51F4A4 x28C9D9 x2FD0B1 x2EB844 x716052 x416161  x80E061}
-            state_type = incorporated
-        }
 
-        add_homeland = cu:byelorussian
-    }
     s:STATE_VOLHYNIA = {
         create_state = {
             country = c:PLC
@@ -117,7 +101,39 @@ STATES = {
         add_homeland = cu:polish
         add_homeland = cu:ukrainian
     }
-    s:STATE_KIEV = {
+
+    s:STATE_BREST = {
+		create_state = {
+			country = c:PLC
+			owned_provinces = {  x18020B x1917E9 x241A22 x406020 x66FB56 x6D7F7E x75F1B4 x7E7F58 x806161 x84294C x84FE3D x862F77 x8ABE62 x936BF9 xA201E3 xA6BED3 xA93262 xAB3AC5 xAC6FAE xB338E8 xBCB94C xBFDF20 xC15AD8 xC1D9C0 xC3FA73 xCB21FD xCCD197 xDE471E xE06176 xE87D11 xF02643 }
+		}
+		add_homeland = cu:polish
+        add_homeland = cu:byelorussian
+	}
+
+	s:STATE_COURLAND = {
+		create_state = {
+			country = c:COU
+			owned_provinces = {  x4A8E5D x4D08D8 x74042F x806121 x898083 x8D4F76 xABA718 xF4B54B xF8BBB0 xFA8436 xFCC2E1 xFD1424 }
+			state_type = incorporated
+		}
+
+		add_homeland = cu:latvian
+	}
+    #split states
+	s:STATE_EAST_PRUSSIA = {
+
+		create_state = {
+			country = c:PLC
+			owned_provinces = {x5428E6 x6E8875 }
+		}
+
+		add_homeland = cu:north_german
+		add_homeland = cu:polish
+		add_homeland = cu:lithuanian
+	}
+
+	s:STATE_KIEV = {
         add_homeland = cu:ukrainian
 
         create_state = {
@@ -130,23 +146,15 @@ STATES = {
             }
             state_type = incorporated
         }
-
-
     }
-    s:STATE_BREST = {
-		create_state = {
-			country = c:PLC
-			owned_provinces = {  x18020B x1917E9 x241A22 x406020 x66FB56 x6D7F7E x75F1B4 x7E7F58 x806161 x84294C x84FE3D x862F77 x8ABE62 x936BF9 xA201E3 xA6BED3 xA93262 xAB3AC5 xAC6FAE xB338E8 xBCB94C xBFDF20 xC15AD8 xC1D9C0 xC3FA73 xCB21FD xCCD197 xDE471E xE06176 xE87D11 xF02643 }
-		}
-	}
 
-	s:STATE_COURLAND = {
-		create_state = {
-			country = c:COU
-			owned_provinces = {  x4A8E5D x4D08D8 x74042F x806121 x898083 x8D4F76 xABA718 xF4B54B xF8BBB0 xFA8436 xFCC2E1 xFD1424 }
-			state_type = incorporated
-		}
+    s:STATE_MINSK = {
+        create_state = {
+            country = c:PLC
+            owned_provinces = {  x80E0A0 xA16195 xC9C7AF x4B3105 x21175E x51F4A4 x28C9D9 x2FD0B1 x2EB844 x716052 x416161  x80E061}
+            state_type = incorporated
+        }
 
-		add_homeland = cu:latvian
-	}
+        add_homeland = cu:byelorussian
+    }
 }
