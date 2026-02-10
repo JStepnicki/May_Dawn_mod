@@ -81,6 +81,7 @@
 
     s:STATE_WEST_GALICIA = {
         region_state:AUS = { kill_population_percent_in_state = { percent = 1 } }
+        region_state:KRA = { kill_population_percent_in_state = { percent = 1 } }
         region_state:PLC = {
             create_pop = { culture = polish size = 1800004 }
             create_pop = { culture = ukrainian size = 152000 }
@@ -176,18 +177,6 @@
             create_pop = { culture = ukrainian size = 133659 }
             create_pop = { culture = polish size = 57504 }
             create_pop = { culture = ashkenazi size = 59387 }
-        }
-    }
-
-    s:STATE_COURLAND = {
-        region_state:RUS = { kill_population_percent_in_state = { percent = 1 } }
-        region_state:COU = {
-            create_pop = { culture = latvian size = 354472 }
-            create_pop = { culture = latvian pop_type = aristocrats size = 5000 }
-            create_pop = { culture = east_german size = 30872 }
-            create_pop = { culture = ashkenazi size = 26432 }
-            create_pop = { culture = lithuanian size = 12744 }
-            create_pop = { culture = polish size = 29440 }
         }
     }
 }

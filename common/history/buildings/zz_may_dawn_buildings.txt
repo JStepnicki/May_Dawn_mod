@@ -307,6 +307,83 @@
         }
     }
 
+# --- WEST PRUSSIA (Gdańsk/Danzig - The Gate to the World) ---
+    s:STATE_WEST_PRUSSIA = {
+        region_state:PRU = {
+            # Totalne czyszczenie pruskich struktur
+            remove_building = building_trade_center
+            remove_building = building_fishing_wharf
+            remove_building = building_rye_farm
+            remove_building = building_port
+        }
+        region_state:PLC = {
+            # Polska Infrastruktura Portowa (Gdańsk)
+            create_building = {
+                building = "building_port"
+                level = 3
+                add_ownership = { country = { country = "c:PLC" levels = 3 } }
+                activate_production_methods = { "pm_basic_port" }
+                reserves = 1
+            }
+
+            # Centrum Handlu Wiślanego
+            create_building = {
+                building = "building_trade_center"
+                level = 5
+                add_ownership = {
+                    building = {
+                        type = "building_financial_district"
+                        country = "c:PLC"
+                        levels = 5
+                        region = "STATE_WEST_PRUSSIA"
+                    }
+                }
+                activate_production_methods = { "pm_trade_center_trade_quantity_normal" }
+                reserves = 1
+            }
+
+            # Sektor Budowlany #4 (Gdańska stocznia i doki)
+            create_building = {
+                building = "building_construction_center"
+                level = 1
+                add_ownership = { country = { country = "c:PLC" levels = 1 } }
+                activate_production_methods = { "pm_wooden_tooling" }
+            }
+
+            # Rybołówstwo Bałtyckie
+            create_building = {
+                building = "building_fishing_wharf"
+                level = 2
+                add_ownership = {
+                    building = {
+                        type = "building_fishing_wharf"
+                        country = "c:PLC"
+                        levels = 2
+                        region = "STATE_WEST_PRUSSIA"
+                    }
+                }
+                activate_production_methods = { "pm_simple_fishing" "pm_unrefrigerated" }
+                reserves = 1
+            }
+
+            # Rolnictwo (Ziemniaki i zboże na eksport)
+            create_building = {
+                building = "building_rye_farm"
+                level = 3
+                add_ownership = {
+                    building = {
+                        type = "building_manor_house"
+                        country = "c:PLC"
+                        levels = 3
+                        region = "STATE_WEST_PRUSSIA"
+                    }
+                }
+                activate_production_methods = { "pm_simple_farming" "pm_potatoes" }
+                reserves = 1
+            }
+        }
+    }
+
     # --- COURLAND (Handled by COU) ---
     s:STATE_COURLAND = {
         region_state:UBD = { remove_building = building_rye_farm }
@@ -317,7 +394,20 @@
                 reserves = 1
                 activate_production_methods = { "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" }
             }
-        }
+        
+			create_building = {
+				building = "building_logging_camp"
+				reserves = 1
+				activate_production_methods = { }
+				add_ownership = {
+					building = {
+						type = "building_manor_house"
+						country = "c:COU"
+						levels = 1
+						region = "STATE_COURLAND"
+					}
+				}
+			}}
     }
 
     # --- KIEV (Split 60% RUS / 40% PLC) ---
