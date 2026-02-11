@@ -1,0 +1,7 @@
+﻿DIPLOMACY = {
+}
+DIPLOMACY = {
+	c:PLC ?= {
+		create_diplomatic_pact = { country = c:COU type = puppet }
+	}
+}

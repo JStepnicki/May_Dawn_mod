@@ -1,0 +1,15 @@
+﻿DIPLOMACY = {
+}
+DIPLOMACY = {
+	c:PLC ?= {
+		set_relations = { country = c:PRU value = -50 }
+	
+		set_relations = { country = c:RUS value = -50 }
+	
+		set_relations = { country = c:AUS value = -50 }
+	
+		set_relations = { country = c:TUR value = 50 }
+	
+		set_relations = { country = c:FRA value = 20 }
+	}
+}

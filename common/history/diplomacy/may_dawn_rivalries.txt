@@ -1,0 +1,11 @@
+﻿DIPLOMACY = {
+}
+DIPLOMACY = {
+	c:PLC ?= {
+		create_diplomatic_pact = { country = c:RUS type = rivalry }
+	
+		create_diplomatic_pact = { country = c:AUS type = rivalry }
+	
+		create_diplomatic_pact = { country = c:PRU type = rivalry }
+	}
+}
