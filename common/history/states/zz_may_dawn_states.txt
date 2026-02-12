@@ -14,7 +14,6 @@ STATES = {
             owned_provinces = {  x1AA8FB x46B451 x4F022C x802161 x809F60 xC17590 xDC58D0 xE165F5 xF8C8F6 xDE551D x117AE1 x4969E4 xC06121 x0087C9 }
             state_type = incorporated
         }
-        add_homeland = cu:polish
     }
     s:STATE_LESSER_POLAND = {
         create_state = {
@@ -22,7 +21,6 @@ STATES = {
             owned_provinces = {  x4161A0 x44ACBB x46B950 x496950 x51A0E0 x9444C9 xAEB9A5 xB491B1 xE0BB00 xEB0783 xF73169 }
             state_type = incorporated
         }
-        add_homeland = cu:polish
     }
     s:STATE_GREATER_POLAND = {
         create_state = {
@@ -30,7 +28,6 @@ STATES = {
             owned_provinces = {  x1CB894 x1F6F99 x24BBED x29408F x2F0D92 x471A61 x577EE4 x57A53D x5FF022 x6000DF x738072 x8FE2DB x955F09 x9FEDC5 xA03316 xA3A3A9 xA7B86B xAB3C62 xC02B8C xC061A0 xC0E0A0 xD0A0E0 xDE06BA }
             state_type = incorporated
         }
-        add_homeland = cu:polish
     }
 
     s:STATE_POSEN = {
@@ -39,7 +36,6 @@ STATES = {
             owned_provinces = {  x2141A0 x2E6001 x999CEE xC32D8B xE513C0 x085962 xC02121 xFCC7B7 xF962B2 x41E0A0 x635336 }
             state_type = incorporated
         }
-        add_homeland = cu:polish
         remove_homeland = cu:north_german
     }
 
@@ -49,17 +45,14 @@ STATES = {
             owned_provinces = {  x374AC3 x41A021 x55FD02 x611F2F x7CB839 x80A0A0 x945000 xBAF66D }
             state_type = incorporated
         }
-        add_homeland = cu:polish
-        remove_homeland = cu:north_german
     }
 
     s:STATE_WEST_GALICIA = {
         create_state = {
             country = c:PLC
-            owned_provinces = {  x1161E0 xC8690C x66DCEE xA63CE6 xFCC35F xC7B7B8 x5F3456 x56599F xA550A9 x906060 x11E061 }
+            owned_provinces = {  x1161E0 xC8690C x66DCEE xA63CE6 xFCC35F xC7B7B8 x5F3456 x56599F xA550A9 x906060 }
             state_type = incorporated
         }
-        add_homeland = cu:polish
     }
 
     s:STATE_EAST_GALICIA = {
@@ -68,8 +61,6 @@ STATES = {
             owned_provinces = {  x9D8087 xCDD223 x11A021 xCAE5B0 x8F9F20 xE369C4 xA3CF78 xB021A0 x053163 x4D0305 xC1B262 xEFE270 x489C42 x7EDD9E x53932F xC58E1C }
             state_type = incorporated
         }
-        add_homeland = cu:polish
-        add_homeland = cu:ukrainian
     }
 
     s:STATE_VILNIUS = {
@@ -154,7 +145,13 @@ STATES = {
             owned_provinces = {  x80E0A0 xA16195 xC9C7AF x4B3105 x21175E x51F4A4 x28C9D9 x2FD0B1 x2EB844 x716052 x416161  x80E061}
             state_type = incorporated
         }
-
+        remove_homeland = cu:russian
         add_homeland = cu:byelorussian
     }
+    #SILESIA WAS POLISH !
+    s:STATE_LOWER_SILESIA= {
+
+        add_homeland = cu:polish
+    }
+
 }

@@ -85,7 +85,35 @@
 						region = "STATE_LESSER_POLAND"
 					}
 				}
-			}}
+			}
+			create_building={
+                building="building_sulfur_mine"
+                add_ownership={
+                    building={
+                        type="building_sulfur_mine"
+                        country="c:PLC"
+                        levels=1
+                        region="STATE_LESSER_POLAND"
+                    }
+                }
+                reserves=1
+                activate_production_methods={ "pm_atmospheric_engine_pump_building_sulfur_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+            }
+            create_building={
+				building="building_chemical_plant"
+				add_ownership={
+					building={
+						type="building_chemical_plant"
+						country="c:PLC"
+						levels=1
+						region="STATE_LESSER_POLAND"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_artificial_fertilizers"  }
+			}
+
+			}
     }
 
     # --- GREATER POLAND ---
@@ -133,7 +161,7 @@
                 add_ownership={
                     country={
                         country="c:PLC"
-                        levels=1
+                        levels=2
                     }
                 }
                 reserves=1
@@ -193,6 +221,11 @@
 				}
 			}
 			create_building = {
+				building = "building_lead_mine"
+				reserves = 1
+				activate_production_methods = { }
+			}
+			create_building = {
 				building = "building_trade_center"
 				reserves = 1
 				activate_production_methods = { }
@@ -204,7 +237,39 @@
 						region = "STATE_GREATER_POLAND"
 					}
 				}
-			}}
+			}
+			create_building={
+				building="building_explosives_factory"
+				add_ownership={
+					building={
+						type="building_explosives_factory"
+						country="c:PLC"
+						levels=1
+						region="STATE_GREATER_POLAND"
+					}
+				}
+				reserves=1
+				activate_production_methods={ "pm_leblanc_process"  }
+			}
+			create_building={
+				building="building_munition_plant"
+				add_ownership={
+					building={
+						type="building_munition_plant"
+						country="c:PLC"
+						levels=1
+						region="STATE_GREATER_POLAND"
+					}
+					country={
+						country="c:PLC"
+						levels=1
+					}
+				}
+				subsidized=yes
+				reserves=1
+				activate_production_methods={ "pm_percussion_caps" "pm_automation_disabled"  }
+			}
+			}
     }
 
     # --- POSEN (Split from Prussia) ---
@@ -334,7 +399,7 @@
                     }
                 }
                 reserves=1
-                activate_production_methods={ "pm_picks_and_shovels_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+                activate_production_methods={ "pm_atmospheric_engine_pump_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
             }
             create_building={
                 building="building_coal_mine"
@@ -347,7 +412,7 @@
                     }
                 }
                 reserves=1
-                activate_production_methods={ "pm_picks_and_shovels_building_coal_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
+                activate_production_methods={ "pm_atmospheric_engine_pump_building_coal_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts"  }
             }
 	    create_building={
 				building="building_artillery_foundry"

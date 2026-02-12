@@ -56,6 +56,10 @@ plc_history_setup_on_action = {
                 country = c:PLC
                 provinces = { x90E060 }
             }
+            set_owner_of_provinces = {
+                country = c:PLC
+                provinces = { x11E061 }
+            }
         }
 
         # --- EAST GALICIA (Lwów area) ---

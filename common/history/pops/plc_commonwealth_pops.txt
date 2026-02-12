@@ -3,10 +3,9 @@
         region_state:RUS = { kill_population_percent_in_state = { percent = 1 } }
         region_state:PLC = {
             create_pop = { culture = polish pop_type = aristocrats size = 12400 }
-            create_pop = { culture = polish size = 958392 }
+            create_pop = { culture = polish size = 1108392 }
             create_pop = { culture = ashkenazi size = 180591 }
             create_pop = { culture = east_german size = 39499 }
-            create_pop = { culture = russian size = 53083 }
             create_pop = { culture = byelorussian size = 50440 }
             create_pop = { culture = ukrainian size = 21106 }
             # war losses
@@ -19,11 +18,9 @@
         region_state:PLC = {
             create_pop = { culture = polish pop_type = aristocrats size = 25000 }
             create_pop = { culture = russian pop_type = aristocrats size = 2300 }
-            create_pop = { culture = polish size = 1979469 }
+            create_pop = { culture = polish size = 2179469 }
             create_pop = { culture = polish religion = protestant size = 30000 }
             create_pop = { culture = ashkenazi size = 358977 }
-            create_pop = { culture = east_german size = 134245 }
-            create_pop = { culture = russian size = 58300 }
             # war losses
             kill_population_percent_in_state = { percent = 0.05 }
         }
@@ -32,12 +29,10 @@
     s:STATE_LESSER_POLAND = {
         region_state:RUS = { kill_population_percent_in_state = { percent = 1 } }
         region_state:PLC = {
-            create_pop = { culture = polish size = 633163 }
+            create_pop = { culture = polish size = 683163 }
             create_pop = { culture = polish religion = protestant size = 26000 }
             create_pop = { culture = ashkenazi size = 117162 }
-            create_pop = { culture = east_german size = 19663 }
             create_pop = { culture = ukrainian size = 160774 }
-            create_pop = { culture = russian size = 35435 }
             # war losses
             kill_population_percent_in_state = { percent = 0.05 }
         }
