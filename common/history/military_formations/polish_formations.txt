@@ -7,23 +7,23 @@ c:PLC = {
             name = "Armia Koronna"
 
             # Greater Poland – największy wkład
-            combat_unit = { type = unit_type:combat_unit_type_line_infantry state_region = s:STATE_GREATER_POLAND count = 14 }
+            combat_unit = { type = unit_type:combat_unit_type_skirmish_infantry state_region = s:STATE_GREATER_POLAND count = 14 }
             combat_unit = { type = unit_type:combat_unit_type_mobile_artillery state_region = s:STATE_GREATER_POLAND count = 4 }
 
             # Mazovia – administracyjne centrum, ale mniejsza ludność
-            combat_unit = { type = unit_type:combat_unit_type_line_infantry state_region = s:STATE_MAZOVIA count = 8 }
+            combat_unit = { type = unit_type:combat_unit_type_skirmish_infantry state_region = s:STATE_MAZOVIA count = 8 }
             combat_unit = { type = unit_type:combat_unit_type_lancers state_region = s:STATE_MAZOVIA count = 4 }
 
             # Lesser Poland
-            combat_unit = { type = unit_type:combat_unit_type_line_infantry state_region = s:STATE_LESSER_POLAND count = 8 }
+            combat_unit = { type = unit_type:combat_unit_type_skirmish_infantry state_region = s:STATE_LESSER_POLAND count = 8 }
             combat_unit = { type = unit_type:combat_unit_type_hussars state_region = s:STATE_LESSER_POLAND count = 3 }
 
             # West Galicia
-            combat_unit = { type = unit_type:combat_unit_type_line_infantry state_region = s:STATE_WEST_GALICIA count = 7 }
+            combat_unit = { type = unit_type:combat_unit_type_skirmish_infantry state_region = s:STATE_WEST_GALICIA count = 7 }
             combat_unit = { type = unit_type:combat_unit_type_mobile_artillery state_region = s:STATE_WEST_GALICIA count = 2 }
 
             # Prusy Zachodnie / Posen
-            combat_unit = { type = unit_type:combat_unit_type_line_infantry state_region = s:STATE_WEST_PRUSSIA count = 2 }
+            combat_unit = { type = unit_type:combat_unit_type_skirmish_infantry state_region = s:STATE_WEST_PRUSSIA count = 2 }
         }
 
 
@@ -34,13 +34,13 @@ c:PLC = {
             name = "Armia Litewska"
 
             # Litwa
-            combat_unit = { type = unit_type:combat_unit_type_line_infantry state_region = s:STATE_VILNIUS count = 4 }
-            combat_unit = { type = unit_type:combat_unit_type_line_infantry state_region = s:STATE_KAUNAS count = 3 }
+            combat_unit = { type = unit_type:combat_unit_type_skirmish_infantry state_region = s:STATE_VILNIUS count = 4 }
+            combat_unit = { type = unit_type:combat_unit_type_skirmish_infantry state_region = s:STATE_KAUNAS count = 3 }
             combat_unit = { type = unit_type:combat_unit_type_lancers state_region = s:STATE_KAUNAS count = 2 }
 
             # Białoruś
-            combat_unit = { type = unit_type:combat_unit_type_line_infantry state_region = s:STATE_BREST count = 2 }
-            combat_unit = { type = unit_type:combat_unit_type_line_infantry state_region = s:STATE_MINSK count = 1 }
+            combat_unit = { type = unit_type:combat_unit_type_skirmish_infantry state_region = s:STATE_BREST count = 2 }
+            combat_unit = { type = unit_type:combat_unit_type_skirmish_infantry state_region = s:STATE_MINSK count = 1 }
             combat_unit = { type = unit_type:combat_unit_type_mobile_artillery state_region = s:STATE_BREST count = 1 }
         }
 
@@ -52,11 +52,11 @@ c:PLC = {
             name = "Armia Rusi Czerwonej"
 
             # Wołyń
-            combat_unit = { type = unit_type:combat_unit_type_line_infantry state_region = s:STATE_VOLHYNIA count = 5 }
+            combat_unit = { type = unit_type:combat_unit_type_skirmish_infantry state_region = s:STATE_VOLHYNIA count = 5 }
             combat_unit = { type = unit_type:combat_unit_type_hussars state_region = s:STATE_VOLHYNIA count = 3 }
 
             # Kijów
-            combat_unit = { type = unit_type:combat_unit_type_line_infantry state_region = s:STATE_KIEV count = 4 }
+            combat_unit = { type = unit_type:combat_unit_type_skirmish_infantry state_region = s:STATE_KIEV count = 4 }
             combat_unit = { type = unit_type:combat_unit_type_hussars state_region = s:STATE_KIEV count = 2 }
             combat_unit = { type = unit_type:combat_unit_type_mobile_artillery state_region = s:STATE_KIEV count = 1 }
         }

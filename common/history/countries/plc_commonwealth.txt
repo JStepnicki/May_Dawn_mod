@@ -4,7 +4,6 @@
 
         # Podatki konsumpcyjne (dla budżetu)
         add_taxed_goods = g:liquor
-        add_taxed_goods = g:wine
 
         # Prawa (Zgodnie z Twoim wzorcem)
         activate_law = law_type:law_monarchy
@@ -34,11 +33,12 @@
         }
 
         # Grupy interesu w rządzie
-        ig:ig_landowners ?= {
-            add_ruling_interest_group = yes
-        }
-        ig:ig_armed_forces ?= {
-            add_ruling_interest_group = yes
-        }
+		ig:ig_landowners ?= {
+			add_ruling_interest_group = yes
+		}
+
+		ig:ig_armed_forces ?= {
+			add_ruling_interest_group = yes
+		}
     }
 }
