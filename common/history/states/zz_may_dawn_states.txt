@@ -42,7 +42,7 @@ STATES = {
     s:STATE_WEST_PRUSSIA = {
         create_state = {
             country = c:PLC
-            owned_provinces = {  x374AC3 x41A021 x55FD02 x611F2F x7CB839 x80A0A0 x945000 xBAF66D }
+            owned_provinces = {  x374AC3 x41A021 x55FD02 x611F2F x7CB839 x80A0A0 x945000 xBAF66D x5428E6 x6E8875 }
             state_type = incorporated
         }
     }
@@ -110,18 +110,6 @@ STATES = {
 		}
 
 		add_homeland = cu:latvian
-	}
-    #split states
-	s:STATE_EAST_PRUSSIA = {
-
-		create_state = {
-			country = c:PLC
-			owned_provinces = {x5428E6 x6E8875 }
-		}
-
-		add_homeland = cu:north_german
-		add_homeland = cu:polish
-		add_homeland = cu:lithuanian
 	}
 
 	s:STATE_KIEV = {
