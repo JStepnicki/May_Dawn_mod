@@ -1,0 +1,43 @@
+﻿POPS = {
+	s:STATE_CHERSON = { #DONE
+		region_state:RUS = {
+            kill_population_percent_in_state = { percent = 0.05 }
+			}
+		}
+	}
+	s:STATE_VITEBSK = { #DONE
+		region_state:RUS = {
+            kill_population_percent_in_state = { percent = 0.1 }
+			}
+		}
+	}
+	s:STATE_MOGILEV = { #DONE
+		region_state:RUS = {
+            kill_population_percent_in_state = { percent = 0.05 }
+			}
+		}
+	}
+	s:STATE_CHERNIHIV = { #DONE
+		region_state:RUS = {
+            kill_population_percent_in_state = { percent = 0.1 }
+			}
+		}
+	}
+	s:STATE_KHARKOV = { #DONE
+		region_state:RUS = {
+            kill_population_percent_in_state = { percent = 0.05 }
+			}
+		}
+	}
+	s:STATE_RIGA = { #DONE
+		region_state:RUS = {
+            kill_population_percent_in_state = { percent = 0.1 }
+			}
+		}
+		region_state:UBD = {
+            kill_population_percent_in_state = { percent = 0.1 }
+			}
+		}
+	}
+
+}
