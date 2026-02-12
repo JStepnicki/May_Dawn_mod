@@ -179,7 +179,7 @@
 					building={
 						type="building_arms_industry"
 						country="c:PLC"
-						levels=2
+						levels=3
 						region="STATE_GREATER_POLAND"
 					}
 				}

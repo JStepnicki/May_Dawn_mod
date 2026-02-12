@@ -9,7 +9,7 @@ RTN = {
 	# Cztery narody: Polski, Litewski, Ukraiński () i Białoruski
 	cultures = { polish lithuanian ukrainian byelorussian }
 
-	capital = STATE_MAZOVIA
+	capital = STATE_GREATER_POLAND
 }
 
 # Imperium Polskie (The Polish Empire)
@@ -22,7 +22,7 @@ TPE = {
 
 	cultures = { polish } # Tylko kultura polska jako dominująca
 
-	capital = STATE_MAZOVIA
+	capital = STATE_GREATER_POLAND
 }
 
 COU = {
