@@ -223,6 +223,14 @@
 			create_building = {
 				building = "building_lead_mine"
 				reserves = 1
+				add_ownership = {
+					building = {
+						type = "building_financial_district"
+						country = "c:PLC"
+						levels = 1
+						region = "STATE_GREATER_POLAND"
+					}
+				}
 				activate_production_methods = { }
 			}
 			create_building = {
@@ -283,7 +291,7 @@
         region_state:PLC = {
             create_building = {
                 building = "building_rye_farm"
-                add_ownership = { building = { type = "building_manor_house" country = "c:PLC" levels = 2 region = "STATE_POSEN" } }
+                add_ownership = { building = { type = "building_manor_house" country = "c:PLC" levels = 1 region = "STATE_GREATER_POLAND" } }
                 reserves = 1
                 activate_production_methods = { "pm_soil_enriching_farming" "pm_tools" "pm_apple_orchards" }
             }
@@ -428,22 +436,6 @@
         }
     }
 
-    # --- EAST PRUSSIA (Split 90% PRU / 10% PLC) ---
-    s:STATE_EAST_PRUSSIA = {
-        region_state:PRU = {
-            # We keep PRU buildings but clean specific ones if needed
-            remove_building = building_logging_camp
-        }
-        region_state:PLC = {
-            create_building = {
-                building = "building_logging_camp"
-                add_ownership = { building = { type = "building_logging_camp" country = "c:PLC" levels = 1 region = "STATE_EAST_PRUSSIA" } }
-                reserves = 1
-                activate_production_methods = { "pm_saw_mills" "pm_no_equipment" }
-            }
-        }
-    }
-
 # --- WEST PRUSSIA (Gdańsk/Danzig - The Gate to the World) ---
     s:STATE_WEST_PRUSSIA = {
         region_state:PRU = {
@@ -458,7 +450,6 @@
             create_building = {
                 building = "building_port"
                 level = 3
-                add_ownership = { country = { country = "c:PLC" levels = 3 } }
                 activate_production_methods = { "pm_basic_port" }
                 reserves = 1
             }
@@ -466,15 +457,14 @@
             # Centrum Handlu Wiślanego
             create_building = {
                 building = "building_trade_center"
-                level = 5
                 add_ownership = {
-                    building = {
-                        type = "building_financial_district"
-                        country = "c:PLC"
-                        levels = 5
-                        region = "STATE_WEST_PRUSSIA"
-                    }
-                }
+					building = {
+						type = "building_financial_district"
+						country = "c:PLC"
+						levels = 5
+						region = "STATE_WEST_PRUSSIA"
+					}
+				}
                 activate_production_methods = { "pm_trade_center_trade_quantity_normal" }
                 reserves = 1
             }
@@ -495,15 +485,7 @@
             # Rybołówstwo Bałtyckie
             create_building = {
                 building = "building_fishing_wharf"
-                level = 2
-                add_ownership = {
-                    building = {
-                        type = "building_fishing_wharf"
-                        country = "c:PLC"
-                        levels = 2
-                        region = "STATE_WEST_PRUSSIA"
-                    }
-                }
+                add_ownership = { building = { type = "building_manor_house" country = "c:PLC" levels = 2 region = "STATE_WEST_PRUSSIA" } }
                 activate_production_methods = { "pm_simple_fishing" "pm_unrefrigerated" }
                 reserves = 1
             }
@@ -511,15 +493,8 @@
             # Rolnictwo (Ziemniaki i zboże na eksport)
             create_building = {
                 building = "building_rye_farm"
+                add_ownership = { building = { type = "building_manor_house" country = "c:PLC" levels = 3 region = "STATE_WEST_PRUSSIA" } }
                 level = 3
-                add_ownership = {
-                    building = {
-                        type = "building_manor_house"
-                        country = "c:PLC"
-                        levels = 3
-                        region = "STATE_WEST_PRUSSIA"
-                    }
-                }
                 activate_production_methods = { "pm_simple_farming" "pm_potatoes" }
                 reserves = 1
             }
@@ -528,14 +503,7 @@
 				building = "building_logging_camp"
 				reserves = 1
 				activate_production_methods = { }
-				add_ownership = {
-					building = {
-						type = "building_manor_house"
-						country = "c:PLC"
-						levels = 2
-						region = "STATE_WEST_PRUSSIA"
-					}
-				}
+
 			}}
     }
 
@@ -603,7 +571,10 @@
 
     # --- BREST & VOLHYNIA ---
     s:STATE_BREST = {
-        region_state:RUS = { remove_building = building_rye_farm }
+        region_state:RUS = {
+        remove_building = building_rye_farm
+        remove_building = building_logging_camp
+        }
         region_state:PLC = {
             create_building = {
                 building = "building_rye_farm"
@@ -619,8 +590,30 @@
 					building = {
 						type = "building_manor_house"
 						country = "c:PLC"
-						levels = 4
+						levels = 8
 						region = "STATE_BREST"
+					}
+				}
+			}
+		}
+
+    }
+    s:STATE_VOLHYNIA = {
+        region_state:RUS = {
+        remove_building = building_logging_camp
+        }
+        region_state:PLC = {
+
+			create_building = {
+				building = "building_logging_camp"
+				reserves = 1
+				activate_production_methods = { }
+				add_ownership = {
+					building = {
+						type = "building_manor_house"
+						country = "c:PLC"
+						levels = 4
+						region = "STATE_VOLHYNIA"
 					}
 				}
 			}}
