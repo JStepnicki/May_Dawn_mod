@@ -100,9 +100,9 @@
             create_pop = { culture = ukrainian size = 152000 }
             create_pop = { culture = ashkenazi size = 128500 }
             create_pop = { culture = ashkenazi pop_type = shopkeepers size = 500 }
+            # war losses
+            kill_population_percent_in_state = { percent = 0.05 }
         }
-        # war losses
-        kill_population_percent_in_state = { percent = 0.05 }
     }
 
     s:STATE_EAST_GALICIA = {
@@ -114,9 +114,9 @@
             create_pop = { culture = ukrainian size = 1343804 }
             create_pop = { culture = ashkenazi size = 14500 }
             create_pop = { culture = ashkenazi pop_type = laborers size = 30000 }
+            # war losses
+            kill_population_percent_in_state = { percent = 0.10 }
         }
-        # war losses
-        kill_population_percent_in_state = { percent = 0.10 }
     }
 
     s:STATE_VILNIUS = {
@@ -153,9 +153,9 @@
             create_pop = { culture = ashkenazi size = 94529 }
             create_pop = { culture = polish size = 44400 }
             create_pop = { culture = east_german size = 40819 }
+            # war losses
+            kill_population_percent_in_state = { percent = 0.20 }
         }
-        # war losses
-        kill_population_percent_in_state = { percent = 0.20 }
     }
 
     s:STATE_MINSK = {
@@ -165,7 +165,7 @@
             create_pop = { culture = byelorussian size = 285000 }
             create_pop = { culture = ashkenazi size = 75000 }
             create_pop = { culture = russian size = 5000 }
-                    # war losses
+            # war losses
             kill_population_percent_in_state = { percent = 0.40 }
         }
         region_state:RUS = {
@@ -173,7 +173,7 @@
             create_pop = { culture = byelorussian size = 284714 }
             create_pop = { culture = ashkenazi size = 74520 }
             create_pop = { culture = russian size = 33883 }
-                    # war losses
+            # war losses
             kill_population_percent_in_state = { percent = 0.40 }
         }
     }
@@ -183,7 +183,7 @@
         region_state:RUS = {
             create_pop = { culture = ukrainian pop_type = aristocrats size = 29300 }
             create_pop = { culture = russian pop_type = aristocrats size = 6000 }
-            create_pop = { culture = ukrainian size = 2076020 }
+            create_pop = { culture = ukrainian size = 1676020 }
             create_pop = { culture = ashkenazi size = 406660 }
             create_pop = { culture = russian size = 81600 }
             create_pop = { culture = polish size = 32740 }
@@ -193,7 +193,7 @@
         region_state:PLC = {
             create_pop = { culture = ukrainian pop_type = aristocrats size = 5000 }
             create_pop = { culture = polish size = 40000 }
-            create_pop = { culture = ukrainian size = 500000 }
+            create_pop = { culture = ukrainian size = 900000 }
             create_pop = { culture = ashkenazi size = 80000 }
             # war losses
             kill_population_percent_in_state = { percent = 0.40 }
