@@ -54,37 +54,20 @@
     s:STATE_WEST_PRUSSIA = {
         region_state:PRU = { kill_population_percent_in_state = { percent = 1 } }
         region_state:PLC = {
-            create_pop = { culture = polish pop_type = aristocrats size = 7000 }
-            create_pop = { culture = polish size = 650000 }
-            create_pop = { culture = polish religion = protestant size = 60000 }
-            create_pop = { culture = north_german size = 50000 }
+            create_pop = { culture = polish pop_type = aristocrats size = 8000 }
+            create_pop = { culture = polish size = 710000 }
+            create_pop = { culture = polish religion = protestant size = 75000 }
+            create_pop = { culture = north_german size = 60000 }
             create_pop = { culture = north_german religion = catholic size = 15000 }
-            create_pop = { culture = ashkenazi size = 12000 }
+            create_pop = { culture = ashkenazi size = 14000 }
             # war losses
             kill_population_percent_in_state = { percent = 0.15 }
         }
     }
 
     s:STATE_EAST_PRUSSIA = {
-        region_state:PRU = { kill_population_percent_in_state = { percent = 1 } }
-        region_state:PRU = {
-            create_pop = { culture = north_german pop_type = aristocrats size = 4500 }
-            create_pop = { culture = north_german size = 560000 }
-            create_pop = { culture = lithuanian religion = protestant size = 105000 }
-            create_pop = { culture = north_german religion = catholic size = 73000 }
-            create_pop = { culture = polish religion = protestant size = 5000 }
-            # war losses
-            kill_population_percent_in_state = { percent = 0.15 }
-        }
-        region_state:PLC = {
-            create_pop = { culture = polish religion = catholic pop_type = aristocrats size = 1000 }
-            create_pop = { culture = polish religion = catholic size = 60000 }
-            create_pop = { culture = polish religion = protestant size = 15000 }
-            create_pop = { culture = north_german size = 10000 }
-            create_pop = { culture = ashkenazi size = 1500 }
-            # war losses
-            kill_population_percent_in_state = { percent = 0.15 }
-        }
+        #LOSES to war and 2 provinces ceasin to West Prussia
+        region_state:PRU = { kill_population_percent_in_state = { percent = 0.15 } }
     }
 
     s:STATE_WEST_GALICIA = {

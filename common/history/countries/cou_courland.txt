@@ -2,22 +2,27 @@
     c:COU ?= {
         effect_starting_technology_tier_1_tech = yes
 
-        # --- PRAWA (Kurlandia: Niemiecka elita, bałtycka gospodarka) ---
-        activate_laws = {
-            law_monarchy
-            law_autocracy              # Silna władza książęca
-            law_landed_voting         # Głos mają wyłącznie baronowie kurlandzcy
+        activate_law = law_type:law_monarchy
+        activate_law = law_type:law_autocracy
+        activate_law = law_type:law_landed_voting
+        activate_law = law_type:law_state_religion
+        activate_law = law_type:law_women_own_property
+        activate_law = law_type:law_appointed_bureaucrats
+        activate_law = law_type:law_national_supremacy
+        activate_law = law_type:law_mercantilism
+        # couralnd has colonial ambitons
 
-            law_mercantilism          # Tradycja handlowa (Kurlandia miała floty!)
-            law_tenant_farmers        # HISTORYCZNIE: Kurlandia zniosła pańszczyznę wcześniej niż Rosja (1817), chłopi byli wolni, ale bez ziemi.
-            law_per_capita_taxes
+        activate_law = law_type:law_interventionism
+        activate_law = law_type:law_no_schools
+        activate_law = law_type:law_local_police
+        activate_law = law_type:law_professional_army
+        activate_law = law_type:law_censorship
+        activate_law = law_type:law_tenant_farmers
+        activate_law = law_type:law_land_based_taxation
 
-            law_state_religion        # Protestantyzm (Luteranizm) jako fundament elity
-            law_national_supremacy     # Niemiecka dominacja nad łotewskimi chłopami
-            law_professional_army
-            law_colonial_resettlement  # Twoja prośba: nawiązanie do tradycji Gambii i Tobago
-            law_no_schools            # Edukacja ograniczona do elit
-            law_local_police           # Silna rola lokalnej szlachty (Rittershaft)
+        set_institution_investment_level = {
+            institution = institution_police
+            level = 1
         }
 
         # --- GRUPY INTERESU ---
@@ -31,8 +36,6 @@
             set_interest_group_name = ig_cou_lutheran_church
         }
 
-        # --- BONUS NA START ---
-        # Jeśli chcesz nawiązać do tradycji morskiej Kurlandii:
-        add_treasury = 25000
+
     }
 }
