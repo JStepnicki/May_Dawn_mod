@@ -45,6 +45,7 @@ STATES = {
             owned_provinces = {  x374AC3 x41A021 x55FD02 x611F2F x7CB839 x80A0A0 x945000 xBAF66D x5428E6 x6E8875 }
             state_type = incorporated
         }
+        remove_homeland = cu:north_german
     }
 
     s:STATE_WEST_GALICIA = {
