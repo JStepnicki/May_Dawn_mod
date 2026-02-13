@@ -1,0 +1,23 @@
+﻿TREATIES = {
+    #treaty of minsk RUS/POL
+    create_treaty = {
+		name = treaty_name_treaty_of_minsk
+		first_country = c:RUS
+		second_country = c:PLC
+
+		is_draft = no
+		entered_into_force_on = 1812.10.26
+		binding_period = { years = 30 }
+
+        articles_to_create = {
+			{
+				article = money_transfer
+				source_country = c:PLC
+				target_country = c:RUS
+				inputs = {
+					{ quantity = 7000 }
+				}
+			}
+		}
+	}
+}

@@ -11,8 +11,8 @@
  TPE_monarchy:0 "National Empire"
 
  ig_plc_magnates:0 "Magnateria"
- ig_plc_army:0 "Wojskowi"
- ig_plc_intelligentsia:0 "Oświecona Inteligencja"
+ ig_plc_army:0 "Generałowie"
+ ig_plc_intelligentsia:0 "Inteligencja"
  ig_plc_clergy:0 "Episkopat"
  ig_plc_szlachta_zagonowa:0 "Chłopstwo"
  ig_plc_burghers:0 "Mieszczaństwo"
