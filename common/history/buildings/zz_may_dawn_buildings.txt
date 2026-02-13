@@ -494,13 +494,13 @@
             create_building = {
                 building = "building_rye_farm"
                 add_ownership = { building = { type = "building_manor_house" country = "c:PLC" levels = 3 region = "STATE_WEST_PRUSSIA" } }
-                level = 3
                 activate_production_methods = { "pm_simple_farming" "pm_potatoes" }
                 reserves = 1
             }
         
 			create_building = {
 				building = "building_logging_camp"
+				add_ownership = { building = { type = "building_manor_house" country = "c:PLC" levels = 1 region = "STATE_WEST_PRUSSIA" } }
 				reserves = 1
 				activate_production_methods = { }
 
