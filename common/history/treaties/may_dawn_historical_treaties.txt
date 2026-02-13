@@ -18,6 +18,11 @@
 					{ quantity = 7000 }
 				}
 			}
+			{
+				article = military_access
+				source_country = c:PLC
+				target_country = c:RUS
+			}
 		}
 	}
 }

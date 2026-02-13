@@ -1,0 +1,17 @@
+﻿# PLC Startup Fix
+on_game_started = {
+    effect = {
+        if = {
+            limit = {
+                exists = c:PLC
+            }
+            c:PLC = {
+                add_modifier = {
+                    name = modifier_post_war_reality
+                    years = 10
+                    is_decaying = yes
+                }
+            }
+        }
+    }
+}
