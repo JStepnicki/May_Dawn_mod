@@ -2,8 +2,8 @@
     c:PLC = {
         # Król
         create_character = {
-			first_name = Fryderyk_August
-			last_name = Wettyn
+			first_name = "Fryderyk August"
+			last_name = "Wettyn"
 			historical = yes
 			culture = cu:polish
 			age = 30

@@ -1,0 +1,97 @@
+﻿# Decyzja 1: Śląsk i Prusy
+plc_claim_western_lands = {
+    is_shown = {
+		exists = c:PLC
+		c:PLC ?= THIS
+	}
+
+    possible = {
+		c:PLC ?= THIS
+		has_technology_researched = nationalism
+		hidden_trigger = {
+			NOT = { has_variable = plc_western_claims_done }
+		}
+	}
+
+    possible = {
+        country_rank >= rank_value:major_power # Musisz być przynajmniej mocarstwem regionalnym
+    }
+
+    when_taken = {
+    	set_variable = {
+			name = plc_western_claims_done
+			value = yes
+		}
+        # Górny i Dolny Śląsk
+        s:STATE_LOWER_SILESIA = { add_claim = c:PLC }
+        s:STATE_UPPER_SILESIA = { add_claim = c:PLC }
+        # Prusy Wschodnie i Zachodnie
+        s:STATE_EAST_PRUSSIA = { add_claim = c:PLC }
+        change_infamy = 15
+
+    }
+
+    ai_chance = { value = 1 }
+}
+
+# Decyzja 2: Inflanty
+plc_claim_livonia = {
+
+    is_shown = {
+		exists = c:PLC
+		c:PLC ?= THIS
+	}
+
+    possible = {
+		c:PLC ?= THIS
+		has_technology_researched = nationalism
+		hidden_trigger = {
+			NOT = { has_variable = plc_livonia_claims_done }
+		}
+	}
+
+    when_taken = {
+         set_variable = {
+			name = plc_livonia_claims_done
+			value = yes
+		}
+        s:STATE_TARTU = { add_claim = c:PLC }
+        s:STATE_RIGA = { add_claim = c:PLC }
+        s:STATE_COURLAND = { add_claim = c:PLC }
+
+        change_infamy = 15
+    }
+
+    ai_chance = { value = 1 }
+}
+
+# Decyzja 3: Kresy Wschodnie
+plc_claim_kresy = {
+
+    is_shown = {
+		exists = c:PLC
+		c:PLC ?= THIS
+	}
+
+    possible = {
+		c:PLC ?= THIS
+		has_technology_researched = nationalism
+		hidden_trigger = {
+			NOT = { has_variable = plc_kresy_claims_done }
+		}
+	}
+    when_taken = {
+        set_variable = {
+			name = plc_kresy_claims_done
+			value = yes
+		}
+        s:STATE_MINSK = { add_claim = c:PLC }
+        s:STATE_KIEV = { add_claim = c:PLC }
+        s:STATE_VITEBSK = { add_claim = c:PLC }
+        s:STATE_MOGILEV = { add_claim = c:PLC }
+        s:STATE_CHERNIHIV = { add_claim = c:PLC }
+        change_infamy = 20
+    }
+
+    ai_chance = { value = 1 }
+}
