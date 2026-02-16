@@ -3,6 +3,7 @@ plc_claim_western_lands = {
     is_shown = {
 		exists = c:PLC
 		c:PLC ?= THIS
+		NOT = { has_variable = plc_western_claims_done }
 	}
 
     possible = {
@@ -40,6 +41,7 @@ plc_claim_livonia = {
     is_shown = {
 		exists = c:PLC
 		c:PLC ?= THIS
+		NOT = { has_variable = plc_livonia_claims_done }
 	}
 
     possible = {
@@ -71,6 +73,7 @@ plc_claim_kresy = {
     is_shown = {
 		exists = c:PLC
 		c:PLC ?= THIS
+		NOT = { has_variable = plc_kresy_claims_done }
 	}
 
     possible = {
