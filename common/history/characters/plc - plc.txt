@@ -16,5 +16,93 @@
 			}
 		}
 
+        # --- INTELIGENCJA (Intelligentsia) - Adam Jerzy Czartoryski ---
+        create_character = {
+            first_name = plc_pol_Adam_Jerzy
+            last_name = plc_pol_Czartoryski
+            historical = yes
+            culture = cu:polish
+            age = 66
+            ig_leader = yes
+            interest_group = ig_intelligentsia
+            ideology = ideology_reformer
+            traits = {
+                erudite
+            }
+        }
+
+        # --- PRZEMYSŁOWCY (Industrialists) - Ksawery Drucki-Lubecki ---
+        create_character = {
+            first_name = plc_pol_Ksawery
+            last_name = plc_pol_Drucki_Lubecki
+            historical = yes
+            culture = cu:polish
+            age = 58
+            ig_leader = yes
+            interest_group = ig_industrialists
+            ideology = ideology_liberal
+            traits = {
+            }
+        }
+
+        # --- ZIEMIAŃSTWO (Landowners) - Andrzej Zamoyski ---
+        create_character = {
+            first_name = plc_pol_Andrzej
+            last_name = plc_pol_Zamoyski
+            historical = yes
+            culture = cu:polish
+            age = 36
+            ig_leader = yes
+            interest_group = ig_landowners
+            ideology = ideology_moderate # Konserwatysta, ale dbający o rolnictwo
+            traits = {
+                charismatic
+            }
+        }
+
+        # --- KOŚCIÓŁ (Devout) - Marcin Dunin ---
+        # Prymas, który historycznie walczył o prawa Kościoła
+        create_character = {
+            first_name = plc_pol_Marcin
+            last_name = plc_pol_Dunin
+            historical = yes
+            culture = cu:polish
+            age = 62
+            ig_leader = yes
+            interest_group = ig_devout
+            ideology = ideology_traditionalist
+            traits = {
+            }
+        }
+        # --- MIESZCZANSTWO (Petty Bourgeoisie) - Karol Marcinkowski ---
+        # Lekarz, społecznik i twórca "Bazaru" w Poznaniu. Idealny lider klasy średniej.
+        create_character = {
+            first_name = plc_pol_Karol
+            last_name = plc_pol_Marcinkowski
+            historical = yes
+            culture = cu:polish
+            age = 36 # Ur. 1800
+            ig_leader = yes
+            interest_group = ig_petty_bourgeoisie
+            ideology = ideology_liberal
+            traits = {
+            }
+        }
+
+        # --- CHŁOPSTWO (Rural Folk) - Jakub Szela (Wersja "Lojalista") ---
+        # W Twoim lore może być liderem chłopów, którzy domagają się uwłaszczenia w zamian za krew przelaną pod Bugiem.
+        create_character = {
+            first_name = plc_pol_Jakub
+            last_name = plc_pol_Szela
+            historical = yes
+            culture = cu:polish
+            ig_leader = yes
+            age = 49 # Ur. 1787
+            interest_group = ig_rural_folk
+            ideology = ideology_agrarian
+
+        }
+
+
     }
 }
