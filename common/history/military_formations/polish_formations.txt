@@ -1,6 +1,6 @@
 ﻿MILITARY_FORMATIONS = {
-c:PLC = {
-        # --- ARMIA KORONNA (Main Army in Warsaw) ---
+    c:PLC = {
+        # --- ARMIA KORONNA (Główna Siła Uderzeniowa) ---
         create_military_formation = {
             type = army
             hq_region = sr:region_poland
@@ -16,49 +16,148 @@ c:PLC = {
 
             # Lesser Poland
             combat_unit = { type = unit_type:combat_unit_type_skirmish_infantry state_region = s:STATE_LESSER_POLAND count = 8 }
-            combat_unit = { type = unit_type:combat_unit_type_hussars state_region = s:STATE_LESSER_POLAND count = 3 }
+            combat_unit = { type = unit_type:combat_unit_type_lancers state_region = s:STATE_LESSER_POLAND count = 3 }
 
             # West Galicia
             combat_unit = { type = unit_type:combat_unit_type_skirmish_infantry state_region = s:STATE_WEST_GALICIA count = 7 }
-            combat_unit = { type = unit_type:combat_unit_type_mobile_artillery state_region = s:STATE_WEST_GALICIA count = 2 }
+            combat_unit = { type = unit_type:combat_unit_type_mobile_artillery state_region = s:STATE_WEST_GALICIA count = 7 }
 
             # Prusy Zachodnie / Posen
             combat_unit = { type = unit_type:combat_unit_type_skirmish_infantry state_region = s:STATE_WEST_PRUSSIA count = 2 }
+
+            save_scope_as = armia_koronna_scope
         }
 
+        # Generał Skrzynecki (Tier 3 - Wódz Naczelny)
+        create_character = {
+            is_general = yes
+            first_name = plc_gen_Jan_Zygmunt
+            last_name = plc_gen_Skrzynecki
+            historical = yes
+            hq = region_poland
+            commander_rank = commander_rank_3
+            interest_group = ig_armed_forces
+            ideology = ideology_moderate
+            age = 49
+            traits = {
+                cautious
+                charismatic
+            }
+            save_scope_as = skrzynecki_gen
+        }
 
-    # --- ARMIA LITWSKA (Northern Defense) ---
+        scope:skrzynecki_gen = {
+            transfer_to_formation = scope:armia_koronna_scope
+        }
+
+        # --- ARMIA LITEWSKA (Obrona Północy) ---
         create_military_formation = {
             type = army
             hq_region = sr:region_poland
             name = "Armia Litewska"
 
-            # Litwa
-            combat_unit = { type = unit_type:combat_unit_type_skirmish_infantry state_region = s:STATE_VILNIUS count = 4 }
-            combat_unit = { type = unit_type:combat_unit_type_skirmish_infantry state_region = s:STATE_KAUNAS count = 3 }
-            combat_unit = { type = unit_type:combat_unit_type_lancers state_region = s:STATE_KAUNAS count = 2 }
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_VILNIUS
+                count = 4
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_KAUNAS
+                count = 3
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_KAUNAS
+                count = 2
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_BREST
+                count = 1
+            }
 
-            # Białoruś
-            combat_unit = { type = unit_type:combat_unit_type_skirmish_infantry state_region = s:STATE_BREST count = 2 }
-            combat_unit = { type = unit_type:combat_unit_type_skirmish_infantry state_region = s:STATE_MINSK count = 1 }
-            combat_unit = { type = unit_type:combat_unit_type_mobile_artillery state_region = s:STATE_BREST count = 1 }
+            save_scope_as = armia_litewska_scope
         }
 
+        # Generał Prądzyński
+        create_character = {
+            is_general = yes
+            first_name = plc_gen_Ignacy
+            last_name = plc_gen_Pradzynski
+            historical = yes
+            hq = region_poland
+            commander_rank = commander_rank_1
+            age = 44
+            interest_group = ig_armed_forces
+            ideology = ideology_moderate
+            traits = {
+                stalwart_defender
+                engineer
+            }
+            save_scope_as = pradzynski_gen
+        }
 
-    # --- KORPUS Rusi ---
+        scope:pradzynski_gen = {
+            transfer_to_formation = scope:armia_litewska_scope
+        }
+
+        # --- ARMIA RUSI CZERWONEJ (Front Południowo-Wschodni) ---
         create_military_formation = {
             type = army
             hq_region = sr:region_poland
             name = "Armia Rusi Czerwonej"
 
-            # Wołyń
-            combat_unit = { type = unit_type:combat_unit_type_skirmish_infantry state_region = s:STATE_VOLHYNIA count = 5 }
-            combat_unit = { type = unit_type:combat_unit_type_hussars state_region = s:STATE_VOLHYNIA count = 3 }
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_VOLHYNIA
+                count = 5
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_lancers
+                state_region = s:STATE_VOLHYNIA
+                count = 3
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_skirmish_infantry
+                state_region = s:STATE_KIEV
+                count = 4
+            }
+            combat_unit = {
+                type = unit_type:combat_unit_type_mobile_artillery
+                state_region = s:STATE_KIEV
+                count = 1
+            }
 
-            # Kijów
-            combat_unit = { type = unit_type:combat_unit_type_skirmish_infantry state_region = s:STATE_KIEV count = 4 }
-            combat_unit = { type = unit_type:combat_unit_type_hussars state_region = s:STATE_KIEV count = 2 }
-            combat_unit = { type = unit_type:combat_unit_type_mobile_artillery state_region = s:STATE_KIEV count = 1 }
+            save_scope_as = armia_rusi_scope
         }
-	}
+
+        # Generał Bem
+        create_character = {
+            is_general = yes
+            first_name = plc_gen_Jozef
+            last_name = plc_gen_Bem
+            historical = yes
+            hq = region_poland
+            commander_rank = commander_rank_1
+            interest_group = ig_armed_forces
+            ideology = ideology_radical
+            age = 42
+            traits = {
+                experienced_artillery_commander
+                innovative
+            }
+            save_scope_as = bem_gen
+        }
+
+        scope:bem_gen = {
+            transfer_to_formation = scope:armia_rusi_scope
+        }
+
+        # --- KONFIGURACJA METOD PRODUKCJI ---
+        activate_production_method = {
+            building_type = building_barrack
+            production_method = pm_general_training
+        }
+    }
 }
