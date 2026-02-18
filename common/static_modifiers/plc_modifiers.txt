@@ -7,3 +7,27 @@ modifier_post_war_reality = {
     state_construction_mult = -0.1
     interest_group_ig_armed_forces_pol_str_mult = 0.5
 }
+
+polish_empire_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+
+    #half the power of edict
+    state_assimilation_mult = 0.25
+    state_conversion_mult = 0.25
+
+    state_radicalism_increases_violent_hostility_mult = 0.25
+    state_radicalism_increases_cultural_erasure_mult = 0.2
+    state_radicalism_increases_open_prejudice_mult = 0.15
+}
+
+# comonnwealth of poland lithuania and ruthenia
+plrc_modifier = {
+   	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+
+    state_assimilation_mult = -0.25
+    state_conversion_mult = -0.25
+
+    state_radicalism_increases_violent_hostility_mult = -0.5
+    state_radicalism_increases_cultural_erasure_mult = -0.4
+    state_radicalism_increases_open_prejudice_mult = -0.3
+}

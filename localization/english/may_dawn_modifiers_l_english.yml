@@ -1,3 +1,7 @@
 ﻿l_english:
-  modifier_post_war_reality:0 "Post-War Reality"
-  modifier_post_war_reality_desc:0 "The echoes of the Great War still haunt our streets. With a significant portion of the workforce lost and the infrastructure in ruins, the nation must endure a long and painful process of reconstruction while facing deep social unrest."
+  modifier_post_war_reality: "Post-War Reality"
+  modifier_post_war_reality_desc: "The echoes of the Great War still haunt our streets. With a significant portion of the workforce lost and the infrastructure in ruins, the nation must endure a long and painful process of reconstruction while facing deep social unrest."
+  polish_empire_modifier: "Polish supremacy"
+  polish_empire_modifier_desc: "The state focuses on Polonization and centralized authority, building a unified imperial nation."
+  plrc_modifier: "Spirit of the Warsaw Confederation"
+  plrc_modifier_desc: "Multi-ethnic peace and religious tolerance are the foundations of our strength."

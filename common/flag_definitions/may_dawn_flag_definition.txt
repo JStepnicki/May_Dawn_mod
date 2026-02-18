@@ -1,0 +1,13 @@
+﻿PEC = {
+	flag_definition = {
+		coa = PEC
+		priority = 1
+	}
+}
+
+PLR = {
+	flag_definition = {
+		coa = PLR
+		priority = 1
+	}
+}

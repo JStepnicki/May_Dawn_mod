@@ -1,10 +1,28 @@
-﻿# Rzeczpospolita Trojga Narodów (The Commonwealth of Three Nations)
-# Wizja: Monarchia uniwersalna, wielokulturowa, po głębokich reformach.
-
-COU = {
+﻿COU = {
 	color = { 185 150 90 }
 	country_type = recognized
 	tier = principality
 	cultures = { latvian }
 	capital = STATE_COURLAND
+}
+
+# Imperium Polskie
+PEC = {
+    color = { 160  20  40 }
+
+	country_type = recognized
+
+	tier = empire
+
+	cultures = { polish }
+	capital = STATE_GREATER_POLAND
+}
+
+# Rzeczpospolita Trojga Narodów (The Commonwealth of Three Nations)
+PLR = {
+    color = { 160  20  40 }
+	country_type = recognized
+	tier = empire
+	cultures = { polish lithuanian byelorussian ukrainian }
+	capital = STATE_GREATER_POLAND
 }

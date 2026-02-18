@@ -1,0 +1,21 @@
+﻿PEC = {
+	pattern = "pattern_solid.tga"
+	color1 = "red"
+	color2 = "white"
+
+    sub = {
+        parent = "sub_POL"
+        instance = { scale = { 1 1 }  }
+    }
+}
+
+PLR = {
+
+	pattern = "pattern_solid.tga"
+	color1 = "white"
+
+	textured_emblem = {
+	texture = "PLR_MAIN.dds"
+	}
+
+}

@@ -1,0 +1,17 @@
+﻿l_english:
+# Journal Entry
+ je_imperial_identity: "Polish Imperial Identity"
+ je_imperial_identity_desc: "The reclamation of the Borderlands and our rise to Great Power status forces us to decide the final form of our state."
+ je_imperial_identity_tt: "We must control #v Minsk#! and #v Kiev#! and hold the status of a #v Great Power#!."
+
+ # Event
+ may_dawn_poland_events.1.t: "Destiny of the Commonwealth"
+ may_dawn_poland_events.1.d: "The smoke of battle over Kiev and Minsk has cleared. The Commonwealth has returned to its ancient borders as a world power. Now we must choose: shall we become a modern, unified Polish Empire, or shall we revive the union of nations based on tolerance?"
+ may_dawn_poland_events.1.f: "The Eagle and the Knight fly once more over the Dnieper, but the hearts of the people demand a new order."
+
+ may_dawn_poland_events.1.a: "Proclaim the Polish Empire!"
+ may_dawn_poland_events.1.b: "Renew the Act of the Warsaw Confederation."
+
+ plr_reformation_tt: "The time has come to create a strong and unified state. In the spirit of nationalism and the idea of 'Poland First', the Polish Empire is proclaimed, with the Polish nation as the leading force and unity and strength as the foundation of its future."
+
+ pce_reformation_tt: "The time has come to rebuild the state in the spirit of the Warsaw Confederation. The Commonwealth of Three Nations is proclaimed — a shared state of Poles, Lithuanians, and Ruthenians founded upon religious tolerance, coexistence, and shared responsibility for the fate of the country."

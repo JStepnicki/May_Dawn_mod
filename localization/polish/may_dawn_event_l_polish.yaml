@@ -1,0 +1,18 @@
+﻿l_polish:
+ # Journal Entry
+ je_imperial_identity: "Polska Tożsamość Imperialna"
+ je_imperial_identity_desc: "Odzyskanie Kresów i ugruntowanie pozycji mocarstwowej stawia nas przed ostatecznym wyborem formy naszego państwa."
+ je_imperial_identity_tt: "Musimy kontrolować regiony #v Mińska#! i #v Kijowa#! oraz posiadać status #v Wielkiego Mocarstwa#!."
+
+ # Event
+ may_dawn_poland_events.1.t: "Losy Rzeczypospolitej"
+ may_dawn_poland_events.1.d: "Dym bitewny nad Kijowem i Mińskiem opadł. Rzeczpospolita powróciła do swoich dawnych granic jako mocarstwo, z którym liczy się cały świat. Jednak teraz musimy zdecydować: czy staniemy się nowoczesnym, jednolitym Imperium Polskim, czy też wskrzesimy unię narodów opartą na tolerancji?"
+ may_dawn_poland_events.1.f: "Korona i Pogoń znów powiewają nad Dnieprem, ale serca ludu potrzebują nowego porządku."
+
+ may_dawn_poland_events.1.a: "Ogłosić powstanie Imperium Polskiego!"
+ may_dawn_poland_events.1.b: "Odnowić Akt Konfederacji Warszawskiej."
+
+ plr_reformation_tt: "Nadszedł czas na stworzenie silnego i jednolitego państwa. W duchu nacjonalizmu i idei „Polska przede wszystkim” proklamowane zostaje Polskie Imperium, w którym nadrzędną rolę odgrywa naród polski, a jedność i siła państwa stają się fundamentem jego przyszłości."
+
+ pce_reformation_tt: "Nadszedł czas na odbudowę państwa w duchu Konfederacji Warszawskiej. Proklamowana zostaje Rzeczpospolita Trojga Narodów — wspólne państwo Polaków, Litwinów i Rusinów, oparte na tolerancji religijnej, współistnieniu narodów oraz wspólnej odpowiedzialności za los kraju."
+

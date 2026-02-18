@@ -21,7 +21,7 @@
  HUB_NAME_STATE_VOLHYNIA_farm_russian: "$HUB_NAME_STATE_VOLHYNIA_farm$"
  HUB_NAME_STATE_VOLHYNIA_wood_russian: "Rovno"
 
- STATE_VOLHYNIA_polish: "Wołyń"
+ STATE_VOLHYNIA_polish: "Województwo Wołyńskie"
  HUB_NAME_STATE_VOLHYNIA_city_polish: "Łuck"
  HUB_NAME_STATE_VOLHYNIA_mine_polish: "Krzemieniec"
  HUB_NAME_STATE_VOLHYNIA_farm_polish: "Włodzimierz"
@@ -229,7 +229,7 @@
  HUB_NAME_STATE_WEST_GALICIA_farm_german: "Resze"
  HUB_NAME_STATE_WEST_GALICIA_wood_german: "Tarnau"
 
- STATE_WEST_GALICIA_polish: "Krakowskie"
+ STATE_WEST_GALICIA_polish: "Województwo Krakowskie"
  HUB_NAME_STATE_WEST_GALICIA_city_polish: "Kraków"
  HUB_NAME_STATE_WEST_GALICIA_mine_polish: "Jarosław"
  HUB_NAME_STATE_WEST_GALICIA_farm_polish: "Rzeszów"
@@ -355,7 +355,7 @@
  HUB_NAME_STATE_RIGA_farm_german: "Wenden"
  HUB_NAME_STATE_RIGA_wood_german: "Dvinsk"
 
- STATE_RIGA_polish: "Inflanty Środkowe"
+ STATE_RIGA_polish: "Inflanty Południowe"
  HUB_NAME_STATE_RIGA_city_polish: "Ryga"
  HUB_NAME_STATE_RIGA_port_polish: "Szłok"
  HUB_NAME_STATE_RIGA_mine_polish: "Wolmar"
@@ -404,7 +404,7 @@
  HUB_NAME_STATE_TARTU_farm_german: "Fellin"
  HUB_NAME_STATE_TARTU_wood_german: "Werro"
 
- STATE_TARTU_polish: "Dorpat"
+ STATE_TARTU_polish: "Inflanty północne"
  HUB_NAME_STATE_TARTU_city_polish: "Dorpat"
  HUB_NAME_STATE_TARTU_port_polish: "Parnawa"
  HUB_NAME_STATE_TARTU_mine_polish: "Otepää"

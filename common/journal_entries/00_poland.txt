@@ -1,0 +1,83 @@
+﻿# polish imperial identity
+je_imperial_identity = {
+    icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	group = je_group_poland
+
+     is_shown_in_lobby = {
+        country_has_primary_culture = cu:polish
+    }
+
+    is_shown_when_inactive = {
+       country_has_primary_culture = cu:polish
+    }
+
+    possible = {
+        has_technology_researched = nationalism
+        custom_tooltip = {
+            text = je_imperial_identity_tt
+            c:PLC ?= THIS
+        }
+    }
+
+    immediate = {
+        trigger_event = { id = poland_events.6 popup = yes }
+    }
+
+    complete = {
+        has_technology_researched = nationalism
+        owns_entire_state_region = STATE_MINSK
+        owns_entire_state_region = STATE_KIEV
+        country_rank >= rank_value:great_power
+    }
+
+    on_complete = {
+        #event for imperial identity
+        trigger_event = { id = may_dawn_poland_events.1 popup = yes }
+
+        # new polish homelands
+		s:STATE_KIEV = {
+			add_homeland = cu:polish
+		}
+		s:STATE_MINSK = {
+			add_homeland = cu:polish
+		}
+
+        custom_tooltip =  plr_reformation_tt
+        show_as_tooltip = {
+            add_primary_culture = cu:ukrainian
+            add_primary_culture = cu:byelorussian
+            add_loyalists = {
+                culture = cu:ukrainian
+                value = 0.1
+            }
+            add_loyalists = {
+                culture = cu:byelorussian
+                value = 0.1
+            }
+
+            add_modifier = {
+                name = plrc_modifier
+                days = long_modifier_time
+		    }
+        }
+        custom_tooltip = pce_reformation_tt
+        show_as_tooltip = {
+            remove_primary_culture = cu:lithuanian
+            add_loyalists = {
+                culture = cu:polish
+                value = 0.1
+            }
+            add_modifier = {
+                name = polish_empire_modifier
+                days = long_modifier_time
+		    }
+		    add_radicals = {
+                value = medium_radicals
+                culture = cu:lithuanian
+		    }
+        }
+    }
+
+    should_be_pinned_by_default = yes
+}

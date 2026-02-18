@@ -1,14 +1,18 @@
 ﻿l_polish:
- COU:0 "Kurladnia"
- COU_ADJ:0 "Kurlandzki"
- 
+ COU: "Kurladnia"
+ COU_ADJ: "Kurlandzki"
+ PEC: "Imperium Polskie"
+ PEC_ADJ: "Imperialny"
+ PLR: "Rzeczpospolita Trojga Narodów"
+ PLR_ADJ: "Rzeczpospolity"
+  
  # Specyficzne nazwy rządów
 
- ig_plc_magnates:0 "Magnateria"
- ig_plc_army:0 "Generałowie"
- ig_plc_intelligentsia:0 "Inteligencja"
- ig_plc_clergy:0 "Episkopat"
- ig_plc_szlachta_zagonowa:0 "Chłopstwo"
- ig_plc_burghers:0 "Mieszczaństwo"
- ig_plc_industrialists:0 "Fabrykanci"
- ig_plc_trade_unions:0 "Związki zawodowe"
+ ig_plc_magnates: "Magnateria"
+ ig_plc_army: "Generałowie"
+ ig_plc_intelligentsia: "Inteligencja"
+ ig_plc_clergy: "Episkopat"
+ ig_plc_szlachta_zagonowa: "Chłopstwo"
+ ig_plc_burghers: "Mieszczaństwo"
+ ig_plc_industrialists: "Fabrykanci"
+ ig_plc_trade_unions: "Związki zawodowe"

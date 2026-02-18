@@ -1,0 +1,78 @@
+﻿namespace = may_dawn_poland_events
+
+# Event: Nasza Tożsamość
+may_dawn_poland_events.1 = {
+	type = country_event
+
+	placement = root
+
+	title = may_dawn_poland_events.1.t
+	desc = may_dawn_poland_events.1.d
+	flavor = may_dawn_poland_events.1.f
+
+    	duration = 3
+
+	event_image = {
+		video = "votp_monarch_holding_court"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	# Warunki wystąpienia
+	trigger = {
+        has_technology_researched = nationalism
+        country_rank >= rank_value:great_power
+		c:PLC ?= this
+		NOT = { has_variable = may_dawn_poland_events_chosen }
+	}
+
+	immediate = {
+		set_variable = may_dawn_poland_events_chosen
+	}
+
+	# OPCJA 1: Imperium Polskie (Nacjonalistyczna)
+	option = {
+		name = may_dawn_poland_events.1.a
+		custom_tooltip = plr_reformation_tt
+		default_option = yes
+
+		# Efekty
+		remove_primary_culture = cu:lithuanian
+
+		add_modifier = {
+			name = polish_empire_modifier
+			days = long_modifier_time
+		}
+		add_radicals = {
+		    value = medium_radicals
+		    culture = cu:lithuanian
+		}
+		change_tag = PEC
+	}
+
+	# OPCJA 2: Droga Tolerancji (Rzeczpospolita Wielu Narodów)
+	option = {
+		name = may_dawn_poland_events.1.b
+        custom_tooltip = pce_reformation_tt
+
+		# Efekty
+		add_primary_culture = cu:byelorussian
+		add_primary_culture = cu:ukrainian
+
+		add_loyalists = {
+			value = medium_radicals
+			culture = cu:ukrainian
+		}
+
+		add_loyalists = {
+			value = medium_radicals
+			culture = cu:byelorussian
+		}
+
+        add_modifier = {
+			name = plrc_modifier
+			days = long_modifier_time
+		}
+		change_tag = PLR
+	}
+}

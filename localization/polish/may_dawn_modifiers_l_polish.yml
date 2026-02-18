@@ -1,3 +1,7 @@
 ﻿l_polish:
-  modifier_post_war_reality:0 "Powojenna Rzeczywistość"
-  modifier_post_war_reality_desc:0 "Echa wielkiej wojny wciąż nawiedzają nasze ulice. Przy znacznej utracie siły roboczej i zniszczonej infrastrukturze, naród musi przetrwać długi i bolesny proces odbudowy, mierząc się jednocześnie z głębokimi niepokojami społecznymi."
+  modifier_post_war_reality: "Powojenna Rzeczywistość"
+  modifier_post_war_reality_desc: "Echa wielkiej wojny wciąż nawiedzają nasze ulice. Przy znacznej utracie siły roboczej i zniszczonej infrastrukturze, naród musi przetrwać długi i bolesny proces odbudowy, mierząc się jednocześnie z głębokimi niepokojami społecznymi."
+  polish_empire_modifier: "Polska dominacja"
+  polish_empire_modifier_desc: "Państwo stawia na polonizację i centralną władzę, budując jednolity naród imperialny."
+  plrc_modifier: "Duch Konfederacji Warszawskiej"
+  plrc_modifier_desc: "Wieloetniczny pokój i tolerancja religijna są fundamentami naszej potęgi."
