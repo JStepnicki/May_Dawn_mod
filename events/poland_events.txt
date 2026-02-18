@@ -1,0 +1,120 @@
+﻿# --- EVENT UNIFIKACJI (Zaktualizowany) ---
+
+namespace = poland_events
+
+poland_events.3 = {
+    type = country_event
+    placement = root
+
+    title = poland_events.3.t
+    desc = poland_events.3.d
+    flavor = poland_events.3.f
+
+    duration = 3
+
+    event_image = {
+       video = "votp_monarch_holding_court"
+    }
+
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+    icon = "gfx/interface/icons/event_icons/event_portrait.dds"
+    cooldown = { days = short_modifier_time }
+
+    trigger = {
+       has_technology_researched = nationalism
+       is_subject = no
+       is_at_war = no
+       # Sprawdzamy, czy ROOT jest jednym z polskich państw (dodano PEC i PLR)
+       OR = {
+          c:POL ?= this
+          c:KRA ?= this
+          c:PLC ?= this
+          c:PEC ?= this
+          c:PLR ?= this
+          AND = {
+             c:GAL ?= this
+             ruler = { culture = cu:polish }
+          }
+       }
+       # Sprawdzamy dostępność celów do aneksji (dodano zmienne dla PEC i PLR)
+       OR = {
+          AND = {
+             NOT = { has_variable = rejected_polish_union_pol_var }
+             c:POL ?= { is_player = no is_subject = no is_at_war = no relations:root >= relations_threshold:amicable OR = { this.gdp < root.gdp root = { is_player = yes } } }
+          }
+          AND = {
+             NOT = { has_variable = rejected_polish_union_plc_var }
+             c:PLC ?= { is_player = no is_subject = no is_at_war = no relations:root >= relations_threshold:amicable OR = { this.gdp < root.gdp root = { is_player = yes } } }
+          }
+          AND = {
+             NOT = { has_variable = rejected_polish_union_kra_var }
+             c:KRA ?= { is_player = no is_subject = no is_at_war = no relations:root >= relations_threshold:amicable OR = { this.gdp < root.gdp root = { is_player = yes } } }
+          }
+          AND = {
+             NOT = { has_variable = rejected_polish_union_pec_var }
+             c:PEC ?= { is_player = no is_subject = no is_at_war = no relations:root >= relations_threshold:amicable OR = { this.gdp < root.gdp root = { is_player = yes } } }
+          }
+          AND = {
+             NOT = { has_variable = rejected_polish_union_plr_var }
+             c:PLR ?= { is_player = no is_subject = no is_at_war = no relations:root >= relations_threshold:amicable OR = { this.gdp < root.gdp root = { is_player = yes } } }
+          }
+          AND = {
+             NOT = { has_variable = rejected_polish_union_gal_var }
+             c:GAL ?= { is_player = no is_subject = no is_at_war = no relations:root >= relations_threshold:amicable ruler = { culture = cu:polish } OR = { this.gdp < root.gdp root = { is_player = yes } } }
+          }
+       }
+    }
+
+    immediate = {
+       cu:polish = { save_scope_as = polish_culture_scope }
+
+       # Logika wyboru celu (dodano PEC i PLR)
+       if = {
+          limit = { NOT = { has_variable = rejected_polish_union_pol_var } c:POL ?= { is_player = no is_subject = no is_at_war = no relations:root >= relations_threshold:amicable } }
+          c:POL ?= { save_scope_as = polish_union_target_scope }
+       }
+       else_if = {
+          limit = { NOT = { has_variable = rejected_polish_union_kra_var } c:KRA ?= { is_player = no is_subject = no is_at_war = no relations:root >= relations_threshold:amicable } }
+          c:KRA ?= { save_scope_as = polish_union_target_scope }
+       }
+       else_if = {
+          limit = { NOT = { has_variable = rejected_polish_union_plc_var } c:PLC ?= { is_player = no is_subject = no is_at_war = no relations:root >= relations_threshold:amicable } }
+          c:PLC ?= { save_scope_as = polish_union_target_scope }
+       }
+       else_if = {
+          limit = { NOT = { has_variable = rejected_polish_union_pec_var } c:PEC ?= { is_player = no is_subject = no is_at_war = no relations:root >= relations_threshold:amicable } }
+          c:PEC ?= { save_scope_as = polish_union_target_scope }
+       }
+       else_if = {
+          limit = { NOT = { has_variable = rejected_polish_union_plr_var } c:PLR ?= { is_player = no is_subject = no is_at_war = no relations:root >= relations_threshold:amicable } }
+          c:PLR ?= { save_scope_as = polish_union_target_scope }
+       }
+       else_if = {
+          limit = { NOT = { has_variable = rejected_polish_union_gal_var } c:GAL ?= { is_player = no is_subject = no is_at_war = no ruler = { culture = cu:polish } } }
+          c:GAL ?= { save_scope_as = polish_union_target_scope }
+       }
+    }
+
+    option = {
+       name = poland_events.3.a
+       default_option = yes
+       annex = scope:polish_union_target_scope
+       add_modifier = { name = integrating_polish_modifier days = normal_modifier_time }
+       ai_chance = { base = 90 }
+    }
+
+    option = {
+       name = poland_events.3.b
+       add_radicals = { culture = cu:polish value = large_radicals }
+
+       # Ustawianie zmiennych odrzucenia dla nowych tagów
+       if = { limit = { scope:polish_union_target_scope = { c:POL ?= this } } set_variable = rejected_polish_union_pol_var }
+       else_if = { limit = { scope:polish_union_target_scope = { c:KRA ?= this } } set_variable = rejected_polish_union_kra_var }
+       else_if = { limit = { scope:polish_union_target_scope = { c:PLC ?= this } } set_variable = rejected_polish_union_plc_var }
+       else_if = { limit = { scope:polish_union_target_scope = { c:PEC ?= this } } set_variable = rejected_polish_union_pec_var }
+       else_if = { limit = { scope:polish_union_target_scope = { c:PLR ?= this } } set_variable = rejected_polish_union_plr_var }
+       else_if = { limit = { scope:polish_union_target_scope = { c:GAL ?= this } } set_variable = rejected_polish_union_gal_var }
+
+       ai_chance = { base = 10 }
+    }
+}
