@@ -41,7 +41,7 @@ may_dawn_poland_events.1 = {
 
 		add_modifier = {
 			name = polish_empire_modifier
-			days = long_modifier_time
+			#days = long_modifier_time
 		}
 		add_radicals = {
 		    value = medium_radicals
@@ -71,7 +71,7 @@ may_dawn_poland_events.1 = {
 
         add_modifier = {
 			name = plrc_modifier
-			days = long_modifier_time
+			#days = long_modifier_time
 		}
 		change_tag = PLR
 	}

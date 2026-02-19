@@ -29,10 +29,10 @@ plc_claim_western_lands = {
             value = yes
         }
         # Roszczenia przypisują się do aktualnego tagu (THIS)
-        s:STATE_LOWER_SILESIA = { add_claim = THIS }
-        s:STATE_UPPER_SILESIA = { add_claim = THIS }
-        s:STATE_EAST_PRUSSIA = { add_claim = THIS }
-        s:STATE_WEST_PRUSSIA = { add_claim = THIS }
+        s:STATE_LOWER_SILESIA = { add_claim = ROOT }
+        s:STATE_UPPER_SILESIA = { add_claim = ROOT }
+        s:STATE_EAST_PRUSSIA = { add_claim = ROOT }
+        s:STATE_WEST_PRUSSIA = { add_claim = ROOT }
 
         change_infamy = 15
     }
@@ -68,9 +68,9 @@ plc_claim_livonia = {
             name = plc_livonia_claims_done
             value = yes
         }
-        s:STATE_TARTU = { add_claim = THIS }
-        s:STATE_RIGA = { add_claim = THIS }
-        s:STATE_COURLAND = { add_claim = THIS }
+        s:STATE_TARTU = { add_claim = ROOT }
+        s:STATE_RIGA = { add_claim = ROOT }
+        s:STATE_COURLAND = { add_claim = ROOT }
 
         change_infamy = 15
     }
@@ -106,11 +106,11 @@ plc_claim_kresy = {
             name = plc_kresy_claims_done
             value = yes
         }
-        s:STATE_MINSK = { add_claim = THIS }
-        s:STATE_KIEV = { add_claim = THIS }
-        s:STATE_VITEBSK = { add_claim = THIS }
-        s:STATE_MOGILEV = { add_claim = THIS }
-        s:STATE_CHERNIHIV = { add_claim = THIS }
+        s:STATE_MINSK = { add_claim = ROOT }
+        s:STATE_KIEV = { add_claim = ROOT }
+        s:STATE_VITEBSK = { add_claim = ROOT }
+        s:STATE_MOGILEV = { add_claim = ROOT }
+        s:STATE_CHERNIHIV = { add_claim = ROOT }
 
         change_infamy = 20
     }
