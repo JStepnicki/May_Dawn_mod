@@ -1,119 +1,199 @@
-# 🌅 May Dawn
-### *Survival is not victory. It is only the beginning of the struggle.*
+🌅 May Dawn: A Commonwealth (Poland–Lithuania)
 
-**May Dawn** is an alternate history total conversion mod for **Victoria 3**, exploring a world in which the Polish–Lithuanian Commonwealth narrowly avoided total annihilation during the partitions.
+"Because we do not beg for freedom, we fight for it." - Witold Urbanowicz
 
-Survival, however, came at a horrifying cost.
+May Dawn is an alternate-history total conversion mod for Victoria 3 exploring a world where the Polish–Lithuanian Commonwealth did not disappear — it endured, reformed, and survived against overwhelming odds.
 
-This is not a story of revival or a new Golden Age.  
-This is the story of a state trapped in permanent crisis — modernizing under coercion, drowning in debt, and living under the constant shadow of Russian bayonets.
+Instead of partitions and extinction, the Commonwealth emerges into 1836 wounded, indebted, and militarized — a state balanced between rebirth and collapse.
 
----
+📜 Lore — A Bitter Independence
 
-## 📜 Lore – The Bitter Taste of Reform
+The year 1791 changed everything.
 
-The year **1791** brought no peace.
+In this timeline, the Targowica Confederation was crushed. Reform triumphed — but unity did not survive the victory. The Commonwealth became a fortress state, constantly preparing for the next invasion.
 
-The **Constitution of May 3rd** was ratified, but its enforcement fractured the Commonwealth from within. The magnates, stripped of the *liberum veto*, resisted with conspiracies and sabotage, while early attempts to place the peasantry under legal protection ignited bloody uprisings across the eastern latifundia.
+When Napoleon rose, Poland saw opportunity rather than ideology — a chance for vengeance and restoration.
 
-When Napoleon rose over Europe, Poland embraced him — not out of admiration, but desperation.
+During the Napoleonic Wars, the Commonwealth successfully reclaimed:
 
-The alliance with France restored **Greater Poland** and **Danzig**, but transformed the Commonwealth into a vast military camp. Every horse, every sack of grain, every able-bodied man was sacrificed to sustain the Emperor’s wars.
+Galicia from Austria
 
----
+Royal Prussia from the Hohenzollerns
 
-## ⚔️ The Miracle on the Bug & the Blood Border
+But history still demanded its price.
 
-In **1812**, as the Grande Armée froze and collapsed in Russia, Poland became the last line of resistance.
+The 1812 march on Moscow ended in the same frozen catastrophe. As the Grande Armée collapsed, the Polish Crown Army was left isolated, exhausted, and alone.
 
-The so-called **“Miracle on the Bug”** was no glorious triumph. It was a massacre.  
-Fragments of the Crown Army, peasant scythe-men, and urban militias stopped the Russian advance through sheer exhaustion and bloodshed.
+⚔️ The Miracle on the Bug & Treaty of Minsk (1814)
 
-The peace that followed was merciless.
+Victory never came — only survival.
 
-The Commonwealth survived — but lost its **“eastern lungs.”**  
-**Minsk and Kiev** were absorbed by the Tsardom and transformed into fortress-cities aimed directly at Warsaw.
+Peasant scythe-men and shattered regular forces halted the Russian advance through sheer exhaustion and desperation. The resulting peace became a calculated humiliation meant to cripple the Commonwealth permanently.
 
-Today, the eastern frontier is a **Death Zone** — a scarred no-man’s-land where peace is merely an intermission before the next inevitable war.
+Consequences of the Treaty:
 
----
+The Shattered East
+Borders reverted roughly to the First Partition — with further territorial losses pushing the frontier westward.
 
-## 🗺️ 1836 – A State of Iron and Mud
+The Debt Trap
+Massive reparations to St. Petersburg continue draining the treasury in 1836.
 
-You begin the game in **1836**, with the Napoleonic Wars barely behind you and catastrophe looming ahead.
+Scorched Borderlands
+The Kresy became a militarized wasteland — an integrated No-Man’s-Land between empires.
 
-### Key Starting Conditions
+The Commonwealth survives — but barely.
 
-- **The Constitution in Practice**  
-  Progressive laws exist — on paper. In reality, the Sejm is a battlefield of ancient noble houses, corrupt officials, and an emerging but fragile bourgeoisie.
+✅ Current Features
+🇵🇱 The Sovereign Commonwealth
 
-- **The Social Cauldron**  
-  Peasants are “under legal protection,” yet forced labor persists. Rural unrest is nearing detonation.  
-  Burghers possess rights, but lack the capital necessary to industrialize the state.
+Fully playable Poland with capital in Warsaw
 
-- **Existential Threats**  
-  - **Prussia** covets Danzig  
-  - **Austria** dreams of reclaiming Kraków  
-  - **Russia** waits patiently for a single moment of weakness
+Custom 1836 borders
 
-Independence is temporary. Collapse is always an option.
+Standing professional army
 
----
+Laws inspired by the reforms of the 3rd May Constitution
 
-## 🛠️ Key Features
+👥 Demographic Scars
 
-### 🔥 Atmosphere of Unrest
-- Custom events covering:
-  - Noble conspiracies
-  - Peasant revolts
-  - Constitutional crises
-  - Military dominance over civilian life
+Population reduced by nearly one-sixth after decades of warfare
 
-### 💸 Economy of Desperation
-- Enormous starting **national debt**
-- A bloated military budget threatening bankruptcy
-- Forced, high-risk industrialization paths
+Recovery becomes a central gameplay challenge
 
-### 🌍 The Courland Gambit
-- Manage the loyal vassal **Duchy of Courland**
-- Attempt to revive its historical colonial ambitions in the Tropics
-- Colonial profits may be the difference between survival and collapse
+🏭 Fragmented Industrial Base
 
-### 🧱 Strategic Frontiers
-- Unique eastern border setup:
-  - Militarized zones
-  - Devastated provinces
-  - Reduced economic integration
-- A “broken” frontier designed for defensive, attritional warfare
+Rudimentary, partially rebuilt industry
 
----
+Early gameplay focuses on:
 
-## 🎯 Design Philosophy
+Reconstruction
 
-**May Dawn** is not about easy power fantasy.
+Modernization
 
-It is about:
-- Delaying inevitable wars
-- Balancing reform with internal stability
-- Choosing *which* part of society will bleed next
+Reducing foreign dependence
 
-Victory is never permanent.  
-Independence must be renegotiated every decade.
+⚔️ European-Model Army
 
----
+A smaller but elite professional military:
 
-## ❓ Will You Endure?
+Comparable morale and battlefield performance to Prussian standards
 
-Can you:
-- Maintain fragile independence among predatory empires?
-- Reform society without igniting civil war?
-- Transform a feudal relic into an industrial state — before Russia finishes what the partitions began?
+Veteran officer corps
 
-Or will the ticking bomb of social reform tear the Commonwealth apart from within?
+Defensive elite force rather than mass conscription
 
----
+Design Philosophy: Quality over quantity.
 
-## ⚙️ Installation
+🔥 National Modifier — Post-War Ruin
+Effect	Value
+Birth Rate	+10%
+Construction Efficiency	−10%
+Agricultural Output	−15%
+Armed Forces Political Strength	+50%
+Army Morale	+10%
 
-1. Download or clone the repository
-2. Place the mod folder in:
+The nation rebuilds while the military safeguards stability.
+
+🗺️ National Decisions — Reclaiming the Lost Lands
+
+Special decisions allow diplomatic or military attempts to reclaim historic territories lost during the Partitions.
+
+Outcomes include:
+
+Prestige rewards
+
+Political consequences
+
+Rising tensions with European Great Powers
+
+🏙️ Dynamic Polish Localization
+
+New Polish dynamic names for cities and states
+
+Corrections and improvements to existing localization
+
+🧭 The Identity Path
+
+Choose the future of the Commonwealth:
+
+Polonization Path — Centralized national identity through cultural assimilation
+
+Federation Path — Accept Lithuanians, Belarusians, and Ukrainians into a multinational state
+
+Your decision reshapes politics, stability, and diplomacy.
+
+🚧 Roadmap (Planned Features)
+⚔️ Internal Stability & The Nobility
+
+Magnate Purges
+Reactionary nobles resist reforms — suppress them or risk coups and rebellion.
+
+The Serfdom Question
+Peasants demand the abolition of Pańszczyzna. Ignore them, and rural unrest may ignite revolution.
+
+🌍 Ethnic & Frontier Management
+
+The Kresy Revitalization
+
+Journal Entries focused on rebuilding the devastated eastern frontier
+
+Migration incentives
+
+State investment and modernization projects
+
+🚩 The Grand Vengeance (Late Game)
+
+Long-term strategic objectives allowing the Commonwealth to dismantle the partitioning powers, including:
+
+Breaking the Austrian Empire
+
+Supporting independence movements in:
+
+Czechia
+
+Hungary
+
+Croatia
+
+🎯 Design Goals
+
+Grounded alternate history rather than fantasy
+
+A survival-focused early game
+
+Political instability as a core mechanic
+
+Military strength balanced by economic weakness
+
+Meaningful ideological and cultural choices
+
+🛠️ Installation
+
+Download from steam workshop
+
+For manual instalation unzip files to Victoria3/mod folder
+
+🐞 Feedback & Contributions
+Please share:
+
+Balance suggestions
+
+Bug reports
+
+Historical feedback
+
+Gameplay ideas
+
+Flavor/event concepts
+
+Open an Issue or start a discussion!
+
+📌 Planned Compatibility
+
+Designed for current Victoria 3 versions
+
+Future compatibility patches planned
+
+❤️ Credits
+
+Created by: Jakub Stępnicki
