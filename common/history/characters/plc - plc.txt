@@ -40,7 +40,7 @@
             age = 58
             ig_leader = yes
             interest_group = ig_industrialists
-            ideology = ideology_liberal
+            ideology = ideology_liberal_leader
             traits = {
             }
         }
@@ -84,7 +84,7 @@
             age = 36 # Ur. 1800
             ig_leader = yes
             interest_group = ig_petty_bourgeoisie
-            ideology = ideology_liberal
+            ideology = ideology_liberal_leader
             traits = {
             }
         }
@@ -99,7 +99,7 @@
             ig_leader = yes
             age = 49 # Ur. 1787
             interest_group = ig_rural_folk
-            ideology = ideology_agrarian
+            ideology = ideology_luddite
 
         }
 

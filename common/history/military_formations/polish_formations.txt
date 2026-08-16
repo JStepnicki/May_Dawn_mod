@@ -3,7 +3,7 @@
         # --- ARMIA KORONNA (Główna Siła Uderzeniowa) ---
         create_military_formation = {
             type = army
-            hq_region = sr:region_poland
+            hq_region = sr:region_eastern_europe
             name = "Armia Koronna"
 
             # Greater Poland – największy wkład
@@ -34,7 +34,7 @@
             first_name = plc_gen_Jan_Zygmunt
             last_name = plc_gen_Skrzynecki
             historical = yes
-            hq = region_poland
+            hq = region_eastern_europe
             commander_rank = commander_rank_3
             interest_group = ig_armed_forces
             ideology = ideology_moderate
@@ -53,7 +53,7 @@
         # --- ARMIA LITEWSKA (Obrona Północy) ---
         create_military_formation = {
             type = army
-            hq_region = sr:region_poland
+            hq_region = sr:region_eastern_europe
             name = "Armia Litewska"
 
             combat_unit = {
@@ -86,7 +86,7 @@
             first_name = plc_gen_Ignacy
             last_name = plc_gen_Pradzynski
             historical = yes
-            hq = region_poland
+            hq = region_eastern_europe
             commander_rank = commander_rank_1
             age = 44
             interest_group = ig_armed_forces
@@ -105,7 +105,7 @@
         # --- ARMIA RUSI CZERWONEJ (Front Południowo-Wschodni) ---
         create_military_formation = {
             type = army
-            hq_region = sr:region_poland
+            hq_region = sr:region_eastern_europe
             name = "Armia Rusi Czerwonej"
 
             combat_unit = {
@@ -138,7 +138,7 @@
             first_name = plc_gen_Jozef
             last_name = plc_gen_Bem
             historical = yes
-            hq = region_poland
+            hq = region_eastern_europe
             commander_rank = commander_rank_1
             interest_group = ig_armed_forces
             ideology = ideology_radical

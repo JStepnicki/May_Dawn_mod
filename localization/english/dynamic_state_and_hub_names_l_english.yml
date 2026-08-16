@@ -23,6 +23,7 @@
 
  STATE_VOLHYNIA_polish: "Województwo Wołyńskie"
  HUB_NAME_STATE_VOLHYNIA_city_polish: "Łuck"
+ HUB_NAME_STATE_VOLHYNIA_port_polish: ""
  HUB_NAME_STATE_VOLHYNIA_mine_polish: "Krzemieniec"
  HUB_NAME_STATE_VOLHYNIA_farm_polish: "Włodzimierz"
  HUB_NAME_STATE_VOLHYNIA_wood_polish: "Równe"
@@ -52,6 +53,7 @@
 
  STATE_KHARKOV_polish: "Charkowszczyzna"
  HUB_NAME_STATE_KHARKOV_city_polish: "Charków"
+ HUB_NAME_STATE_KHARKOV_port_polish: ""
  HUB_NAME_STATE_KHARKOV_mine_polish: "Połtawa"
  HUB_NAME_STATE_KHARKOV_farm_polish: "Sumy"
  HUB_NAME_STATE_KHARKOV_wood_polish: "Starobielsk"
@@ -105,6 +107,7 @@
  # Czernihów
  STATE_CHERNIHIV_polish: "Czernihowszczyzna"
  HUB_NAME_STATE_CHERNIHIV_city_polish: "Czernihów"
+ HUB_NAME_STATE_CHERNIHIV_port_polish: ""
  HUB_NAME_STATE_CHERNIHIV_mine_polish: "Nowozybkow"
  HUB_NAME_STATE_CHERNIHIV_farm_polish: "Konotop"
  HUB_NAME_STATE_CHERNIHIV_wood_polish: "Hłuchów"
@@ -121,6 +124,7 @@
  # Brześć / Grodno
  STATE_BREST_polish: "Polesie"
  HUB_NAME_STATE_BREST_city_polish: "Grodno"
+ HUB_NAME_STATE_BREST_port_polish: ""
  HUB_NAME_STATE_BREST_farm_polish: "Brześć Litewski"
  HUB_NAME_STATE_BREST_wood_polish: "Oszmiana"
  HUB_NAME_STATE_BREST_mine_polish: "Wołkowysk"
@@ -135,6 +139,7 @@
 
  STATE_MINSK_polish: "Biała Ruś"
  HUB_NAME_STATE_MINSK_city_polish: "Mińsk"
+ HUB_NAME_STATE_MINSK_port_polish: ""
  HUB_NAME_STATE_MINSK_mine_polish: "Kojdanów"
  HUB_NAME_STATE_MINSK_farm_polish: "Słuck"
  HUB_NAME_STATE_MINSK_wood_polish: "Borysów"
@@ -149,6 +154,7 @@
 
  STATE_MOGILEV_polish: "Mohylewszczyzna"
  HUB_NAME_STATE_MOGILEV_city_polish: "Mohylew"
+ HUB_NAME_STATE_MOGILEV_port_polish: ""
  HUB_NAME_STATE_MOGILEV_mine_polish: "Homel"
  HUB_NAME_STATE_MOGILEV_farm_polish: "Orsza"
  HUB_NAME_STATE_MOGILEV_wood_polish: "Rogaczew"
@@ -163,6 +169,7 @@
 
  STATE_VITEBSK_polish: "Witebszczyzna"
  HUB_NAME_STATE_VITEBSK_city_polish: "Witebsk"
+ HUB_NAME_STATE_VITEBSK_port_polish: ""
  HUB_NAME_STATE_VITEBSK_mine_polish: "Gródek"
  HUB_NAME_STATE_VITEBSK_farm_polish: "Połock"
  HUB_NAME_STATE_VITEBSK_wood_polish: "Lepel"
@@ -172,6 +179,7 @@
  # Posen - German by default
  STATE_POSEN_polish: "Wielkopolska"
  HUB_NAME_STATE_POSEN_city_polish: "Poznań"
+ HUB_NAME_STATE_POSEN_port_polish: ""
  HUB_NAME_STATE_POSEN_port_russian: ""
  HUB_NAME_STATE_POSEN_mine_polish: "Leszno"
  HUB_NAME_STATE_POSEN_farm_polish: "Bydgoszcz"
@@ -188,6 +196,7 @@
  # Warszawa / Łęczyca
  STATE_GREATER_POLAND_polish: "Ziemia Łęczycko-Sieradzka"
  HUB_NAME_STATE_GREATER_POLAND_city_polish: "Warszawa"
+ HUB_NAME_STATE_GREATER_POLAND_port_polish: ""
  HUB_NAME_STATE_GREATER_POLAND_mine_polish: "Łódź"
  HUB_NAME_STATE_GREATER_POLAND_farm_polish: "Radom"
  HUB_NAME_STATE_GREATER_POLAND_wood_polish: "Częstochowa"
@@ -202,6 +211,7 @@
 
  STATE_LESSER_POLAND_polish: "Małopolska"
  HUB_NAME_STATE_LESSER_POLAND_city_polish: "Lublin"
+ HUB_NAME_STATE_LESSER_POLAND_port_polish: ""
  HUB_NAME_STATE_LESSER_POLAND_mine_polish: "Siedlce"
  HUB_NAME_STATE_LESSER_POLAND_farm_polish: "Chełm"
  HUB_NAME_STATE_LESSER_POLAND_wood_polish: "Biała Podlaska"
@@ -216,6 +226,7 @@
 
  STATE_MAZOVIA_polish: "Mazowsze"
  HUB_NAME_STATE_MAZOVIA_city_polish: "Płock"
+ HUB_NAME_STATE_MAZOVIA_port_polish: ""
  HUB_NAME_STATE_MAZOVIA_mine_polish: "Mława"
  HUB_NAME_STATE_MAZOVIA_farm_polish: "Łomża"
  HUB_NAME_STATE_MAZOVIA_wood_polish: "Białystok"
@@ -231,6 +242,7 @@
 
  STATE_WEST_GALICIA_polish: "Województwo Krakowskie"
  HUB_NAME_STATE_WEST_GALICIA_city_polish: "Kraków"
+ HUB_NAME_STATE_WEST_GALICIA_port_polish: ""
  HUB_NAME_STATE_WEST_GALICIA_mine_polish: "Jarosław"
  HUB_NAME_STATE_WEST_GALICIA_farm_polish: "Rzeszów"
  HUB_NAME_STATE_WEST_GALICIA_wood_polish: "Tarnów"
@@ -245,6 +257,7 @@
 
  STATE_EAST_GALICIA_polish: "Ruś Czerwona"
  HUB_NAME_STATE_EAST_GALICIA_city_polish: "Lwów"
+ HUB_NAME_STATE_EAST_GALICIA_port_polish: ""
  HUB_NAME_STATE_EAST_GALICIA_mine_polish: "Kołomyja"
  HUB_NAME_STATE_EAST_GALICIA_farm_polish: "Stanisławów"
  HUB_NAME_STATE_EAST_GALICIA_wood_polish: "Stryj"
@@ -336,6 +349,7 @@
 
  STATE_VILNIUS_polish: "Wileńszczyzna"
  HUB_NAME_STATE_VILNIUS_city_polish: "Wilno"
+ HUB_NAME_STATE_VILNIUS_port_polish: ""
  HUB_NAME_STATE_VILNIUS_farm_polish: "Troki"
  HUB_NAME_STATE_VILNIUS_wood_polish: "Święciany"
  HUB_NAME_STATE_VILNIUS_mine_polish: "Troki"
