@@ -1,0 +1,30 @@
+﻿l_polish:
+ # --- JOURNAL ENTRY ---
+ je_may_dawn_serfdom_question: "Kwestia Pańszczyźniana"
+ je_may_dawn_serfdom_question_reason: "W czarnych latach Cudu nad Bugiem to kosynierzy, nie szlachta, zatrzymali rosyjski marsz na Warszawę. W zamian za krew przelaną pod sztandarami Korony obiecano im wtedy zniesienie pańszczyzny i nadanie ziemi. Dwadzieścia lat później obietnica wciąż czeka na spełnienie, a dwory wciąż żądają odrobku. Chłopstwo pamięta i liczy dni zwłoki. Historia zna już cenę tej cierpliwości: w 1846 roku, gdy nikt inny nie posłuchał chłopskiego gniewu, przemówił on sam. Krwią.\n\nObecny poziom niepokoju na wsi: [Country.MakeScope.Var('plc_serfdom_unrest').GetValue|0]/100"
+ plc_serfdom_question_resolved_tt: "Zreformowaliśmy stosunki na wsi, zanim gniew chłopstwa eksplodował."
+ plc_serfdom_no_rabacja_tt: "Do buntu chłopskiego jeszcze nie doszło."
+ plc_serfdom_unrest_low_tt: "Niepokój na wsi jest niski."
+ plc_rabacja_concluded_tt: "Rabacja Galicyjska już się dokonała."
+
+ # --- WYDARZENIE 1: OSTRZEŻENIE ---
+ may_dawn_serfdom.1.t: "Głosy z Folwarków"
+ may_dawn_serfdom.1.d: "Do Warszawy napływają niepokojące raporty. W Galicji i na Mazowszu chłopi odmawiają odrabiania pańszczyzny, palą księgi dłużne dworów, a w niejednej wsi mówi się już otwarcie o odpłacie szlachcie za pokolenia krzywd. Nazwisko Jakuba Szeli krąży wśród włościan jak hasło. Miejscowi urzędnicy błagają o instrukcje, zanim będzie za późno."
+ may_dawn_serfdom.1.a: "Zarządź natychmiastową reformę stosunków wiejskich"
+ may_dawn_serfdom.1.b: "Wyślij wojsko, by przywróciło porządek na wsi"
+ may_dawn_serfdom.1.c: "Zwlekaj i obserwuj dalszy rozwój sytuacji"
+
+ # --- WYDARZENIE 2: WYBUCH ---
+ may_dawn_serfdom.2.t: "Rabacja Galicyjska"
+ may_dawn_serfdom.2.d: "To, przed czym ostrzegano, stało się faktem. Chłopskie tłumy, uzbrojone w kosy i cepy, ruszyły na dwory. Płoną folwarki od Krakowa po Lwów, a wieści o rzezi szlachty rozchodzą się szybciej niż jakikolwiek rozkaz z Warszawy. Rzeczpospolita, która przetrwała zabory, staje teraz w obliczu wojny domowej we własnym łonie."
+ may_dawn_serfdom.2.a: "Krwawo stłum bunt"
+ may_dawn_serfdom.2.b: "Ustąp - natychmiast znieś resztki poddaństwa (Triumf Chłopstwa)"
+ may_dawn_serfdom.2.c: "Poszukaj kompromisu przez pośredników"
+ may_dawn_serfdom_crush_tt: "Wojsko koronne pacyfikuje zbuntowane wsie. Porządek zostaje przywrócony siłą, lecz pamięć o tej krwi nie zniknie z pieśni ludowych przez pokolenia. Triumf Szlachty."
+ may_dawn_serfdom_concede_tt: "Rząd ogłasza koniec poddaństwa w obliczu buntu. Szlachta płaci cenę za lata zwłoki, ale krew przestaje się lać. Triumf Chłopstwa."
+ may_dawn_serfdom_compromise_tt: "Ani dwór, ani chata nie dostają tego, czego chciały - ale nikt więcej nie ginie. Kruchy, niewygodny kompromis, który nie zadowala nikogo w pełni."
+
+ # --- WYDARZENIE 3: ROZWIĄZANIE POKOJOWE ---
+ may_dawn_serfdom.3.t: "Cichy Koniec Pańszczyzny"
+ may_dawn_serfdom.3.d: "Reforma nadeszła na czas. Tam, gdzie w innej historii płonęły dwory i ginęli ludzie, Rzeczpospolita znalazła drogę bez rozlewu krwi. Jakub Szela pozostanie w pamięci nie jako wódz rzezi, lecz jako głos, który w porę usłyszano."
+ may_dawn_serfdom.3.a: "Dobrze się stało"

@@ -31,3 +31,73 @@ plrc_modifier = {
     state_radicalism_increases_cultural_erasure_mult = -0.4
     state_radicalism_increases_open_prejudice_mult = -0.3
 }
+
+# --- KWESTIA PAŃSZCZYŹNIANA ---
+
+# napięcie na wsi od samego początku - obie strony niezadowolone
+plc_serfdom_tension_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds
+
+	interest_group_ig_landowners_approval_add = -3
+	interest_group_ig_rural_folk_approval_add = -3
+}
+
+# spokojne zniesienie pańszczyzny
+plc_serfdom_resolved_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+
+	interest_group_ig_rural_folk_pol_str_mult = 0.2
+	state_radicalism_increases_violent_hostility_mult = -0.2
+}
+
+# doraźna reforma po ostrzeżeniu
+plc_serfdom_reform_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+
+	interest_group_ig_landowners_pol_str_mult = -0.15
+	interest_group_ig_rural_folk_pol_str_mult = 0.15
+}
+
+# wojsko tłumi niepokoje - odkłada problem na później
+plc_serfdom_repression_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds
+
+	interest_group_ig_armed_forces_pol_str_mult = 0.1
+	interest_group_ig_rural_folk_pol_str_mult = -0.2
+	state_radicalism_increases_violent_hostility_mult = 0.1
+}
+
+# DROGA 1: Triumf Szlachty - bunt stłumiony krwią
+plc_rabacja_scars_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds
+
+	interest_group_ig_landowners_approval_add = 6
+	interest_group_ig_rural_folk_approval_add = -10
+
+	interest_group_ig_landowners_pol_str_mult = 0.25
+	interest_group_ig_rural_folk_pol_str_mult = -0.35
+	state_radicalism_increases_violent_hostility_mult = 0.2
+}
+
+# DROGA 2: Triumf Chłopstwa - szlachta ustępuje pod groźbą kos
+plc_peasants_triumph_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+
+	interest_group_ig_rural_folk_approval_add = 6
+	interest_group_ig_landowners_approval_add = -10
+
+	interest_group_ig_rural_folk_pol_str_mult = 0.35
+	interest_group_ig_landowners_pol_str_mult = -0.35
+	state_radicalism_increases_open_prejudice_mult = -0.1
+}
+
+# DROGA 3: Kompromis - żadna ze stron nie dostaje tego, czego chciała
+plc_serfdom_compromise_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+
+	interest_group_ig_landowners_approval_add = -2
+	interest_group_ig_rural_folk_approval_add = -2
+
+	interest_group_ig_landowners_pol_str_mult = -0.05
+	interest_group_ig_rural_folk_pol_str_mult = 0.05
+}

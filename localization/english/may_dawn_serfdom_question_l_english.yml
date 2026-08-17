@@ -1,0 +1,30 @@
+﻿l_english:
+ # --- JOURNAL ENTRY ---
+ je_may_dawn_serfdom_question: "The Serfdom Question"
+ je_may_dawn_serfdom_question_reason: "In the black years of the Miracle on the Bug, it was scythe-men, not the nobility, who halted the Russian march on Warsaw. In return for the blood spilled under the Crown's banners, they were promised an end to serfdom and grants of land. Twenty years later, the promise still waits to be kept, and the manors still demand their labour dues. The peasantry remembers, and counts the days of delay. History already knows the price of that patience: in 1846, when no one else listened to the peasants' anger, it spoke for itself. In blood.\n\nCurrent level of rural unrest: [Country.MakeScope.Var('plc_serfdom_unrest').GetValue|0]/100"
+ plc_serfdom_question_resolved_tt: "We reformed the countryside before peasant anger could explode."
+ plc_serfdom_no_rabacja_tt: "The peasant revolt has not yet happened."
+ plc_serfdom_unrest_low_tt: "Rural unrest is low."
+ plc_rabacja_concluded_tt: "The Galician Slaughter has already run its course."
+
+ # --- EVENT 1: WARNING ---
+ may_dawn_serfdom.1.t: "Voices from the Manors"
+ may_dawn_serfdom.1.d: "Disturbing reports reach Warsaw. In Galicia and Mazovia, peasants refuse to render their labour dues, manor debt-ledgers are burning, and in more than one village talk has turned openly to settling accounts with the nobility for generations of wrongs. The name Jakub Szela passes among the villagers like a watchword. Local officials beg for instructions before it is too late."
+ may_dawn_serfdom.1.a: "Order immediate reform of rural relations"
+ may_dawn_serfdom.1.b: "Send the army to restore order in the countryside"
+ may_dawn_serfdom.1.c: "Delay and watch how the situation develops"
+
+ # --- EVENT 2: ERUPTION ---
+ may_dawn_serfdom.2.t: "The Galician Slaughter"
+ may_dawn_serfdom.2.d: "What was feared has come to pass. Peasant crowds, armed with scythes and flails, have marched on the manors. Estates burn from Kraków to Lwów, and word of the nobility's slaughter travels faster than any order out of Warsaw. The Commonwealth, which survived the Partitions, now faces a civil war within its own body."
+ may_dawn_serfdom.2.a: "Crush the revolt in blood"
+ may_dawn_serfdom.2.b: "Concede - abolish the remnants of serfdom immediately (Peasants' Triumph)"
+ may_dawn_serfdom.2.c: "Seek a compromise through mediators"
+ may_dawn_serfdom_crush_tt: "The Crown Army pacifies the rebellious villages. Order is restored by force, but the memory of this blood will not fade from folk songs for generations. The Nobility's Triumph."
+ may_dawn_serfdom_concede_tt: "The government declares an end to serfdom in the face of the revolt. The nobility pays the price for years of delay, but the bloodshed stops. The Peasants' Triumph."
+ may_dawn_serfdom_compromise_tt: "Neither the manor nor the cottage gets what it wanted - but no one dies. A fragile, uncomfortable compromise that satisfies no one fully."
+
+ # --- EVENT 3: PEACEFUL RESOLUTION ---
+ may_dawn_serfdom.3.t: "The Quiet End of Serfdom"
+ may_dawn_serfdom.3.d: "The reform came in time. Where in another history the manors burned and people died, the Commonwealth found a way without bloodshed. Jakub Szela will be remembered not as the leader of a slaughter, but as a voice that was heard in time."
+ may_dawn_serfdom.3.a: "It is well that it happened so"

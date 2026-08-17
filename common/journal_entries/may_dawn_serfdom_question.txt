@@ -1,0 +1,136 @@
+﻿# --- KWESTIA PAŃSZCZYŹNIANA ---
+# Widmo Rabacji Galicyjskiej. Jeśli Rzeczpospolita nie rozwiąże sprawy pańszczyzny,
+# gniew chłopstwa eksploduje tak, jak zrobił to naprawdę w 1846 roku - tylko tym razem
+# uderzy we własne państwo, a nie w zaborcę.
+
+je_may_dawn_serfdom_question = {
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+	group = je_group_poland
+
+	is_shown_in_lobby = {
+		c:PLC ?= this
+	}
+
+	is_shown_when_inactive = {
+		c:PLC ?= this
+	}
+
+	possible = {
+		c:PLC ?= THIS
+	}
+
+	immediate = {
+		set_variable = { name = plc_serfdom_unrest value = 15 }
+
+		add_modifier = {
+			name = plc_serfdom_tension_modifier
+			years = 50
+		}
+
+		add_radicals = {
+			value = small_radicals
+			interest_group = ig:ig_landowners
+		}
+		add_radicals = {
+			value = small_radicals
+			interest_group = ig:ig_rural_folk
+		}
+	}
+
+	on_monthly_pulse = {
+		effect = {
+			if = {
+				limit = { has_law_or_variant = law_type:law_serfdom }
+				change_variable = { name = plc_serfdom_unrest add = 2.5 }
+			}
+			else_if = {
+				limit = { has_law_or_variant = law_type:law_tenant_farmers }
+				change_variable = { name = plc_serfdom_unrest add = 1.2 }
+			}
+			else_if = {
+				limit = {
+					OR = {
+						has_law_or_variant = law_type:law_latifundias
+						has_law_or_variant = law_type:law_expanded_latifundias
+					}
+				}
+				change_variable = { name = plc_serfdom_unrest add = 1.8 }
+			}
+			else_if = {
+				limit = {
+					OR = {
+						has_law_or_variant = law_type:law_commercialized_agriculture
+						has_law_or_variant = law_type:law_peasant_proprietorship
+						has_law_or_variant = law_type:law_homesteading
+						has_law_or_variant = law_type:law_collectivized_agriculture
+					}
+				}
+				change_variable = { name = plc_serfdom_unrest subtract = 3 }
+			}
+
+			if = {
+				limit = { has_variable = plc_serfdom_resentment }
+				change_variable = { name = plc_serfdom_unrest add = 1 }
+			}
+
+			clamp_variable = { name = plc_serfdom_unrest min = 0 max = 100 }
+
+			if = {
+				limit = {
+					var:plc_serfdom_unrest >= 65
+					NOT = { has_variable = plc_rabacja_warned }
+				}
+				set_variable = { name = plc_rabacja_warned value = yes }
+				trigger_event = { id = may_dawn_serfdom.1 days = 3 }
+			}
+
+			if = {
+				limit = {
+					var:plc_serfdom_unrest >= 100
+					NOT = { has_variable = plc_rabacja_erupted }
+				}
+				set_variable = { name = plc_rabacja_erupted value = yes }
+				trigger_event = { id = may_dawn_serfdom.2 days = 1 }
+			}
+		}
+	}
+
+	complete = {
+		custom_tooltip = {
+			text = plc_serfdom_question_resolved_tt
+			OR = {
+				has_law_or_variant = law_type:law_commercialized_agriculture
+				has_law_or_variant = law_type:law_peasant_proprietorship
+				has_law_or_variant = law_type:law_homesteading
+				has_law_or_variant = law_type:law_collectivized_agriculture
+			}
+		}
+		custom_tooltip = {
+			text = plc_serfdom_no_rabacja_tt
+			NOT = { has_variable = plc_rabacja_erupted }
+		}
+		custom_tooltip = {
+			text = plc_serfdom_unrest_low_tt
+			var:plc_serfdom_unrest < 30
+		}
+	}
+
+	on_complete = {
+		remove_modifier = plc_serfdom_tension_modifier
+		add_modifier = {
+			name = plc_serfdom_resolved_modifier
+			years = 15
+		}
+		trigger_event = { id = may_dawn_serfdom.3 days = 0 }
+	}
+
+	fail = {
+		custom_tooltip = {
+			text = plc_rabacja_concluded_tt
+			has_variable = plc_rabacja_concluded
+		}
+	}
+
+	should_be_pinned_by_default = yes
+}

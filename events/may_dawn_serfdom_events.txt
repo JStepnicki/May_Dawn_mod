@@ -1,0 +1,188 @@
+﻿namespace = may_dawn_serfdom
+
+# --- OSTRZEŻENIE: Głosy z Folwarków ---
+may_dawn_serfdom.1 = {
+	type = country_event
+
+	placement = root
+
+	title = may_dawn_serfdom.1.t
+	desc = may_dawn_serfdom.1.d
+
+	duration = 3
+
+	event_image = {
+		video = "votp_monarch_holding_court"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+	trigger = {
+		c:PLC ?= this
+	}
+
+	# OPCJA A: Natychmiastowa reforma
+	option = {
+		name = may_dawn_serfdom.1.a
+		default_option = yes
+
+		change_variable = { name = plc_serfdom_unrest subtract = 30 }
+		clamp_variable = { name = plc_serfdom_unrest min = 0 max = 100 }
+
+		add_modifier = {
+			name = plc_serfdom_reform_modifier
+			years = 5
+		}
+	}
+
+	# OPCJA B: Wojsko tłumi niepokoje
+	option = {
+		name = may_dawn_serfdom.1.b
+
+		change_variable = { name = plc_serfdom_unrest subtract = 15 }
+		clamp_variable = { name = plc_serfdom_unrest min = 0 max = 100 }
+
+		set_variable = { name = plc_serfdom_resentment value = yes }
+
+		add_modifier = {
+			name = plc_serfdom_repression_modifier
+			years = 5
+		}
+	}
+
+	# OPCJA C: Zwlekaj
+	option = {
+		name = may_dawn_serfdom.1.c
+	}
+}
+
+# --- WYBUCH: Rabacja Galicyjska ---
+may_dawn_serfdom.2 = {
+	type = country_event
+
+	placement = root
+
+	title = may_dawn_serfdom.2.t
+	desc = may_dawn_serfdom.2.d
+
+	duration = 3
+
+	event_image = {
+		video = "votp_monarch_holding_court"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	trigger = {
+		c:PLC ?= this
+	}
+
+	# OPCJA A: Krwawo stłum bunt
+	option = {
+		name = may_dawn_serfdom.2.a
+		default_option = yes
+
+		custom_tooltip = may_dawn_serfdom_crush_tt
+
+		s:STATE_WEST_GALICIA = {
+			kill_population_percent_in_state = { percent = 0.03 pop_type = peasants }
+		}
+		s:STATE_EAST_GALICIA = {
+			kill_population_percent_in_state = { percent = 0.03 pop_type = peasants }
+		}
+		s:STATE_LESSER_POLAND = {
+			kill_population_percent_in_state = { percent = 0.02 pop_type = peasants }
+		}
+
+		remove_modifier = plc_serfdom_tension_modifier
+		add_modifier = {
+			name = plc_rabacja_scars_modifier
+			years = 10
+			is_decaying = yes
+		}
+
+		set_variable = { name = plc_serfdom_unrest value = 20 }
+		set_variable = { name = plc_rabacja_concluded value = yes }
+	}
+
+	# OPCJA B: Ustąp - natychmiast znieś resztki poddaństwa
+	option = {
+		name = may_dawn_serfdom.2.b
+
+		custom_tooltip = may_dawn_serfdom_concede_tt
+
+		s:STATE_WEST_GALICIA = {
+			kill_population_percent_in_state = { percent = 0.02 pop_type = aristocrats }
+		}
+		s:STATE_EAST_GALICIA = {
+			kill_population_percent_in_state = { percent = 0.02 pop_type = aristocrats }
+		}
+		s:STATE_LESSER_POLAND = {
+			kill_population_percent_in_state = { percent = 0.015 pop_type = aristocrats }
+		}
+
+		if = {
+			limit = { has_law = law_type:law_serfdom }
+			activate_law = law_type:law_tenant_farmers
+		}
+
+		remove_modifier = plc_serfdom_tension_modifier
+		add_modifier = {
+			name = plc_peasants_triumph_modifier
+			years = 10
+			is_decaying = yes
+		}
+
+		set_variable = { name = plc_serfdom_unrest value = 10 }
+		set_variable = { name = plc_rabacja_concluded value = yes }
+	}
+
+	# OPCJA C: Kompromis - negocjacje przez pośredników
+	option = {
+		name = may_dawn_serfdom.2.c
+
+		custom_tooltip = may_dawn_serfdom_compromise_tt
+
+		if = {
+			limit = { has_law = law_type:law_serfdom }
+			activate_law = law_type:law_tenant_farmers
+		}
+
+		remove_modifier = plc_serfdom_tension_modifier
+		add_modifier = {
+			name = plc_serfdom_compromise_modifier
+			years = 8
+			is_decaying = yes
+		}
+
+		set_variable = { name = plc_serfdom_unrest value = 40 }
+		set_variable = { name = plc_rabacja_concluded value = yes }
+	}
+}
+
+# --- ROZWIĄZANIE POKOJOWE ---
+may_dawn_serfdom.3 = {
+	type = country_event
+
+	placement = root
+
+	title = may_dawn_serfdom.3.t
+	desc = may_dawn_serfdom.3.d
+
+	duration = 3
+
+	event_image = {
+		video = "votp_monarch_holding_court"
+	}
+
+	icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+	trigger = {
+		c:PLC ?= this
+	}
+
+	option = {
+		name = may_dawn_serfdom.3.a
+		default_option = yes
+	}
+}
