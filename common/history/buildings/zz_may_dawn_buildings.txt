@@ -37,7 +37,34 @@
 						region = "STATE_MAZOVIA"
 					}
 				}
-			}}
+			}
+			create_building = {
+				building = "building_tooling_workshop"
+				add_ownership = {
+					building = {
+						type = "building_manor_house"
+						country = "c:PLC"
+						levels = 2
+						region = "STATE_MAZOVIA"
+					}
+				}
+				reserves = 1
+				activate_production_methods = { "pm_crude_tools" "pm_automation_disabled" }
+			}
+			create_building = {
+				building = "building_iron_mine"
+				add_ownership = {
+					building = {
+						type = "building_manor_house"
+						country = "c:PLC"
+						levels = 2
+						region = "STATE_MAZOVIA"
+					}
+				}
+				reserves = 1
+				activate_production_methods = { "pm_atmospheric_engine_pump_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
+			}
+		}
     }
 
     # --- LESSER POLAND ---
@@ -111,6 +138,20 @@
 				}
 				reserves=1
 				activate_production_methods={ "pm_artificial_fertilizers"  }
+			}
+
+			create_building = {
+				building = "building_iron_mine"
+				add_ownership = {
+					building = {
+						type = "building_manor_house"
+						country = "c:PLC"
+						levels = 2
+						region = "STATE_LESSER_POLAND"
+					}
+				}
+				reserves = 1
+				activate_production_methods = { "pm_atmospheric_engine_pump_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
 			}
 
 			}
@@ -276,6 +317,20 @@
 				subsidized=yes
 				reserves=1
 				activate_production_methods={ "pm_percussion_caps" "pm_automation_disabled"  }
+			}
+
+			create_building = {
+				building = "building_iron_mine"
+				add_ownership = {
+					building = {
+						type = "building_manor_house"
+						country = "c:PLC"
+						levels = 2
+						region = "STATE_GREATER_POLAND"
+					}
+				}
+				reserves = 1
+				activate_production_methods = { "pm_atmospheric_engine_pump_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
 			}
 			}
     }

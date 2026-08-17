@@ -11,5 +11,7 @@ DIPLOMACY = {
 		set_relations = { country = c:TUR value = 50 }
 	
 		set_relations = { country = c:FRA value = 20 }
+
+		set_relations = { country = c:COU value = 20 }
 	}
 }
