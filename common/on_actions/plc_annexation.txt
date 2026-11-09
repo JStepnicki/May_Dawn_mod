@@ -1,6 +1,8 @@
 ﻿# --- PLC ANNEXATION ON ACTIONS ---
-# This file ensures that the last "stub" provinces of the occupiers
-# are transferred to PLC/COU on day 0.
+# Historia stanów z vanilli tworzy w tych regionach stany Rosji, Polski (POL), Austrii i Prus,
+# a historia moda zabiera im prowincje. Zostają wtedy resztki albo puste "split state" bez terytorium.
+# Zamiast przenosić pojedyncze prowincje (co psuło się, gdy patch zmieniał mapę),
+# przekazujemy PLC/COU każdy obcy stan w regionie – gra scala je w jeden stan.
 
 on_game_started = {
     on_actions = {
@@ -10,107 +12,83 @@ on_game_started = {
 
 plc_history_setup_on_action = {
     effect = {
-        # --- MAZOVIA (Stealing the last province from Russia) ---
+        # --- Regiony w całości należące do Rzeczypospolitej ---
         s:STATE_MAZOVIA = {
-            set_owner_of_provinces = {
-                country = c:PLC
-                provinces = { x009F60 } # The "capitol" province of the state
+            every_scope_state = {
+                limit = { NOT = { owner = c:PLC } }
+                set_state_owner = c:PLC
             }
         }
-
-        # --- GREATER POLAND ---
         s:STATE_GREATER_POLAND = {
-            set_owner_of_provinces = {
-                country = c:PLC
-                provinces = { x0E40DA }
+            every_scope_state = {
+                limit = { NOT = { owner = c:PLC } }
+                set_state_owner = c:PLC
             }
         }
-
-        # --- LESSER POLAND ---
         s:STATE_LESSER_POLAND = {
-            set_owner_of_provinces = {
-                country = c:PLC
-                provinces = { x40DF20 }
+            every_scope_state = {
+                limit = { NOT = { owner = c:PLC } }
+                set_state_owner = c:PLC
             }
         }
-
-        # --- POSEN (Stealing the last part from Prussia) ---
         s:STATE_POSEN = {
-            set_owner_of_provinces = {
-                country = c:PLC
-                provinces = { x1FA1E1 }
+            every_scope_state = {
+                limit = { NOT = { owner = c:PLC } }
+                set_state_owner = c:PLC
             }
         }
-
-        # --- WEST PRUSSIA (Gdańsk/Danzig area) ---
         s:STATE_WEST_PRUSSIA = {
-            set_owner_of_provinces = {
-                country = c:PLC
-                provinces = { x178C99 }
+            every_scope_state = {
+                limit = { NOT = { owner = c:PLC } }
+                set_state_owner = c:PLC
             }
         }
-
-        # --- WEST GALICIA ---
         s:STATE_WEST_GALICIA = {
-            set_owner_of_provinces = {
-                country = c:PLC
-                provinces = { x90E060 }
-            }
-            set_owner_of_provinces = {
-                country = c:PLC
-                provinces = { x11E061 }
+            every_scope_state = {
+                limit = { NOT = { owner = c:PLC } }
+                set_state_owner = c:PLC
             }
         }
-
-        # --- EAST GALICIA (Lwów area) ---
         s:STATE_EAST_GALICIA = {
-            set_owner_of_provinces = {
-                country = c:PLC
-                provinces = { xA2805F }
+            every_scope_state = {
+                limit = { NOT = { owner = c:PLC } }
+                set_state_owner = c:PLC
             }
         }
-
-        # --- COURLAND (Transferring to Courland tag) ---
-        s:STATE_COURLAND = {
-            set_owner_of_provinces = {
-                country = c:COU
-                provinces = { x01E021 }
-            }
-        }
-
-        # --- LITHUANIA / KAUNAS ---
         s:STATE_LITHUANIA = {
-            set_owner_of_provinces = {
-                country = c:PLC
-                provinces = { x00E0A0 }
+            every_scope_state = {
+                limit = { NOT = { owner = c:PLC } }
+                set_state_owner = c:PLC
             }
         }
-
-        # --- VILNIUS ---
         s:STATE_VILNIUS = {
-            set_owner_of_provinces = {
-                country = c:PLC
-                provinces = { x0161A0 }
+            every_scope_state = {
+                limit = { NOT = { owner = c:PLC } }
+                set_state_owner = c:PLC
             }
         }
-
-        # --- VOLHYNIA ---
         s:STATE_VOLHYNIA = {
-            set_owner_of_provinces = {
-                country = c:PLC
-                provinces = { x0EB3C7 }
+            every_scope_state = {
+                limit = { NOT = { owner = c:PLC } }
+                set_state_owner = c:PLC
             }
         }
-
-        # --- BREST ---
         s:STATE_BREST = {
-            set_owner_of_provinces = {
-                country = c:PLC
-                provinces = { x157352 }
+            every_scope_state = {
+                limit = { NOT = { owner = c:PLC } }
+                set_state_owner = c:PLC
             }
         }
 
-        # NOTE: For Split States like KIEV or MINSK, do NOT add them here
-        # unless you want to annex the Russian parts as well!
+        # --- Kurlandia ---
+        s:STATE_COURLAND = {
+            every_scope_state = {
+                limit = { NOT = { owner = c:COU } }
+                set_state_owner = c:COU
+            }
+        }
+
+        # UWAGA: KIEV i MINSK są celowo podzielone z Rosją – nie dodawaj ich tutaj,
+        # chyba że chcesz oddać PLC także rosyjskie części.
     }
 }
