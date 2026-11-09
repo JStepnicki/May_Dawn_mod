@@ -3,6 +3,7 @@
  je_imperial_identity: "Polish Imperial Identity"
  je_imperial_identity_desc: "The reclamation of the Borderlands and our rise to Great Power status forces us to decide the final form of our state."
  je_imperial_identity_tt: "We must control #v Minsk#! and #v Kiev#! and hold the status of a #v Great Power#!."
+ je_imperial_identity_reason: "Since the Treaty of Minsk the Commonwealth has survived as a fortress, not a power. Only by reclaiming the Borderlands of #v Minsk#! and #v Kiev#! and standing among the Great Powers can we decide what our state is to become."
 
  # Event
  may_dawn_poland_events.1.t: "Destiny of the Commonwealth"

@@ -1,6 +1,6 @@
 ﻿POPS = {
     s:STATE_MAZOVIA = {
-        region_state:RUS = { kill_population_percent_in_state = { percent = 1 } }
+        region_state:RUS ?= { kill_population_percent_in_state = { percent = 1 } }
         region_state:PLC = {
             create_pop = { culture = polish pop_type = aristocrats size = 12400 }
             create_pop = { culture = polish size = 1108392 }
@@ -14,7 +14,7 @@
     }
 
     s:STATE_GREATER_POLAND = {
-        region_state:RUS = { kill_population_percent_in_state = { percent = 1 } }
+        region_state:RUS ?= { kill_population_percent_in_state = { percent = 1 } }
         region_state:PLC = {
             create_pop = { culture = polish pop_type = aristocrats size = 25000 }
             create_pop = { culture = russian pop_type = aristocrats size = 2300 }
@@ -27,7 +27,7 @@
     }
 
     s:STATE_LESSER_POLAND = {
-        region_state:RUS = { kill_population_percent_in_state = { percent = 1 } }
+        region_state:RUS ?= { kill_population_percent_in_state = { percent = 1 } }
         region_state:PLC = {
             create_pop = { culture = polish size = 683163 }
             create_pop = { culture = polish religion = protestant size = 26000 }
@@ -39,7 +39,7 @@
     }
 
     s:STATE_POSEN = {
-        region_state:PRU = { kill_population_percent_in_state = { percent = 1 } }
+        region_state:PRU ?= { kill_population_percent_in_state = { percent = 1 } }
         region_state:PLC = {
             create_pop = { culture = polish pop_type = aristocrats size = 12000 }
             create_pop = { culture = north_german size = 40400 }
@@ -52,7 +52,7 @@
     }
 
     s:STATE_WEST_PRUSSIA = {
-        region_state:PRU = { kill_population_percent_in_state = { percent = 1 } }
+        region_state:PRU ?= { kill_population_percent_in_state = { percent = 1 } }
         region_state:PLC = {
             create_pop = { culture = polish pop_type = aristocrats size = 8000 }
             create_pop = { culture = polish size = 710000 }
@@ -67,12 +67,12 @@
 
     s:STATE_EAST_PRUSSIA = {
         #LOSES to war and 2 provinces ceasin to West Prussia
-        region_state:PRU = { kill_population_percent_in_state = { percent = 0.15 } }
+        region_state:PRU ?= { kill_population_percent_in_state = { percent = 0.15 } }
     }
 
     s:STATE_WEST_GALICIA = {
-        region_state:AUS = { kill_population_percent_in_state = { percent = 1 } }
-        region_state:KRA = { kill_population_percent_in_state = { percent = 1 } }
+        region_state:AUS ?= { kill_population_percent_in_state = { percent = 1 } }
+        region_state:KRA ?= { kill_population_percent_in_state = { percent = 1 } }
         region_state:PLC = {
             create_pop = { culture = polish size = 1800004 }
             create_pop = { culture = ukrainian size = 152000 }
@@ -84,7 +84,7 @@
     }
 
     s:STATE_EAST_GALICIA = {
-        region_state:AUS = { kill_population_percent_in_state = { percent = 1 } }
+        region_state:AUS ?= { kill_population_percent_in_state = { percent = 1 } }
         region_state:PLC = {
             create_pop = { culture = polish pop_type = aristocrats size = 20000 }
             create_pop = { culture = ukrainian pop_type = aristocrats size = 6000 }
@@ -98,7 +98,7 @@
     }
 
     s:STATE_VILNIUS = {
-        region_state:RUS = { kill_population_percent_in_state = { percent = 1 } }
+        region_state:RUS ?= { kill_population_percent_in_state = { percent = 1 } }
         region_state:PLC = {
             create_pop = { culture = polish pop_type = aristocrats size = 4500 }
             create_pop = { culture = byelorussian size = 147130 }
@@ -111,8 +111,8 @@
         }
     }
 
-    s:STATE_KAUNAS = {
-        region_state:RUS = { kill_population_percent_in_state = { percent = 1 } }
+    s:STATE_LITHUANIA = {
+        region_state:RUS ?= { kill_population_percent_in_state = { percent = 1 } }
         region_state:PLC = {
             create_pop = { culture = polish pop_type = aristocrats size = 4500 }
             create_pop = { culture = lithuanian size = 350000 }
@@ -125,7 +125,7 @@
     }
 
     s:STATE_VOLHYNIA = {
-        region_state:RUS = { kill_population_percent_in_state = { percent = 1 } }
+        region_state:RUS ?= { kill_population_percent_in_state = { percent = 1 } }
         region_state:PLC = {
             create_pop = { culture = ukrainian size = 526356 }
             create_pop = { culture = ashkenazi size = 94529 }
@@ -137,7 +137,7 @@
     }
 
     s:STATE_MINSK = {
-        region_state:RUS = { kill_population_percent_in_state = { percent = 1 } }
+        region_state:RUS ?= { kill_population_percent_in_state = { percent = 1 } }
         region_state:PLC = {
             create_pop = { culture = polish size = 15000 }
             create_pop = { culture = byelorussian size = 285000 }
@@ -146,7 +146,7 @@
             # war losses
             kill_population_percent_in_state = { percent = 0.40 }
         }
-        region_state:RUS = {
+        region_state:RUS ?= {
             create_pop = { culture = polish size = 14910 }
             create_pop = { culture = byelorussian size = 284714 }
             create_pop = { culture = ashkenazi size = 74520 }
@@ -157,8 +157,8 @@
     }
 
     s:STATE_KIEV = {
-        region_state:RUS = { kill_population_percent_in_state = { percent = 1 } }
-        region_state:RUS = {
+        region_state:RUS ?= { kill_population_percent_in_state = { percent = 1 } }
+        region_state:RUS ?= {
             create_pop = { culture = ukrainian pop_type = aristocrats size = 29300 }
             create_pop = { culture = russian pop_type = aristocrats size = 6000 }
             create_pop = { culture = ukrainian size = 1676020 }
@@ -179,7 +179,7 @@
     }
 
     s:STATE_BREST = {
-        region_state:RUS = { kill_population_percent_in_state = { percent = 1 } }
+        region_state:RUS ?= { kill_population_percent_in_state = { percent = 1 } }
         region_state:PLC = {
             create_pop = { culture = byelorussian size = 512334 }
             create_pop = { culture = lithuanian size = 10524 }

@@ -1,17 +1,38 @@
 ﻿BUILDINGS = {
     # --- MAZOVIA ---
     s:STATE_MAZOVIA = {
-        region_state:RUS = {
+        region_state:RUS ?= {
             # Remove Russian base game buildings
-            remove_building = building_rye_farm
-            remove_building = building_logging_camp
+            if = { limit = { has_building = building_rye_farm } remove_building = building_rye_farm }
+            if = { limit = { has_building = building_logging_camp } remove_building = building_logging_camp }
         }
         region_state:PLC = {
+            # May Dawn 0.6: centralna Polska – więcej żywności i przemysłu
+            create_building = {
+                building = "building_rye_farm"
+                add_ownership = { building = { type = "building_manor_house" country = "c:PLC" levels = 3 region = "STATE_MAZOVIA" } }
+                reserves = 1
+                activate_production_methods = { "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" }
+            }
+            # May Dawn 0.6: dodatkowa produkcja żywności (+1)
+            create_building = {
+                building = "building_rye_farm"
+                add_ownership = { building = { type = "building_manor_house" country = "c:PLC" levels = 1 region = "STATE_MAZOVIA" } }
+                reserves = 1
+                activate_production_methods = { "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" }
+            }
+            # May Dawn 0.6: dodatkowa produkcja żywności (+1)
+            create_building = {
+                building = "building_livestock_ranch"
+                add_ownership = { building = { type = "building_manor_house" country = "c:PLC" levels = 1 region = "STATE_MAZOVIA" } }
+                reserves = 1
+                activate_production_methods = {  }
+            }
             create_building = {
                 building = "building_rye_farm"
                 add_ownership = { building = { type = "building_manor_house" country = "c:PLC" levels = 2 region = "STATE_MAZOVIA" } }
                 reserves = 1
-                activate_production_methods = { "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" }
+                activate_production_methods = { "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" }
             }
             create_building = {
                 building = "building_logging_camp"
@@ -52,7 +73,7 @@
 				activate_production_methods = { "pm_crude_tools" "pm_automation_disabled" }
 			}
 			create_building = {
-				building = "building_iron_mine"
+				building = "building_coal_mine"
 				add_ownership = {
 					building = {
 						type = "building_manor_house"
@@ -62,20 +83,34 @@
 					}
 				}
 				reserves = 1
-				activate_production_methods = { "pm_atmospheric_engine_pump_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
+				activate_production_methods = { "pm_atmospheric_engine_pump_building_coal_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
 			}
 		}
     }
 
     # --- LESSER POLAND ---
     s:STATE_LESSER_POLAND = {
-        region_state:RUS = {
+        region_state:RUS ?= {
             # Clean up Russian influence
-            remove_building = building_paper_mill
-            remove_building = building_livestock_ranch
-            remove_building = building_glassworks
+            if = { limit = { has_building = building_paper_mill } remove_building = building_paper_mill }
+            if = { limit = { has_building = building_livestock_ranch } remove_building = building_livestock_ranch }
+            if = { limit = { has_building = building_glassworks } remove_building = building_glassworks }
         }
         region_state:PLC = {
+            # May Dawn 0.6: centralna Polska – więcej żywności i przemysłu
+            create_building = {
+                building = "building_rye_farm"
+                add_ownership = { building = { type = "building_manor_house" country = "c:PLC" levels = 3 region = "STATE_LESSER_POLAND" } }
+                reserves = 1
+                activate_production_methods = { "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" }
+            }
+            # May Dawn 0.6: dodatkowa produkcja żywności (+1)
+            create_building = {
+                building = "building_livestock_ranch"
+                add_ownership = { building = { type = "building_manor_house" country = "c:PLC" levels = 1 region = "STATE_LESSER_POLAND" } }
+                reserves = 1
+                activate_production_methods = {  }
+            }
             create_building = {
                 building = "building_paper_mill"
                 add_ownership = { country = { country = "c:PLC" levels = 1 } }
@@ -159,15 +194,55 @@
 
     # --- GREATER POLAND ---
     s:STATE_GREATER_POLAND = {
-        region_state:RUS = {
-            remove_building = building_textile_mill
-            remove_building = building_trade_center
-            remove_building = building_furniture_manufactory
-            remove_building = building_paper_mill
-            remove_building = building_tooling_workshop
-            remove_building = building_rye_farm
+        region_state:RUS ?= {
+            if = { limit = { has_building = building_textile_mill } remove_building = building_textile_mill }
+            if = { limit = { has_building = building_trade_center } remove_building = building_trade_center }
+            if = { limit = { has_building = building_furniture_manufactory } remove_building = building_furniture_manufactory }
+            if = { limit = { has_building = building_paper_mill } remove_building = building_paper_mill }
+            if = { limit = { has_building = building_tooling_workshop } remove_building = building_tooling_workshop }
+            if = { limit = { has_building = building_rye_farm } remove_building = building_rye_farm }
         }
         region_state:PLC = {
+            # May Dawn 0.6: odbudowa rolnictwa (czyste zboże, bez ziemniaków) + przetwórstwo
+            create_building = {
+                building = "building_rye_farm"
+                add_ownership = { building = { type = "building_manor_house" country = "c:PLC" levels = 3 region = "STATE_GREATER_POLAND" } }
+                reserves = 1
+                activate_production_methods = { "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" }
+            }
+            create_building = {
+                building = "building_food_industry"
+                add_ownership = { building = { type = "building_financial_district" country = "c:PLC" levels = 2 region = "STATE_GREATER_POLAND" } }
+                reserves = 1
+                activate_production_methods = { "pm_bakery" "pm_disabled_canning" "pm_disabled_distillery" "pm_manual_dough_processing" }
+            }
+            # May Dawn 0.6: centralna Polska – więcej żywności i przemysłu
+            create_building = {
+                building = "building_rye_farm"
+                add_ownership = { building = { type = "building_manor_house" country = "c:PLC" levels = 3 region = "STATE_GREATER_POLAND" } }
+                reserves = 1
+                activate_production_methods = { "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" }
+            }
+            create_building = {
+                building = "building_textile_mill"
+                add_ownership = { building = { type = "building_financial_district" country = "c:PLC" levels = 2 region = "STATE_GREATER_POLAND" } }
+                reserves = 1
+                activate_production_methods = { "pm_handsewn_clothes" "pm_traditional_looms" "pm_craftsman_sewing" }
+            }
+            # May Dawn 0.6: dodatkowa produkcja żywności (+1)
+            create_building = {
+                building = "building_rye_farm"
+                add_ownership = { building = { type = "building_manor_house" country = "c:PLC" levels = 1 region = "STATE_GREATER_POLAND" } }
+                reserves = 1
+                activate_production_methods = { "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" }
+            }
+            # May Dawn 0.6: dodatkowa produkcja żywności (+1)
+            create_building = {
+                building = "building_livestock_ranch"
+                add_ownership = { building = { type = "building_manor_house" country = "c:PLC" levels = 1 region = "STATE_GREATER_POLAND" } }
+                reserves = 1
+                activate_production_methods = {  }
+            }
             create_building = {
                 building = "building_textile_mill"
                 add_ownership = { building = { type = "building_textile_mill" country = "c:PLC" levels = 1 region = "STATE_GREATER_POLAND" } }
@@ -184,7 +259,7 @@
                 building = "building_rye_farm"
                 add_ownership = { building = { type = "building_manor_house" country = "c:PLC" levels = 3 region = "STATE_GREATER_POLAND" } }
                 reserves = 1
-                activate_production_methods = { "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" }
+                activate_production_methods = { "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" }
             }
             create_building = {
                 building = "building_logging_camp"
@@ -337,13 +412,27 @@
 
     # --- POSEN (Split from Prussia) ---
     s:STATE_POSEN = {
-        region_state:PRU = {
+        region_state:PRU ?= {
             # Clear Prussian buildings in the split state
-            remove_building = building_food_industry
-            remove_building = building_rye_farm
-            remove_building = building_livestock_ranch
+            if = { limit = { has_building = building_food_industry } remove_building = building_food_industry }
+            if = { limit = { has_building = building_rye_farm } remove_building = building_rye_farm }
+            if = { limit = { has_building = building_livestock_ranch } remove_building = building_livestock_ranch }
         }
         region_state:PLC = {
+            # May Dawn 0.6: odbudowa rolnictwa (czyste zboże, bez ziemniaków) + przetwórstwo
+            create_building = {
+                building = "building_rye_farm"
+                add_ownership = { building = { type = "building_manor_house" country = "c:PLC" levels = 3 region = "STATE_POSEN" } }
+                reserves = 1
+                activate_production_methods = { "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" }
+            }
+            # May Dawn 0.6: dodatkowa produkcja żywności (+1)
+            create_building = {
+                building = "building_rye_farm"
+                add_ownership = { building = { type = "building_manor_house" country = "c:PLC" levels = 1 region = "STATE_POSEN" } }
+                reserves = 1
+                activate_production_methods = { "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" }
+            }
             create_building = {
                 building = "building_rye_farm"
                 add_ownership = { building = { type = "building_manor_house" country = "c:PLC" levels = 1 region = "STATE_GREATER_POLAND" } }
@@ -405,16 +494,43 @@
 
     # --- WEST GALICIA (Merged from Austria and Krakow) ---
     s:STATE_WEST_GALICIA = {
-        region_state:AUS = {
-            remove_building = building_government_administration
-            remove_building = building_rye_farm
-            remove_building = building_livestock_ranch
+        region_state:AUS ?= {
+            if = { limit = { has_building = building_government_administration } remove_building = building_government_administration }
+            if = { limit = { has_building = building_rye_farm } remove_building = building_rye_farm }
+            if = { limit = { has_building = building_livestock_ranch } remove_building = building_livestock_ranch }
         }
-        region_state:KRA = {
-            remove_building = building_university
-            remove_building = building_textile_mill
+        region_state:KRA ?= {
+            if = { limit = { has_building = building_university } remove_building = building_university }
+            if = { limit = { has_building = building_textile_mill } remove_building = building_textile_mill }
         }
         region_state:PLC = {
+            # May Dawn 0.6: odbudowa rolnictwa (czyste zboże, bez ziemniaków) + przetwórstwo
+            create_building = {
+                building = "building_rye_farm"
+                add_ownership = { building = { type = "building_manor_house" country = "c:PLC" levels = 4 region = "STATE_WEST_GALICIA" } }
+                reserves = 1
+                activate_production_methods = { "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" }
+            }
+            create_building = {
+                building = "building_food_industry"
+                add_ownership = { building = { type = "building_financial_district" country = "c:PLC" levels = 1 region = "STATE_WEST_GALICIA" } }
+                reserves = 1
+                activate_production_methods = { "pm_bakery" "pm_disabled_canning" "pm_disabled_distillery" "pm_manual_dough_processing" }
+            }
+            # May Dawn 0.6: dodatkowa produkcja żywności (+1)
+            create_building = {
+                building = "building_rye_farm"
+                add_ownership = { building = { type = "building_manor_house" country = "c:PLC" levels = 1 region = "STATE_WEST_GALICIA" } }
+                reserves = 1
+                activate_production_methods = { "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" }
+            }
+            # May Dawn 0.6: dodatkowa produkcja żywności (+1)
+            create_building = {
+                building = "building_livestock_ranch"
+                add_ownership = { building = { type = "building_manor_house" country = "c:PLC" levels = 1 region = "STATE_WEST_GALICIA" } }
+                reserves = 1
+                activate_production_methods = {  }
+            }
             create_building = {
                 building = "building_university"
                 add_ownership = { country = { country = "c:PLC" levels = 2 } }
@@ -493,18 +609,18 @@
 
 # --- WEST PRUSSIA (Gdańsk/Danzig - The Gate to the World) ---
     s:STATE_WEST_PRUSSIA = {
-        region_state:PRU = {
+        region_state:PRU ?= {
             # Totalne czyszczenie pruskich struktur
-            remove_building = building_trade_center
-            remove_building = building_fishing_wharf
-            remove_building = building_rye_farm
-            remove_building = building_port
+            if = { limit = { has_building = building_trade_center } remove_building = building_trade_center }
+            if = { limit = { has_building = building_fishing_wharf } remove_building = building_fishing_wharf }
+            if = { limit = { has_building = building_rye_farm } remove_building = building_rye_farm }
+            if = { limit = { has_building = building_port } remove_building = building_port }
         }
         region_state:PLC = {
             # Polska Infrastruktura Portowa (Gdańsk)
             create_building = {
                 building = "building_port"
-                level = 3
+                add_ownership = { country = { country = "c:PLC" levels = 3 } }
                 activate_production_methods = { "pm_basic_port" }
                 reserves = 1
             }
@@ -564,7 +680,7 @@
 
     # --- COURLAND (Handled by COU) ---
     s:STATE_COURLAND = {
-        region_state:UBD = { remove_building = building_rye_farm }
+        region_state:UBD ?= { remove_building = building_rye_farm }
         region_state:COU = {
             create_building = {
                 building = "building_rye_farm"
@@ -590,10 +706,10 @@
 
     # --- KIEV (Split 60% RUS / 40% PLC) ---
     s:STATE_KIEV = {
-        region_state:RUS = {
+        region_state:RUS ?= {
             # Russia keeps some, but we remove the part taken by PLC
-            remove_building = building_food_industry
-            remove_building = building_wheat_farm
+            if = { limit = { has_building = building_food_industry } remove_building = building_food_industry }
+            if = { limit = { has_building = building_wheat_farm } remove_building = building_wheat_farm }
         }
         region_state:PLC = {
             create_building = {
@@ -626,11 +742,25 @@
 
     # --- BREST & VOLHYNIA ---
     s:STATE_BREST = {
-        region_state:RUS = {
-        remove_building = building_rye_farm
-        remove_building = building_logging_camp
+        region_state:RUS ?= {
+        if = { limit = { has_building = building_rye_farm } remove_building = building_rye_farm }
+        if = { limit = { has_building = building_logging_camp } remove_building = building_logging_camp }
         }
         region_state:PLC = {
+            # May Dawn 0.6: dodatkowa produkcja żywności (+1)
+            create_building = {
+                building = "building_rye_farm"
+                add_ownership = { building = { type = "building_manor_house" country = "c:PLC" levels = 1 region = "STATE_BREST" } }
+                reserves = 1
+                activate_production_methods = { "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" }
+            }
+            # May Dawn 0.6: dodatkowa produkcja żywności (+1)
+            create_building = {
+                building = "building_livestock_ranch"
+                add_ownership = { building = { type = "building_manor_house" country = "c:PLC" levels = 1 region = "STATE_BREST" } }
+                reserves = 1
+                activate_production_methods = {  }
+            }
             create_building = {
                 building = "building_rye_farm"
                 add_ownership = { building = { type = "building_manor_house" country = "c:PLC" levels = 5 region = "STATE_BREST" } }
@@ -654,10 +784,17 @@
 
     }
     s:STATE_VOLHYNIA = {
-        region_state:RUS = {
-        remove_building = building_logging_camp
+        region_state:RUS ?= {
+        if = { limit = { has_building = building_logging_camp } remove_building = building_logging_camp }
         }
         region_state:PLC = {
+            # May Dawn 0.6: odbudowa rolnictwa (czyste zboże, bez ziemniaków) + przetwórstwo
+            create_building = {
+                building = "building_wheat_farm"
+                add_ownership = { building = { type = "building_manor_house" country = "c:PLC" levels = 2 region = "STATE_VOLHYNIA" } }
+                reserves = 1
+                activate_production_methods = { "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" }
+            }
 
 			create_building = {
 				building = "building_logging_camp"
@@ -672,5 +809,30 @@
 					}
 				}
 			}}
+    }
+
+    # --- MIŃSK (polska część) – May Dawn 0.6 ---
+    s:STATE_MINSK = {
+        region_state:PLC ?= {
+            create_building = {
+                building = "building_rye_farm"
+                add_ownership = { building = { type = "building_manor_house" country = "c:PLC" levels = 2 region = "STATE_MINSK" } }
+                reserves = 1
+                activate_production_methods = { "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" }
+            }
+        }
+    }
+
+    # --- EAST_GALICIA – May Dawn 0.6 ---
+    s:STATE_EAST_GALICIA = {
+        region_state:PLC ?= {
+            # May Dawn 0.6: odbudowa rolnictwa (czyste zboże, bez ziemniaków) + przetwórstwo
+            create_building = {
+                building = "building_wheat_farm"
+                add_ownership = { building = { type = "building_manor_house" country = "c:PLC" levels = 4 region = "STATE_EAST_GALICIA" } }
+                reserves = 1
+                activate_production_methods = { "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" }
+            }
+        }
     }
 }

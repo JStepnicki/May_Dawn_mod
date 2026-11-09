@@ -1,0 +1,3 @@
+﻿# May Dawn: kra nie istnieje na starcie (ziemie należą do Rzeczypospolitej). Plik celowo pusty – nadpisuje vanillę.
+COUNTRIES = {
+}

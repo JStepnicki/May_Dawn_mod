@@ -1,5 +1,12 @@
 ﻿# PLC Startup Fix
 on_game_started = {
+    on_actions = {
+        may_dawn_on_game_started
+    }
+}
+
+# Osobna on_action – vanilla ma już własny blok effect w on_game_started
+may_dawn_on_game_started = {
     effect = {
         if = {
             limit = {
