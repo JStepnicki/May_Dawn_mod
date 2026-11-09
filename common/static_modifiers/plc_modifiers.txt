@@ -1,7 +1,9 @@
 ﻿# post-war reality
 modifier_post_war_reality = {
     icon = gfx/interface/icons/timed_modifier_icons/modifier_fire_negative.dds
-    unit_morale_damage_mult = 0.10
+    unit_morale_loss_mult = -0.10                         # weterani znad Bugu nie pękają (+10% morale)
+    building_group_bg_agriculture_throughput_add = -0.15  # Kresy wciąż zdewastowane
+    building_group_bg_ranching_throughput_add = -0.15
     state_birth_rate_mult = 0.10
     state_migration_pull_mult = -0.1
     state_construction_mult = -0.1
