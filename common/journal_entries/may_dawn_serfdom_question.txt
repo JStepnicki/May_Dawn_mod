@@ -48,25 +48,25 @@ je_may_dawn_serfdom_question = {
 				limit = { has_law_or_variant = law_type:law_serfdom }
 				change_variable = { name = plc_serfdom_unrest add = 2.5 }
 			}
-			else_if = {
-				limit = { has_law_or_variant = law_type:law_tenant_farmers }
-				change_variable = { name = plc_serfdom_unrest add = 1.2 }
-			}
+			# latyfundia to warianty dzierżawy – muszą być sprawdzane przed nią
 			else_if = {
 				limit = {
 					OR = {
-						has_law_or_variant = law_type:law_latifundias
-						has_law_or_variant = law_type:law_expanded_latifundias
+						has_law = law_type:law_latifundias
+						has_law = law_type:law_expanded_latifundias
 					}
 				}
 				change_variable = { name = plc_serfdom_unrest add = 1.8 }
 			}
 			else_if = {
+				limit = { has_law = law_type:law_tenant_farmers }
+				change_variable = { name = plc_serfdom_unrest add = 1.2 }
+			}
+			else_if = {
 				limit = {
 					OR = {
 						has_law_or_variant = law_type:law_commercialized_agriculture
-						has_law_or_variant = law_type:law_peasant_proprietorship
-						has_law_or_variant = law_type:law_homesteading
+						has_law_or_variant = law_type:law_peasant_proprietorship # obejmuje też homesteading
 						has_law_or_variant = law_type:law_collectivized_agriculture
 					}
 				}
@@ -111,7 +111,6 @@ je_may_dawn_serfdom_question = {
 				OR = {
 					has_law_or_variant = law_type:law_commercialized_agriculture
 					has_law_or_variant = law_type:law_peasant_proprietorship
-					has_law_or_variant = law_type:law_homesteading
 					has_law_or_variant = law_type:law_collectivized_agriculture
 				}
 			}

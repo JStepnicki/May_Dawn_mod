@@ -325,7 +325,7 @@
 		# Due to their size, each IR and Art-reg consists of two in-game regiments
 		create_military_formation = {
 			type = army
-			hq_region = sr:region_eastern_europe
+			hq_region = sr:region_central_europe # May Dawn: Galicja należy do PLC
 			name = "generalkommando_lemberg"
 
 			save_scope_as = generalkommando_lemberg
@@ -3916,9 +3916,9 @@
 				count = 2
 			}
 
-			combat_unit = { # Courland Lancer Regiment
+			combat_unit = { # Courland Lancer Regiment (May Dawn: Kurlandia to COU – stacjonuje w Rydze)
 				type = unit_type:combat_unit_type_lancers
-				state_region = s:STATE_COURLAND
+				state_region = s:STATE_RIGA
 				count = 1
 			}
 			combat_unit = { # Narva Jägers
