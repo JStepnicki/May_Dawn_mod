@@ -26,3 +26,15 @@ PLR = {
 	cultures = { polish lithuanian byelorussian ukrainian }
 	capital = STATE_GREATER_POLAND
 }
+
+# Rzeczpospolita Obojga Narodów – nadpisanie vanilli (od 1.11 wymagane jawne REPLACE:)
+REPLACE:PLC = {
+	color = { 160  20  40 }
+
+	country_type = recognized
+
+	tier = kingdom
+
+	cultures = { polish lithuanian }
+	capital = STATE_GREATER_POLAND
+}

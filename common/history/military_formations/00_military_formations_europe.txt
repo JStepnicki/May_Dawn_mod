@@ -852,6 +852,11 @@
 				type = ship_type:ship_type_frigate
 				count = 19
 			}
+
+			ship = {
+				type = ship_type:ship_type_early_troop_ship
+				count = 10
+			}
 		}
 
 		create_military_formation = {
@@ -867,6 +872,11 @@
 			ship = {
 				type = ship_type:ship_type_frigate
 				count = 23
+			}
+
+			ship = {
+				type = ship_type:ship_type_early_troop_ship
+				count = 8
 			}
 		}
 
@@ -1193,6 +1203,11 @@
 				type = ship_type:ship_type_frigate
 				count = 5
 			}
+
+			ship = {
+				type = ship_type:ship_type_early_troop_ship
+				count = 3
+			}
 		}
 
 		create_military_formation = {
@@ -1286,6 +1301,11 @@
 				type = ship_type:ship_type_frigate
 				count = 23
 			}
+
+			ship = {
+				type = ship_type:ship_type_early_troop_ship
+				count = 11
+			}
 		}
 
 		create_military_formation = {
@@ -1302,6 +1322,11 @@
 				type = ship_type:ship_type_frigate
 				count = 25
 			}
+
+			ship = {
+				type = ship_type:ship_type_early_troop_ship
+				count = 9
+			}
 		}
 
 		create_military_formation = {
@@ -1317,6 +1342,11 @@
 			ship = {
 				type = ship_type:ship_type_frigate
 				count = 21
+			}
+
+			ship = {
+				type = ship_type:ship_type_early_troop_ship
+				count = 7
 			}
 		}
 
@@ -1346,6 +1376,7 @@
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_russia
+			supply_hub = s:STATE_INGRIA
 			name = Otdelniy_Gvardeyskiy_Korpus
 
 			combat_unit = { # L.-Gds. Preobrazhenskii and Semenovskii regiments, L.-Gds. Izmailovskii and Jäger regiments, Livgardets 3:e finska skarpskyttebataljon (Finland)
@@ -1566,7 +1597,7 @@
 
 			combat_unit = { # Kostroma and Galich Jägers
 				type = unit_type:combat_unit_type_line_infantry
-				state_region = s:STATE_GALICH
+				state_region = s:STATE_VOLOGDA
 				count = 2
 			}
 
@@ -1811,6 +1842,7 @@
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_eastern_europe
+			supply_hub = s:STATE_CHERSON
 			name = 5y_Pekhotniy_Korpus
 
 			combat_unit = { # Podolia and Zhitomir Jägers
@@ -1834,12 +1866,12 @@
 			# 5th Artillery Division
 			combat_unit = { # 13th, 14th, and 15th Field Artillery Brigades
 				type = unit_type:combat_unit_type_cannon_artillery
-				state_region = s:STATE_TARTARIA
+				state_region = s:STATE_SARATOV
 				count = 3
 			}
 			combat_unit = { # 5th Horse-Artillery Brigade
 				type = unit_type:combat_unit_type_mobile_artillery
-				state_region = s:STATE_TARTARIA
+				state_region = s:STATE_SARATOV
 				count = 1
 			}
 
@@ -1864,6 +1896,7 @@
 		create_military_formation = {
 			type = army
 			hq_region = sr:region_russia
+			supply_hub = s:STATE_NOVGOROD
 			name = Otdelniy_Grenaderskiy_Korpus
 
 			combat_unit = { # Kiev and His Royal Highness Prince Eugene of Württemberg’s Grenadiers
@@ -1955,7 +1988,7 @@
 #			# Don Cossacks
 #			combat_unit = {
 #				type = unit_type:combat_unit_type_hussars
-#				state_region = s:STATE_TARTARIA
+#				state_region = s:STATE_SARATOV
 #				count = 10
 #			}
 #			# Don Cossacks
@@ -2005,6 +2038,11 @@
 				count = 22
 			}
 			save_scope_as = rus_baltic_fleet
+
+			ship = {
+				type = ship_type:ship_type_early_troop_ship
+				count = 10
+			}
 		}
 
 		create_character = {
@@ -2038,6 +2076,11 @@
 				count = 11
 			}
 			save_scope_as = rus_black_sea_fleet
+
+			ship = {
+				type = ship_type:ship_type_early_troop_ship
+				count = 5
+			}
 		}
 
 		create_character = {
@@ -2680,6 +2723,11 @@
 				type = ship_type:ship_type_frigate
 				count = 5
 			}
+
+			ship = {
+				type = ship_type:ship_type_early_troop_ship
+				count = 3
+			}
 		}
 	}
 
@@ -2773,6 +2821,11 @@
 				type = ship_type:ship_type_frigate
 				state_region = s:STATE_JUTLAND
 				count = 2
+			}
+
+			ship = {
+				type = ship_type:ship_type_early_troop_ship
+				count = 3
 			}
 		}
 	}
@@ -3137,6 +3190,11 @@
 				state_region = s:STATE_APULIA
 				count = 1
 			}
+
+			ship = {
+				type = ship_type:ship_type_early_troop_ship
+				count = 3
+			}
 		}
 	}
 
@@ -3470,6 +3528,11 @@
 				type = ship_type:ship_type_frigate
 				count = 18
 			}
+
+			ship = {
+				type = ship_type:ship_type_early_troop_ship
+				count = 9
+			}
 		}
 	}
 
@@ -3631,6 +3694,11 @@
 			ship = {
 				type = ship_type:ship_type_frigate
 				count = 4
+			}
+
+			ship = {
+				type = ship_type:ship_type_early_troop_ship
+				count = 3
 			}
 		}
 	}
@@ -3822,6 +3890,11 @@
 
 			ship = {
 				type = ship_type:ship_type_frigate
+				count = 3
+			}
+
+			ship = {
+				type = ship_type:ship_type_early_troop_ship
 				count = 3
 			}
 		}

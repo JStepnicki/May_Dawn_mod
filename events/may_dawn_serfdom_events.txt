@@ -84,13 +84,13 @@ may_dawn_serfdom.2 = {
 
 		custom_tooltip = may_dawn_serfdom_crush_tt
 
-		s:STATE_WEST_GALICIA = {
+		s:STATE_WEST_GALICIA.region_state:PLC ?= {
 			kill_population_percent_in_state = { percent = 0.03 pop_type = peasants }
 		}
-		s:STATE_EAST_GALICIA = {
+		s:STATE_EAST_GALICIA.region_state:PLC ?= {
 			kill_population_percent_in_state = { percent = 0.03 pop_type = peasants }
 		}
-		s:STATE_LESSER_POLAND = {
+		s:STATE_LESSER_POLAND.region_state:PLC ?= {
 			kill_population_percent_in_state = { percent = 0.02 pop_type = peasants }
 		}
 
@@ -111,18 +111,18 @@ may_dawn_serfdom.2 = {
 
 		custom_tooltip = may_dawn_serfdom_concede_tt
 
-		s:STATE_WEST_GALICIA = {
+		s:STATE_WEST_GALICIA.region_state:PLC ?= {
 			kill_population_percent_in_state = { percent = 0.02 pop_type = aristocrats }
 		}
-		s:STATE_EAST_GALICIA = {
+		s:STATE_EAST_GALICIA.region_state:PLC ?= {
 			kill_population_percent_in_state = { percent = 0.02 pop_type = aristocrats }
 		}
-		s:STATE_LESSER_POLAND = {
+		s:STATE_LESSER_POLAND.region_state:PLC ?= {
 			kill_population_percent_in_state = { percent = 0.015 pop_type = aristocrats }
 		}
 
 		if = {
-			limit = { has_law = law_type:law_serfdom }
+			limit = { has_law_or_variant = law_type:law_serfdom }
 			activate_law = law_type:law_tenant_farmers
 		}
 
@@ -144,7 +144,7 @@ may_dawn_serfdom.2 = {
 		custom_tooltip = may_dawn_serfdom_compromise_tt
 
 		if = {
-			limit = { has_law = law_type:law_serfdom }
+			limit = { has_law_or_variant = law_type:law_serfdom }
 			activate_law = law_type:law_tenant_farmers
 		}
 

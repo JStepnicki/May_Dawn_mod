@@ -1,0 +1,54 @@
+﻿# polish imperial identity
+# Przeniesione z 00_poland.txt (żeby nie nadpisywać vanilli) i przepisane na format JE z 1.15 (outcome).
+je_imperial_identity = {
+	icon = "gfx/interface/icons/event_icons/waving_flag.dds"
+
+	group = je_group_poland
+
+	is_shown_in_lobby = {
+		country_has_primary_culture = cu:polish
+	}
+
+	is_shown_when_inactive = {
+		country_has_primary_culture = cu:polish
+	}
+
+	possible = {
+		has_technology_researched = nationalism
+		custom_tooltip = {
+			text = je_imperial_identity_tt
+			c:PLC ?= THIS
+		}
+	}
+
+	immediate = {
+		trigger_event = { id = poland_events.6 popup = yes }
+	}
+
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		color = "gold_positive"
+		conclusion_desc = je_standard_completion_conclusion_desc
+		trigger = {
+			has_technology_researched = nationalism
+			owns_entire_state_region = STATE_MINSK
+			owns_entire_state_region = STATE_KIEV
+			country_rank >= rank_value:great_power
+		}
+		effect = {
+			#event for imperial identity
+			trigger_event = { id = may_dawn_poland_events.1 popup = yes }
+
+			# new polish homelands
+			s:STATE_KIEV = {
+				add_homeland = cu:polish
+			}
+			s:STATE_MINSK = {
+				add_homeland = cu:polish
+			}
+		}
+	}
+
+	should_be_pinned_by_default_uninvolved_or_context = yes
+}

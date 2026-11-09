@@ -79,7 +79,7 @@ plc_history_setup_on_action = {
         }
 
         # --- LITHUANIA / KAUNAS ---
-        s:STATE_KAUNAS = {
+        s:STATE_LITHUANIA = {
             set_owner_of_provinces = {
                 country = c:PLC
                 provinces = { x00E0A0 }

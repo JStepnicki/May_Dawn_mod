@@ -96,41 +96,52 @@ je_may_dawn_serfdom_question = {
 		}
 	}
 
-	complete = {
-		custom_tooltip = {
-			text = plc_serfdom_question_resolved_tt
-			OR = {
-				has_law_or_variant = law_type:law_commercialized_agriculture
-				has_law_or_variant = law_type:law_peasant_proprietorship
-				has_law_or_variant = law_type:law_homesteading
-				has_law_or_variant = law_type:law_collectivized_agriculture
+	outcome = {
+		header = je_standard_completion_header
+		effect_header = je_standard_on_completion_header
+		color = "gold_positive"
+		conclusion_desc = je_standard_completion_conclusion_desc
+		trigger = {
+			custom_tooltip = {
+				text = plc_serfdom_question_resolved_tt
+				OR = {
+					has_law_or_variant = law_type:law_commercialized_agriculture
+					has_law_or_variant = law_type:law_peasant_proprietorship
+					has_law_or_variant = law_type:law_homesteading
+					has_law_or_variant = law_type:law_collectivized_agriculture
+				}
+			}
+			custom_tooltip = {
+				text = plc_serfdom_no_rabacja_tt
+				NOT = { has_variable = plc_rabacja_erupted }
+			}
+			custom_tooltip = {
+				text = plc_serfdom_unrest_low_tt
+				var:plc_serfdom_unrest < 30
 			}
 		}
-		custom_tooltip = {
-			text = plc_serfdom_no_rabacja_tt
-			NOT = { has_variable = plc_rabacja_erupted }
-		}
-		custom_tooltip = {
-			text = plc_serfdom_unrest_low_tt
-			var:plc_serfdom_unrest < 30
-		}
-	}
-
-	on_complete = {
-		remove_modifier = plc_serfdom_tension_modifier
-		add_modifier = {
-			name = plc_serfdom_resolved_modifier
-			years = 15
-		}
-		trigger_event = { id = may_dawn_serfdom.3 days = 0 }
-	}
-
-	fail = {
-		custom_tooltip = {
-			text = plc_rabacja_concluded_tt
-			has_variable = plc_rabacja_concluded
+		effect = {
+			remove_modifier = plc_serfdom_tension_modifier
+			add_modifier = {
+				name = plc_serfdom_resolved_modifier
+				years = 15
+			}
+			trigger_event = { id = may_dawn_serfdom.3 days = 0 }
 		}
 	}
 
-	should_be_pinned_by_default = yes
+	outcome = {
+		header = je_standard_failure_header
+		effect_header = je_standard_on_failure_header
+		color = "blue_negative"
+		conclusion_desc = je_standard_failure_conclusion_desc
+		trigger = {
+			custom_tooltip = {
+				text = plc_rabacja_concluded_tt
+				has_variable = plc_rabacja_concluded
+			}
+		}
+	}
+
+	should_be_pinned_by_default_uninvolved_or_context = yes
 }

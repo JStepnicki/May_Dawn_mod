@@ -1,7 +1,7 @@
 ﻿BUILDINGS = {
     # --- MAZOVIA ---
     s:STATE_MAZOVIA = {
-        region_state:RUS = {
+        region_state:RUS ?= {
             # Remove Russian base game buildings
             remove_building = building_rye_farm
             remove_building = building_logging_camp
@@ -69,7 +69,7 @@
 
     # --- LESSER POLAND ---
     s:STATE_LESSER_POLAND = {
-        region_state:RUS = {
+        region_state:RUS ?= {
             # Clean up Russian influence
             remove_building = building_paper_mill
             remove_building = building_livestock_ranch
@@ -159,7 +159,7 @@
 
     # --- GREATER POLAND ---
     s:STATE_GREATER_POLAND = {
-        region_state:RUS = {
+        region_state:RUS ?= {
             remove_building = building_textile_mill
             remove_building = building_trade_center
             remove_building = building_furniture_manufactory
@@ -590,7 +590,7 @@
 
     # --- KIEV (Split 60% RUS / 40% PLC) ---
     s:STATE_KIEV = {
-        region_state:RUS = {
+        region_state:RUS ?= {
             # Russia keeps some, but we remove the part taken by PLC
             remove_building = building_food_industry
             remove_building = building_wheat_farm
@@ -626,7 +626,7 @@
 
     # --- BREST & VOLHYNIA ---
     s:STATE_BREST = {
-        region_state:RUS = {
+        region_state:RUS ?= {
         remove_building = building_rye_farm
         remove_building = building_logging_camp
         }
@@ -654,7 +654,7 @@
 
     }
     s:STATE_VOLHYNIA = {
-        region_state:RUS = {
+        region_state:RUS ?= {
         remove_building = building_logging_camp
         }
         region_state:PLC = {
