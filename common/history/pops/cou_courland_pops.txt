@@ -1,6 +1,6 @@
 ﻿POPS = {
     s:STATE_COURLAND = {
-        region_state:UBD = { kill_population_percent_in_state = { percent = 1 } }
+        region_state:UBD ?= { kill_population_percent_in_state = { percent = 1 } }
         region_state:COU = {
             create_pop = { culture = latvian size = 354472 }
             create_pop = { culture = latvian pop_type = aristocrats size = 5000 }

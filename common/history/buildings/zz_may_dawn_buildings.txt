@@ -83,7 +83,7 @@
 					}
 				}
 				reserves = 1
-				activate_production_methods = { "pm_atmospheric_engine_pump_building_iron_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
+				activate_production_methods = { "pm_atmospheric_engine_pump_building_coal_mine" "pm_no_explosives" "pm_no_steam_automation" "pm_road_carts" }
 			}
 		}
     }
@@ -412,7 +412,7 @@
 
     # --- POSEN (Split from Prussia) ---
     s:STATE_POSEN = {
-        region_state:PRU = {
+        region_state:PRU ?= {
             # Clear Prussian buildings in the split state
             if = { limit = { has_building = building_food_industry } remove_building = building_food_industry }
             if = { limit = { has_building = building_rye_farm } remove_building = building_rye_farm }
@@ -494,12 +494,12 @@
 
     # --- WEST GALICIA (Merged from Austria and Krakow) ---
     s:STATE_WEST_GALICIA = {
-        region_state:AUS = {
+        region_state:AUS ?= {
             if = { limit = { has_building = building_government_administration } remove_building = building_government_administration }
             if = { limit = { has_building = building_rye_farm } remove_building = building_rye_farm }
             if = { limit = { has_building = building_livestock_ranch } remove_building = building_livestock_ranch }
         }
-        region_state:KRA = {
+        region_state:KRA ?= {
             if = { limit = { has_building = building_university } remove_building = building_university }
             if = { limit = { has_building = building_textile_mill } remove_building = building_textile_mill }
         }
@@ -609,7 +609,7 @@
 
 # --- WEST PRUSSIA (Gdańsk/Danzig - The Gate to the World) ---
     s:STATE_WEST_PRUSSIA = {
-        region_state:PRU = {
+        region_state:PRU ?= {
             # Totalne czyszczenie pruskich struktur
             if = { limit = { has_building = building_trade_center } remove_building = building_trade_center }
             if = { limit = { has_building = building_fishing_wharf } remove_building = building_fishing_wharf }
@@ -680,7 +680,7 @@
 
     # --- COURLAND (Handled by COU) ---
     s:STATE_COURLAND = {
-        region_state:UBD = { remove_building = building_rye_farm }
+        region_state:UBD ?= { remove_building = building_rye_farm }
         region_state:COU = {
             create_building = {
                 building = "building_rye_farm"
