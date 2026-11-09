@@ -8,6 +8,10 @@ je_may_dawn_serfdom_question = {
 
 	group = je_group_poland
 
+	activation_description = {
+		always = yes
+	}
+
 	is_shown_in_lobby = {
 		c:PLC ?= this
 	}

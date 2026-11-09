@@ -5,6 +5,10 @@ je_imperial_identity = {
 
 	group = je_group_poland
 
+	activation_description = {
+		has_technology_researched = nationalism
+	}
+
 	is_shown_in_lobby = {
 		country_has_primary_culture = cu:polish
 	}
