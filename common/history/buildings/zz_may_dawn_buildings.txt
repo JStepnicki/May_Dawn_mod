@@ -12,14 +12,14 @@
                 building = "building_rye_farm"
                 add_ownership = { building = { type = "building_manor_house" country = "c:PLC" levels = 3 region = "STATE_MAZOVIA" } }
                 reserves = 1
-                activate_production_methods = { "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" }
+                activate_production_methods = { "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" }
             }
             # May Dawn 0.6: dodatkowa produkcja żywności (+1)
             create_building = {
                 building = "building_rye_farm"
                 add_ownership = { building = { type = "building_manor_house" country = "c:PLC" levels = 1 region = "STATE_MAZOVIA" } }
                 reserves = 1
-                activate_production_methods = { "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" }
+                activate_production_methods = { "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" }
             }
             # May Dawn 0.6: dodatkowa produkcja żywności (+1)
             create_building = {
@@ -32,7 +32,7 @@
                 building = "building_rye_farm"
                 add_ownership = { building = { type = "building_manor_house" country = "c:PLC" levels = 2 region = "STATE_MAZOVIA" } }
                 reserves = 1
-                activate_production_methods = { "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" }
+                activate_production_methods = { "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" }
             }
             create_building = {
                 building = "building_logging_camp"
@@ -102,7 +102,7 @@
                 building = "building_rye_farm"
                 add_ownership = { building = { type = "building_manor_house" country = "c:PLC" levels = 3 region = "STATE_LESSER_POLAND" } }
                 reserves = 1
-                activate_production_methods = { "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" }
+                activate_production_methods = { "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" }
             }
             # May Dawn 0.6: dodatkowa produkcja żywności (+1)
             create_building = {
@@ -203,12 +203,25 @@
             if = { limit = { has_building = building_rye_farm } remove_building = building_rye_farm }
         }
         region_state:PLC = {
+            # May Dawn 0.6: odbudowa rolnictwa (czyste zboże, bez ziemniaków) + przetwórstwo
+            create_building = {
+                building = "building_rye_farm"
+                add_ownership = { building = { type = "building_manor_house" country = "c:PLC" levels = 3 region = "STATE_GREATER_POLAND" } }
+                reserves = 1
+                activate_production_methods = { "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" }
+            }
+            create_building = {
+                building = "building_food_industry"
+                add_ownership = { building = { type = "building_financial_district" country = "c:PLC" levels = 2 region = "STATE_GREATER_POLAND" } }
+                reserves = 1
+                activate_production_methods = { "pm_bakery" "pm_disabled_canning" "pm_disabled_distillery" "pm_manual_dough_processing" }
+            }
             # May Dawn 0.6: centralna Polska – więcej żywności i przemysłu
             create_building = {
                 building = "building_rye_farm"
                 add_ownership = { building = { type = "building_manor_house" country = "c:PLC" levels = 3 region = "STATE_GREATER_POLAND" } }
                 reserves = 1
-                activate_production_methods = { "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" }
+                activate_production_methods = { "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" }
             }
             create_building = {
                 building = "building_textile_mill"
@@ -221,7 +234,7 @@
                 building = "building_rye_farm"
                 add_ownership = { building = { type = "building_manor_house" country = "c:PLC" levels = 1 region = "STATE_GREATER_POLAND" } }
                 reserves = 1
-                activate_production_methods = { "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" }
+                activate_production_methods = { "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" }
             }
             # May Dawn 0.6: dodatkowa produkcja żywności (+1)
             create_building = {
@@ -246,7 +259,7 @@
                 building = "building_rye_farm"
                 add_ownership = { building = { type = "building_manor_house" country = "c:PLC" levels = 3 region = "STATE_GREATER_POLAND" } }
                 reserves = 1
-                activate_production_methods = { "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" }
+                activate_production_methods = { "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" }
             }
             create_building = {
                 building = "building_logging_camp"
@@ -406,12 +419,19 @@
             if = { limit = { has_building = building_livestock_ranch } remove_building = building_livestock_ranch }
         }
         region_state:PLC = {
+            # May Dawn 0.6: odbudowa rolnictwa (czyste zboże, bez ziemniaków) + przetwórstwo
+            create_building = {
+                building = "building_rye_farm"
+                add_ownership = { building = { type = "building_manor_house" country = "c:PLC" levels = 3 region = "STATE_POSEN" } }
+                reserves = 1
+                activate_production_methods = { "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" }
+            }
             # May Dawn 0.6: dodatkowa produkcja żywności (+1)
             create_building = {
                 building = "building_rye_farm"
                 add_ownership = { building = { type = "building_manor_house" country = "c:PLC" levels = 1 region = "STATE_POSEN" } }
                 reserves = 1
-                activate_production_methods = { "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" }
+                activate_production_methods = { "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" }
             }
             create_building = {
                 building = "building_rye_farm"
@@ -484,12 +504,25 @@
             if = { limit = { has_building = building_textile_mill } remove_building = building_textile_mill }
         }
         region_state:PLC = {
+            # May Dawn 0.6: odbudowa rolnictwa (czyste zboże, bez ziemniaków) + przetwórstwo
+            create_building = {
+                building = "building_rye_farm"
+                add_ownership = { building = { type = "building_manor_house" country = "c:PLC" levels = 4 region = "STATE_WEST_GALICIA" } }
+                reserves = 1
+                activate_production_methods = { "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" }
+            }
+            create_building = {
+                building = "building_food_industry"
+                add_ownership = { building = { type = "building_financial_district" country = "c:PLC" levels = 1 region = "STATE_WEST_GALICIA" } }
+                reserves = 1
+                activate_production_methods = { "pm_bakery" "pm_disabled_canning" "pm_disabled_distillery" "pm_manual_dough_processing" }
+            }
             # May Dawn 0.6: dodatkowa produkcja żywności (+1)
             create_building = {
                 building = "building_rye_farm"
                 add_ownership = { building = { type = "building_manor_house" country = "c:PLC" levels = 1 region = "STATE_WEST_GALICIA" } }
                 reserves = 1
-                activate_production_methods = { "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" }
+                activate_production_methods = { "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" }
             }
             # May Dawn 0.6: dodatkowa produkcja żywności (+1)
             create_building = {
@@ -719,7 +752,7 @@
                 building = "building_rye_farm"
                 add_ownership = { building = { type = "building_manor_house" country = "c:PLC" levels = 1 region = "STATE_BREST" } }
                 reserves = 1
-                activate_production_methods = { "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" }
+                activate_production_methods = { "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" }
             }
             # May Dawn 0.6: dodatkowa produkcja żywności (+1)
             create_building = {
@@ -755,6 +788,13 @@
         if = { limit = { has_building = building_logging_camp } remove_building = building_logging_camp }
         }
         region_state:PLC = {
+            # May Dawn 0.6: odbudowa rolnictwa (czyste zboże, bez ziemniaków) + przetwórstwo
+            create_building = {
+                building = "building_wheat_farm"
+                add_ownership = { building = { type = "building_manor_house" country = "c:PLC" levels = 2 region = "STATE_VOLHYNIA" } }
+                reserves = 1
+                activate_production_methods = { "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" }
+            }
 
 			create_building = {
 				building = "building_logging_camp"
@@ -778,7 +818,20 @@
                 building = "building_rye_farm"
                 add_ownership = { building = { type = "building_manor_house" country = "c:PLC" levels = 2 region = "STATE_MINSK" } }
                 reserves = 1
-                activate_production_methods = { "pm_simple_farming" "pm_potatoes" "pm_tools_disabled" }
+                activate_production_methods = { "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" }
+            }
+        }
+    }
+
+    # --- EAST_GALICIA – May Dawn 0.6 ---
+    s:STATE_EAST_GALICIA = {
+        region_state:PLC ?= {
+            # May Dawn 0.6: odbudowa rolnictwa (czyste zboże, bez ziemniaków) + przetwórstwo
+            create_building = {
+                building = "building_wheat_farm"
+                add_ownership = { building = { type = "building_manor_house" country = "c:PLC" levels = 4 region = "STATE_EAST_GALICIA" } }
+                reserves = 1
+                activate_production_methods = { "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" }
             }
         }
     }
