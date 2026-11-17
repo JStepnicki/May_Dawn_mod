@@ -435,7 +435,7 @@
             }
             create_building = {
                 building = "building_rye_farm"
-                add_ownership = { building = { type = "building_manor_house" country = "c:PLC" levels = 1 region = "STATE_GREATER_POLAND" } }
+                add_ownership = { building = { type = "building_manor_house" country = "c:PLC" levels = 1 region = "STATE_POSEN" } }
                 reserves = 1
                 activate_production_methods = { "pm_soil_enriching_farming" "pm_tools" "pm_apple_orchards" }
             }
@@ -469,7 +469,7 @@
                         type="building_tooling_workshop"
                         country="c:PLC"
                         levels=1
-                        region="STATE_GREATER_POLAND"
+                        region="STATE_POSEN"
                     }
                 }
                 reserves=1
@@ -561,7 +561,7 @@
                         type="building_tooling_workshop"
                         country="c:PLC"
                         levels=2
-                        region="STATE_GREATER_POLAND"
+                        region="STATE_WEST_GALICIA"
                     }
                 }
                 reserves=1
